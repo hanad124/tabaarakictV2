@@ -139,18 +139,16 @@ function Header() {
                 <SheetContent>
                   <SheetHeader>
                     <SheetTitle>
-                      <div className="flex-shrink-0 text-center -mt-3">
-                        <Image
-                          className="h-10 w-10"
-                          src="https://drive.google.com/uc?export=download&id=1BoJ_KOqK9mgnqjf5Hh0WJF-7ZY5eNpk4"
-                          alt="logo image"
-                          width={500}
-                          height={300}
-                        />
-                      </div>
+                      <Image
+                        className="h-10 w-10 flex-shrink-0 text-center -mt-3"
+                        src="https://drive.google.com/uc?export=download&id=1BoJ_KOqK9mgnqjf5Hh0WJF-7ZY5eNpk4"
+                        alt="logo image"
+                        width={500}
+                        height={300}
+                      />
                     </SheetTitle>
                     <SheetDescription>
-                      <div className=" flex flex-col gap-1 justify-start text-left  mt-7">
+                      <span className=" flex flex-col gap-1 justify-start text-left  mt-7">
                         <a
                           href="#"
                           className=" text-[#323F7C] hover:text-[#0B63E5] px-3 py-3 rounded-md text-sm font-medium"
@@ -194,7 +192,7 @@ function Header() {
                         <Button variant={"default"} className="mt-5">
                           Contact us
                         </Button>
-                      </div>
+                      </span>
                     </SheetDescription>
                   </SheetHeader>
                 </SheetContent>
