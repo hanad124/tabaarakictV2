@@ -5,10 +5,10 @@ const About = () => {
   return (
     <div>
       {/* who we're */}
-      <div className="mt-32 px-10 lg:flex md:gap-14 items-center justify-center md:w-full md:justify-center">
+      <div className="mt-32 mb-24 px-10 lg:flex md:gap-14 items-center justify-center md:w-full md:justify-center">
         <div className="flex-2">
           <Image
-            className="w-auto"
+            className="w-auto border rounded-md md:h-[36.9rem]"
             src="https://drive.google.com/uc?export=download&id=1opIGfiwwltzVj1rr-fgixBSWJu80vBJi"
             alt="girl image"
             width={500}
@@ -19,7 +19,7 @@ const About = () => {
           <p className="text-[#3056D3] font-bold text-xl mb-7">
             Who we&apos;re{" "}
           </p>
-          <h2 className="text-[#323F7C] text-3xl font-bold leading-normal lg:leading-relaxed lg:text-4xl">
+          <h2 className="text-[#323F7C] text-2xl font-bold leading-normal lg:leading-relaxed lg:text-4xl">
             We provide perfect it <br />
             <span className="text-[#3056D3]">solutions & technology</span> for
             any startups.

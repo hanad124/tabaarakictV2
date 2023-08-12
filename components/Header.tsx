@@ -36,7 +36,7 @@ function Header() {
   return (
     <div>
       <nav
-        className={`fixed top-0 left-0 w-full z-10${
+        className={`fixed top-0 left-0 w-full z-10 py-2${
           isVisible
             ? " w-full backdrop-blur-2xl border-b-2 border-blue-800"
             : ""
@@ -113,7 +113,7 @@ function Header() {
               Contact us
             </Button>
 
-            <div className="absolute top-3 right-8">
+            <div className="absolute top-6 right-8">
               <Sheet>
                 <SheetTrigger onClick={handleSheetClose}>
                   {" "}

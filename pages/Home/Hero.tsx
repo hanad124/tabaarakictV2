@@ -15,7 +15,7 @@ const Hero = () => {
               "linear-gradient(126deg, rgba(13, 21, 34, 0.75) 0%, rgba(0, 39, 98, 0.47) 100%), linear-gradient(179deg, rgba(13, 21, 34, 0.90) 0%, rgba(0, 39, 98, 0.81) 98.98%), url('https://drive.google.com/uc?export=download&id=1O8BpNIrrF0aIA2onyIiBhT3dVYO4Sh5w')",
           }}
         >
-          <div className="pt-44 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
+          <div className="pt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
             <div className="flex flex-col md:flex-row md:justify-between items-center">
               <div className="md:w-1/2">
                 <h1
