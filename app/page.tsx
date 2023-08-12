@@ -1,37 +1,9 @@
-"use client";
+import Home from "@/pages/Home/Home";
 
-import Image from "next/image";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import Header from "@/components/Header";
-import { Button } from "@/components/ui/button";
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
-import { useTheme } from "next-themes";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
-import React, { useState } from "react";
-import Hero from "@/pages/Home/Hero";
-import About from "@/pages/Home/About";
-import ScrollIndicator from "@/components/ScrollIndicator";
-
-export default function Home() {
+export default function Page() {
   return (
     <>
-      <Header />
-      <ScrollIndicator />
-      <Hero />
-      <About />
+      <Home />
     </>
   );
 }

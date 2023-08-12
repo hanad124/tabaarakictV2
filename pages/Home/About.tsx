@@ -8,7 +8,7 @@ const About = () => {
       <div className="mt-32 mb-24 px-10 lg:flex md:gap-14 items-center justify-center md:w-full md:justify-center">
         <div className="flex-2">
           <Image
-            className="w-auto border rounded-md md:h-[36.9rem]"
+            className="w-auto border rounded-[18px] md:h-[36.9rem]"
             src="https://drive.google.com/uc?export=download&id=1opIGfiwwltzVj1rr-fgixBSWJu80vBJi"
             alt="girl image"
             width={500}
@@ -20,7 +20,7 @@ const About = () => {
             Who we&apos;re{" "}
           </p>
           <h2 className="text-[#323F7C] text-2xl font-bold leading-normal lg:leading-relaxed lg:text-4xl">
-            We provide perfect it <br />
+            We provide perfect IT <br />
             <span className="text-[#3056D3]">solutions & technology</span> for
             any startups.
           </h2>
