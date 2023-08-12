@@ -57,3 +57,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Scroll indicator styles */
+
+.progress-wrapper {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  height: 2px;
+  z-index: 49;
+  width: 100%;
+}
+
+.progress-bar {
+  height: 3px;
+  background-color: #23ba9e;
+  transition: width 0.2s;
+  border-radius: 4px;
+}

@@ -23,11 +23,13 @@ import {
 import React, { useState } from "react";
 import Hero from "@/pages/Home/Hero";
 import About from "@/pages/Home/About";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <ScrollIndicator />
       <Hero />
       <About />
     </>
