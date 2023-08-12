@@ -5,6 +5,7 @@ import About from "@/pages/Home/About";
 import Header from "@/components/Header";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import Services from "@/pages/Home/Services";
+import Products from "@/pages/Home/Products";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Products />
     </>
   );
 }

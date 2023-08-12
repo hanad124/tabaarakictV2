@@ -43,7 +43,7 @@ const Hero = () => {
                   Contact Us
                 </Button>
               </div>
-              <div className="md:w-1/2 mt-[3rem] lg:mt-0 md:mt-0 md:ml-8 lg:ml-16 hidden md:block">
+              <div className="md:w-1/2 mt-[3rem] lg:mt-0 md:mt-0  lg:ml-28 hidden md:block">
                 <Image
                   className="w-full h-auto rounded-lg shadow-md"
                   src="https://drive.google.com/uc?export=download&id=1q4r72Jl-wkcXQ-OJ00n2CbuPrEBuRFXm"
