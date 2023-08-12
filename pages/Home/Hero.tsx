@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="flex flex-col md:flex-row md:justify-between items-center">
               <div className="md:w-1/2">
                 <h1
-                  className="lg:text-5xl  lg:mt-0 md:mt-0 text-4xl md:text-4xl sm:text-4xl leading-relaxed text-white font-bold mb-4 mt-6"
+                  className="lg:text-5xl  lg:mt-0 md:mt-0 text-4xl md:text-4xl leading-relaxed text-white font-bold mb-4 mt-6"
                   style={{ lineHeight: "138.5%" }}
                 >
                   Empower Your Business with Innovative ICT Solutions

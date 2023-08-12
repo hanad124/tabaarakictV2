@@ -11,9 +11,9 @@ const Services = () => {
         </p>
         <div className="mt-16 flex flex-col justify-center gap-10 md:flex-row md:flex-wrap">
           {/* single service 1*/}
-          <div className="bg-background rounded-md shadow-custom_shadow p-7 md:w-[360px]">
-            <div className="flex justify-center">
-              <div className=" bg-custom_primary/10 px-3 py-2 rounded-md">
+          <div className="group bg-background hover:bg-custom_primary rounded-md shadow-custom_shadow p-7 md:w-[300px] flex flex-col">
+            <div className="flex justify-center flex-1">
+              <div className=" bg-custom_primary/10 px-3 py-2 rounded-md group-hover:bg-white/10 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
@@ -37,6 +37,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M27 12.375L31.9063 16.4636C32.8658 17.2631 32.8658 18.7369 31.9063 19.5364L27 23.625"
@@ -49,6 +50,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M22.5 5.625L13.5 30.375"
@@ -56,19 +58,20 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                 </svg>
               </div>
             </div>
 
-            <p className="text-center pt-6 text-lg font-bold text-custom_secondary">
+            <p className="text-center pt-6 text-lg font-bold text-custom_secondary group-hover:text-background flex-1">
               Software Development
             </p>
-            <p className="text-center text-custom_textColor leading-relaxed my-4">
+            <p className="text-center text-custom_textColor leading-relaxed my-4 group-hover:text-custom_border flex-1">
               Tailored software solutions that streamline processes and drive
               growth.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline">
+            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-background">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,6 +86,7 @@ const Services = () => {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-white"
                 />
                 <path
                   d="M14 5.25L20.75 12L14 18.75"
@@ -90,14 +94,15 @@ const Services = () => {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-white"
                 />
               </svg>
             </div>
           </div>
           {/* single service 2*/}
-          <div className="bg-background rounded-md shadow-custom_shadow p-7 md:w-[360px]">
+          <div className="group bg-background hover:bg-custom_primary rounded-md shadow-custom_shadow p-7 md:w-[330px]">
             <div className="flex justify-center">
-              <div className=" bg-custom_primary/10 px-3 py-2 rounded-md">
+              <div className=" bg-custom_primary/10 group-hover:bg-white/10  px-3 py-2 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
@@ -116,6 +121,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M18 28.125V20.25"
@@ -123,6 +129,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M13.5 15.75L18 20.25L22.5 15.75"
@@ -130,6 +137,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M11.0677 23.486C9.73 22.4413 8.64653 21.1068 7.89872 19.5831C7.15091 18.0593 6.75822 16.3859 6.75017 14.6886C6.71648 8.59073 11.6325 3.52175 17.7287 3.37826C20.091 3.32138 22.4113 4.00976 24.3604 5.34576C26.3094 6.68176 27.7884 8.59754 28.5874 10.8214C29.3863 13.0452 29.4648 15.4641 28.8117 17.7351C28.1586 20.006 26.807 22.0136 24.9487 23.4732C24.5393 23.7903 24.2075 24.1964 23.9782 24.6606C23.7489 25.1248 23.6281 25.6351 23.625 26.1529L23.625 27.0001C23.625 27.2984 23.5065 27.5846 23.2955 27.7956C23.0845 28.0065 22.7984 28.1251 22.5 28.1251H13.5C13.2016 28.1251 12.9155 28.0065 12.7045 27.7956C12.4935 27.5846 12.375 27.2984 12.375 27.0001L12.375 26.152C12.3737 25.6375 12.2553 25.1301 12.0288 24.6682C11.8023 24.2063 11.4736 23.8021 11.0677 23.486V23.486Z"
@@ -137,18 +145,19 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                 </svg>
               </div>
             </div>
 
-            <p className="text-center pt-6 text-lg font-bold text-custom_secondary">
+            <p className="text-center pt-6 text-lg font-bold text-custom_secondary         group-hover:text-background">
               Mobile App Development
             </p>
-            <p className="text-center text-custom_textColor leading-relaxed my-4">
+            <p className="text-center text-custom_textColor group-hover:text-custom_border leading-relaxed my-4">
               Engaging and functional mobile apps for seamless user experiences.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline">
+            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-background">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -162,22 +171,22 @@ const Services = () => {
                   stroke="#0B63E5"
                   strokeWidth="1.5"
                   strokeLinecap="round"
-                  strokeLinejoin="round"
+                  className="group-hover:stroke-white"
                 />
                 <path
                   d="M14 5.25L20.75 12L14 18.75"
                   stroke="#0B63E5"
                   strokeWidth="1.5"
-                  strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-white"
                 />
               </svg>
             </div>
           </div>
           {/* single service 3*/}
-          <div className="bg-background rounded-md shadow-custom_shadow p-7 md:w-[360px]">
+          <div className="group hover:bg-custom_primary bg-background rounded-md shadow-custom_shadow p-7 md:w-[330px]">
             <div className="flex justify-center">
-              <div className=" bg-custom_primary/10 px-3 py-2 rounded-md">
+              <div className=" bg-custom_primary/10 group-hover:bg-white/10 px-3 py-2 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
@@ -187,44 +196,48 @@ const Services = () => {
                 >
                   <path
                     d="M18.0007 21.3755V34.8755"
-                    stroke="white"
+                    stroke="#0B63E5"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M18.0007 21.3755C19.554 21.3755 20.8132 20.1163 20.8132 18.563C20.8132 17.0097 19.554 15.7505 18.0007 15.7505C16.4474 15.7505 15.1882 17.0097 15.1882 18.563C15.1882 20.1163 16.4474 21.3755 18.0007 21.3755Z"
-                    stroke="white"
+                    stroke="#0B63E5"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M10.1257 10.1255V4.50049C10.1257 4.20212 10.2443 3.91597 10.4552 3.70499C10.6662 3.49401 10.9524 3.37549 11.2507 3.37549H24.7507C25.0491 3.37549 25.3352 3.49401 25.5462 3.70499C25.7572 3.91597 25.8757 4.20212 25.8757 4.50049V10.1255"
-                    stroke="white"
+                    stroke="#0B63E5"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M10.1258 10.1255L6.27459 17.9204C6.1832 18.1054 6.14444 18.3119 6.16254 18.5175C6.18064 18.723 6.25491 18.9196 6.37722 19.0857L18.0008 34.8755L29.6244 19.0856C29.7467 18.9195 29.821 18.7229 29.8391 18.5174C29.8572 18.3119 29.8184 18.1054 29.727 17.9204L25.8758 10.1255H10.1258Z"
-                    stroke="white"
+                    stroke="#0B63E5"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                 </svg>
               </div>
             </div>
 
-            <p className="text-center pt-6 text-lg font-bold text-custom_secondary">
+            <p className="group-hover:text-background text-center pt-6 text-lg font-bold text-custom_secondary">
               Bulk sms Api
             </p>
-            <p className="text-center text-custom_textColor leading-relaxed my-4">
+            <p className="group-hover:text-custom_border  text-center text-custom_textColor leading-relaxed my-4">
               fficiently reach and engage your audience with our powerful SMS
               integration.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline">
+            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-white">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -239,6 +252,7 @@ const Services = () => {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-white"
                 />
                 <path
                   d="M14 5.25L20.75 12L14 18.75"
@@ -246,14 +260,15 @@ const Services = () => {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-white"
                 />
               </svg>
             </div>
           </div>
           {/* single service 4*/}
-          <div className="bg-background rounded-md shadow-custom_shadow p-7 md:w-[360px]">
+          <div className="group bg-background hover:bg-custom_primary rounded-md shadow-custom_shadow p-7 md:w-[330px]">
             <div className="flex justify-center">
-              <div className=" bg-custom_primary/10 px-3 py-2 rounded-md">
+              <div className=" bg-custom_primary/10 group-hover:bg-white/10 px-3 py-2 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
@@ -272,6 +287,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M28.125 6.75H7.875C7.25368 6.75 6.75 7.25368 6.75 7.875V28.125C6.75 28.7463 7.25368 29.25 7.875 29.25H28.125C28.7463 29.25 29.25 28.7463 29.25 28.125V7.875C29.25 7.25368 28.7463 6.75 28.125 6.75Z"
@@ -279,6 +295,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M29.25 14.625H32.625"
@@ -286,6 +303,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M29.25 21.375H32.625"
@@ -293,6 +311,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M3.375 14.625H6.75"
@@ -300,6 +319,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M3.375 21.375H6.75"
@@ -307,6 +327,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M21.375 29.25V32.625"
@@ -314,6 +335,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M14.625 29.25V32.625"
@@ -321,6 +343,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M21.375 3.375V6.75"
@@ -328,6 +351,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M14.625 3.375V6.75"
@@ -335,19 +359,20 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                 </svg>
               </div>
             </div>
 
-            <p className="text-center pt-6 text-lg font-bold text-custom_secondary">
+            <p className="group-hover:text-background text-center pt-6 text-lg font-bold text-custom_secondary">
               Web design & Hosting
             </p>
-            <p className="text-center text-custom_textColor leading-relaxed my-4">
+            <p className="group-hover:text-custom_border text-center text-custom_textColor leading-relaxed my-4">
               Captivating web design and reliable hosting for a strong online
               presence.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline">
+            <div className="group-hover:text-background flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -362,6 +387,7 @@ const Services = () => {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-background"
                 />
                 <path
                   d="M14 5.25L20.75 12L14 18.75"
@@ -369,14 +395,15 @@ const Services = () => {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-background"
                 />
               </svg>
             </div>
           </div>
           {/* single service 5*/}
-          <div className="bg-background rounded-md shadow-custom_shadow p-7 md:w-[360px]">
-            <div className="flex justify-center">
-              <div className=" bg-custom_primary/10 px-3 py-2 rounded-md">
+          <div className="group bg-background hover:bg-custom_primary  rounded-md shadow-custom_shadow p-7 md:w-[330px] flex flex-col">
+            <div className="flex justify-center flex-1">
+              <div className=" bg-custom_primary/10 group-hover:bg-white/10 px-3 py-2 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
@@ -395,6 +422,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M5.625 11.25V18C5.625 21.7279 11.1655 24.75 18 24.75C24.8345 24.75 30.375 21.7279 30.375 18V11.25"
@@ -402,6 +430,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M5.625 18V24.75C5.625 28.4779 11.1655 31.5 18 31.5C24.8345 31.5 30.375 28.4779 30.375 24.75V18"
@@ -409,18 +438,19 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                 </svg>
               </div>
             </div>
 
-            <p className="text-center pt-6 text-lg font-bold text-custom_secondary">
+            <p className="text-center group-hover:text-background pt-6 text-lg font-bold text-custom_secondary flex-1">
               IT Consultant{" "}
             </p>
-            <p className="text-center text-custom_textColor leading-relaxed my-4">
+            <p className="text-center text-custom_textColor leading-relaxed my-4  group-hover:text-custom_border flex-1">
               Strategic guidance to align technology with business goals.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline">
+            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline  group-hover:text-background ">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -435,6 +465,7 @@ const Services = () => {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-white"
                 />
                 <path
                   d="M14 5.25L20.75 12L14 18.75"
@@ -442,14 +473,15 @@ const Services = () => {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-white"
                 />
               </svg>
             </div>
           </div>
           {/* single service 6*/}
-          <div className="bg-background rounded-md shadow-custom_shadow p-7 md:w-[360px]">
+          <div className="group bg-background 10 hover:bg-custom_primary rounded-md shadow-custom_shadow p-7 md:w-[330px]">
             <div className="flex justify-center">
-              <div className=" bg-custom_primary/10 px-3 py-2 rounded-md">
+              <div className=" bg-custom_primary/10 10 group-hover:bg-white/10  px-3 py-2 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
@@ -468,6 +500,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M24.8937 21.4469V14.1344L11.25 6.60938"
@@ -475,6 +508,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M31.3448 10.4943L18.1334 17.9999L4.65576 10.4929"
@@ -482,6 +516,7 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                   <path
                     d="M18.1335 18L18.0015 33.0217"
@@ -489,19 +524,20 @@ const Services = () => {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    className="group-hover:stroke-white"
                   />
                 </svg>
               </div>
             </div>
 
-            <p className="text-center pt-6 text-lg font-bold text-custom_secondary">
+            <p className="text-center pt-6 text-lg font-bold text-custom_secondary group-hover:text-background ">
               Network Infrastructure
             </p>
-            <p className="text-center text-custom_textColor leading-relaxed my-4">
+            <p className="text-center text-custom_textColor group-hover:text-custom_border leading-relaxed my-4">
               Secure and scalable networks for seamless connectivity and
               communication.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline">
+            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-background">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -516,6 +552,7 @@ const Services = () => {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-white"
                 />
                 <path
                   d="M14 5.25L20.75 12L14 18.75"
@@ -523,6 +560,7 @@ const Services = () => {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="group-hover:stroke-white"
                 />
               </svg>
             </div>
