@@ -16,7 +16,9 @@ const About = () => {
           />
         </div>
         <div className="mt-10 flex-1 md:mt-0 lg:max-w-[34rem]">
-          <p className="text-[#3056D3] font-bold text-xl mb-7">Who we're</p>
+          <p className="text-[#3056D3] font-bold text-xl mb-7">
+            Who we&apos;re{" "}
+          </p>
           <h2 className="text-[#323F7C] text-3xl font-bold leading-normal lg:leading-relaxed lg:text-4xl">
             We provide perfect it <br />
             <span className="text-[#3056D3]">solutions & technology</span> for
