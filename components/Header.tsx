@@ -38,15 +38,11 @@ function Header() {
       <nav
         className={`fixed top-0 left-0 w-full z-10 py-2${
           isVisible
-            ? " w-full backdrop-blur-2xl border-b-2 border-blue-800"
+            ? " w-full backdrop-blur-2xl border-b-2 border-custom_border"
             : ""
         }`}
         style={{
-          background: `${
-            isVisible
-              ? "linear-gradient(126deg, #0D1522 0%, rgba(0, 39, 98, 0.30) 100%), linear-gradient(179deg, rgba(13, 21, 34, 0.50) 0%, rgba(0, 39, 98, 0.50) 98.98%)"
-              : ""
-          }`,
+          background: `${isVisible ? "rgba(255,255,255,70%)" : ""}`,
         }}
       >
         <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-4  }`}>
@@ -64,42 +60,42 @@ function Header() {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="#"
-                  className=" hover:text-blue-500 text-white px-3 py-2 rounded-md text-md font-medium"
+                  className=" hover:text-blue-500 text-custom_secondary px-3 py-2 rounded-md text-md font-medium"
                 >
                   Home
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-[#0B63E5] px-3 py-2 rounded-md text-md font-medium"
+                  className="text-custom_secondary hover:text-[#0B63E5] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Services
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-[#0B63E5] px-3 py-2 rounded-md text-md font-medium"
+                  className="text-custom_secondary hover:text-[#0B63E5] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Portfolio
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-[#0B63E5] px-3 py-2 rounded-md text-md font-medium"
+                  className="text-custom_secondary hover:text-[#0B63E5] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Blog
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-blue-500 px-3 py-2 rounded-md text-md font-medium"
+                  className="text-custom_secondary hover:text-blue-500 px-3 py-2 rounded-md text-md font-medium"
                 >
                   Careers
                 </a>
 
                 <a
                   href="#"
-                  className="text-white hover:text-blue-500 px-3 py-2 rounded-md text-md font-medium"
+                  className="text-custom_secondary hover:text-blue-500 px-3 py-2 rounded-md text-md font-medium"
                 >
                   About
                 </a>

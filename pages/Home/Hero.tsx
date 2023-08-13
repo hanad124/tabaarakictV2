@@ -7,59 +7,86 @@ const Hero = () => {
   return (
     <div>
       {/* Hero section */}
-      <section className="hero-section">
-        <div
-          className="bg-hero-image bg-cover bg-center h-[50rem] "
-          style={{
-            backgroundImage:
-              "linear-gradient(126deg, rgba(13, 21, 34, 0.75) 0%, rgba(0, 39, 98, 0.47) 100%), linear-gradient(179deg, rgba(13, 21, 34, 0.90) 0%, rgba(0, 39, 98, 0.81) 98.98%), url('https://drive.google.com/uc?export=download&id=1O8BpNIrrF0aIA2onyIiBhT3dVYO4Sh5w')",
-          }}
-        >
-          <div className="pt-32 lg:pt-48 md:pt-44 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
-            <div className="flex flex-col md:flex-row md:justify-between items-center">
-              <div className="md:w-1/2">
-                <h1
-                  className="lg:text-5xl  lg:mt-0 md:mt-0 text-4xl md:text-4xl leading-relaxed text-white font-bold mb-4 mt-6"
-                  style={{ lineHeight: "138.5%" }}
+      <div className="pt-20 md:pt-28 relative overflow-hidden before:absolute before:top-0 before:left-1/2 before:bg-[url('https://drive.google.com/uc?export=download&id=1y_PRMsW7qQhS2rBuPShSV-MTGwmLGc8M')] before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-[url('https://drive.google.com/uc?export=download&id=1y_PRMsW7qQhS2rBuPShSV-MTGwmLGc8M)]">
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
+          {/* <!-- Announcement Banner --> */}
+          <div className="flex justify-center">
+            <a
+              className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-sm text-gray-800 p-1 pl-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-200"
+              href="#"
+            >
+              We are Hiring 🕹️ - Apply now
+              <span className="py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-gray-200 font-semibold text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-400">
+                <svg
+                  className="w-2.5 h-2.5"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
                 >
-                  Empower Your Business with Innovative ICT Solutions
-                </h1>
-                <p className="text-white mt-[2rem] md:mt-0 lg:mt-0 lg:text-lg md:text-lg text-md mb-8 leading-relaxed">
-                  At{" "}
-                  <span className="font-semibold">
-                    `Tabaarak ICT Solutions`
-                  </span>
-                  , we are dedicated to transforming businesses with our
-                  advanced ICT solutions. Our focus is on delivering
-                  state-of-the-art technologies that ignite growth, optimize
-                  efficiency, and elevate customer experiences to unprecedented
-                  levels.
-                </p>
-
-                <Button
-                  size={"lg"}
-                  className="btn-primary  mt-[1rem] md:mt-0 lg:mt-0 text-white bg-[#0B63E5]  py-3 rounded-md hover:bg-[#0b62e5db] "
-                >
-                  Contact Us
-                </Button>
-              </div>
-              <div className="md:w-1/2 mt-[3rem] lg:mt-0 md:mt-0  lg:ml-28 hidden md:block">
-                <Image
-                  className="w-full h-auto rounded-lg shadow-md"
-                  src="https://drive.google.com/uc?export=download&id=1q4r72Jl-wkcXQ-OJ00n2CbuPrEBuRFXm"
-                  alt="Hero Image"
-                  width={500}
-                  height={300}
-                />
-              </div>
-            </div>
-            <div className=""></div>
+                  <path
+                    d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </span>
+            </a>
           </div>
+          {/* <!-- End Announcement Banner --> */}
+
+          {/* <!-- Title --> */}
+          <div className="mt-12 max-w-2xl text-center mx-auto">
+            <h1 className="block font-bold text-custom_secondary text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
+              Let's Build
+              <span className=" text-custom_primary"> Together</span>
+            </h1>
+          </div>
+          {/* <!-- End Title --> */}
+
+          <div className="mt-5 max-w-3xl text-center mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-400">
+              At Tabaarak ICT Solutions, we are dedicated to transforming
+              businesses with our advanced ICT solutions. Our focus is on
+              delivering state-of-the-art technologies that ignite growth,
+              optimize efficiency, and elevate customer experiences to
+              unprecedented levels.
+            </p>
+          </div>
+
+          {/* <!-- Buttons --> */}
+          <div className="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center">
+            <Button
+              size={"lg"}
+              className="inline-flex justify-center items-center gap-x-3 text-center bg-custom_primary border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800"
+              // href="#"
+            >
+              Contact us now
+              <svg
+                className="w-3 h-3"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </Button>
+          </div>
+          {/* <!-- End Buttons --> */}
         </div>
-      </section>
+      </div>
+      {/* <!-- End Hero --> */}
+
       {/*Domain Search section  */}
-      <div className="domain-search-section -mt-7">
-        <div className="flex justify-between px-4 border-2 mx-auto    rounded-full w-5/6  border-[#0b62e5] bg-white py-2">
+      <div className="domain-search-section mt-16">
+        <div className="flex justify-between px-4 ring-2 mx-auto focus-within:ring-4 focus-within:ring-[#0b62e5b3] rounded-full w-5/6  ring-[#0b62e5] bg-white py-2">
           <div className="flex w-full items-center">
             <p className="border-r-2 border-[#DDD] text-[#323F7C] pr-2 hidden md:block">
               www.
@@ -75,7 +102,7 @@ const Hero = () => {
             <p className="hidden">Search</p>
           </div>
         </div>
-        <div className="flex gap-4 flex-wrap px-4 justify-center mt-4">
+        <div className="flex gap-4 flex-wrap px-4 justify-center mt-10">
           <p className="text-[#323F7C] font-semibold">
             <span className="text-[#0B63E5]">.so</span> $15/Year
           </p>

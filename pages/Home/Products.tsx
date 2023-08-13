@@ -14,7 +14,7 @@ const Products = () => {
             <Image
               className="w-full  flex-1"
               src="https://drive.google.com/uc?export=download&id=1QUXzY6hJsfn9ls1RaQ9UiQ-sOJJkEyyM"
-              alt="girl image"
+              alt="Shaafi image"
               width={500}
               height={300}
             />
@@ -64,7 +64,7 @@ const Products = () => {
             <Image
               className="w-full  flex-1"
               src="https://drive.google.com/uc?export=download&id=1K1u8ydBWYDvx_1gS4D50S0vU4kyGEhqf"
-              alt="girl image"
+              alt="KIAS image"
               width={500}
               height={300}
             />
@@ -114,7 +114,7 @@ const Products = () => {
             <Image
               className="w-full  flex-1"
               src="https://drive.google.com/uc?export=download&id=1xMGYwB9aRZvaL6wEi_jO2tDg9ofFwKbT"
-              alt="girl image"
+              alt="Dur-Dur image"
               width={500}
               height={300}
             />
@@ -164,7 +164,7 @@ const Products = () => {
             <Image
               className="w-full  flex-1"
               src="https://drive.google.com/uc?export=download&id=1Gtvg_xDTWwI_XfwXk5RHJiD6bkIQFqZY"
-              alt="girl image"
+              alt="HRM image"
               width={500}
               height={300}
             />
