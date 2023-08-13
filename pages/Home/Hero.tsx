@@ -1,9 +1,33 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { BiSearch } from "react-icons/bi";
-
-import Image from "next/image";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [announcement, setAnnouncement] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+
+  const announcementsText = [
+    "We are Hiring 🕹️ - Apply now",
+    "New workshop 🖥️ - Register now",
+    "Check out 👁️ - new blog post",
+  ];
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * announcementsText.length);
+    setAnnouncement(announcementsText[randomIndex]);
+
+    // Simulating delay for loading skeleton
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div>
       {/* Hero section */}
@@ -15,7 +39,11 @@ const Hero = () => {
               className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-sm text-gray-800 p-1 pl-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-200"
               href="#"
             >
-              We are Hiring 🕹️ - Apply now
+              {isLoading ? (
+                <Skeleton height={20} width={200} />
+              ) : (
+                <div>{announcement}</div>
+              )}
               <span className="py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-gray-200 font-semibold text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-400">
                 <svg
                   className="w-2.5 h-2.5"

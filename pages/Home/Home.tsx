@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import Services from "@/pages/Home/Services";
 import Products from "@/pages/Home/Products";
+import GoTopButton from "@/components/GoTopButton";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Services />
       <Products />
+      <GoTopButton />
     </>
   );
 }
