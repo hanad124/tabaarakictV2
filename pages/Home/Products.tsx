@@ -8,7 +8,7 @@ const Products = () => {
         <h2 className="text-custom_secondary text-2xl font-bold leading-normal lg:leading-relaxed lg:text-5xl md:text-4xl md:mx-24 text-center lg:mx-36 mb-0 ">
           we offer a range of powerful and innovative products
         </h2>
-        <div className="flex flex-col justify-center gap-10 md:flex-row md:flex-wrap mt-16">
+        <div className="flex flex-col justify-center md:justify-start gap-10 md:flex-row md:flex-wrap mt-16">
           {/* Single card 1 */}
           <div className="flex flex-col border border-custom_border  md:w-[370px]  rounded-lg px-5 py-5">
             <Image

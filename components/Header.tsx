@@ -38,7 +38,7 @@ function Header() {
       <nav
         className={`fixed top-0 left-0 w-full z-10 py-2${
           isVisible
-            ? " w-full backdrop-blur-2xl border-b-2 border-custom_border"
+            ? " w-full backdrop-blur-3xl border-b-2 border-custom_border"
             : ""
         }`}
         style={{
