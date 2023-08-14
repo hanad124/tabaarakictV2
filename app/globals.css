@@ -58,6 +58,22 @@
   }
 }
 
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e6e8ec;
+  /* background: #23ba9e; */
+  /* border-radius: 5px; */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0b63e5;
+  border-radius: 14px;
+  border: 2px solid #0b63e5;
+}
+
 /* Scroll indicator styles */
 
 .progress-wrapper {

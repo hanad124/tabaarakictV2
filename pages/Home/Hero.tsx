@@ -75,24 +75,27 @@ const Hero = () => {
 
           <div className="mt-5 max-w-3xl text-center mx-auto">
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              At <span className="bg-custom_primary/10  px-2 py-[2px] rounded-sm">Tabaarak ICT Solutions</span>, we are dedicated to transforming
-              businesses with our advanced ICT solutions. Our focus is on
-              delivering state-of-the-art technologies that ignite growth,
-              optimize efficiency, and elevate customer experiences to
-              unprecedented levels.
+              At{" "}
+              <span className="bg-custom_primary/10  px-2 py-[2px] rounded-sm">
+                Tabaarak ICT Solutions
+              </span>
+              , we are dedicated to transforming businesses with our advanced
+              ICT solutions. Our focus is on delivering state-of-the-art
+              technologies that ignite growth, optimize efficiency, and elevate
+              customer experiences to unprecedented levels.
             </p>
           </div>
 
           {/* <!-- Buttons --> */}
-          <div className="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center">
+          <div className="mt-8 gridgap-3 w-full sm:inline-flex sm:justify-center">
             <Button
               size={"lg"}
-              className="inline-flex justify-center items-center gap-x-3 text-center bg-custom_primary border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800"
+              className="group inline-flex justify-center items-center gap-x-3 text-center bg-custom_primary border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800"
               // href="#"
             >
               Contact us now
               <svg
-                className="w-3 h-3"
+                className="w-3 h-3 group-hover:ml-2"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -114,7 +117,7 @@ const Hero = () => {
 
       {/*Domain Search section  */}
       <div className="domain-search-section mt-16">
-        <div className="flex justify-between px-4 ring-2 mx-auto md:w-4/6 lg:w-3/6 focus-within:ring-4 focus-within:ring-[#0b62e5b3] rounded-full w-5/6  ring-[#0b62e5] bg-white py-2">
+        <div className="flex justify-between px-4 border-2 mx-auto md:w-4/6 lg:w-3/6 focus-within:ring-[3px] focus-within:ring-[#0b62e571] rounded-full w-5/6  border-custom_primary bg-white py-2">
           <div className="flex w-full items-center">
             <p className="border-r-2 border-[#DDD] text-[#323F7C] pr-2 hidden md:block">
               www.
