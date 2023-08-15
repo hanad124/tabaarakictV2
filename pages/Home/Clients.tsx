@@ -76,11 +76,15 @@ const Clients = () => {
                     setClient(client);
                   }}
                 >
-                  <img
-                    src={client.img}
-                    alt={client.name}
-                    className="w-32 h-32 md:w-40 md:h-40  max-h-36 rounded-md cursor-pointer"
-                  />
+                  {!client.img ? (
+                    <Skeleton  height={120} width={180} />
+                  ) : (
+                    <img
+                      src={client.img}
+                      alt={client.name}
+                      className="w-32 h-32 md:w-40 md:h-40  max-h-36 rounded-md cursor-pointer"
+                    />
+                  )}
                 </div>
               ))}
             </div>

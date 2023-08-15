@@ -8,6 +8,7 @@ import Services from "@/pages/Home/Services";
 import Products from "@/pages/Home/Products";
 import Portfolio from "./Portfolio";
 import Clients from "./Clients";
+import FunFact from "@/pages/Home/FunFact";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Products />
       <Portfolio />
       <Clients />
+      <FunFact />
     </>
   );
 }
