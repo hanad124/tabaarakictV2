@@ -38,7 +38,7 @@ const Clients = () => {
             solutions
           </p>
 
-          <div className="mt-16 flex flex-col justify-between items-center lg:flex-row">
+          <div className="md:mt-16 mt-32 flex flex-col justify-between items-center lg:flex-row ">
             <div className="lg:w-2/5">
               <div className="flex justify-center lg:justify-start w-full">
                 {isLoading ? (
@@ -47,11 +47,11 @@ const Clients = () => {
                   <img
                     src="https://drive.google.com/uc?export=download&id=1LV5pkMGtPPMOFdmB3V0BN2GTObnPWi-o"
                     alt="quote icon"
-                    className="w-24 md:w-36"
+                    className="w-24 md:w-36 -mb-16"
                   />
                 )}
               </div>
-              <p className="text-custom_tertiary leading-[34px] md:leading-[46px]   text-lg md:text-2xl  -mt-16">
+              <p className="text-custom_tertiary leading-[34px] md:leading-[46px]   text-lg md:text-2xl  ">
                 {client.text}
               </p>
               <p className="text-custom_textColor font-sm mt-4">
