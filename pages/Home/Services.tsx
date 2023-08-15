@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <div className="" style={{ background: "rgba(11, 99, 229, 0.05)" }}>
+    <div className="bg-custom_primary/5">
       <div className="py-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 ">
         <h2 className="text-custom_secondary text-2xl font-bold leading-normal lg:leading-relaxed lg:text-5xl md:text-3xl md:mx-7 text-center lg:mx-10 mb-0">
           Transform Your Business with Our Comprehensive ICT Services

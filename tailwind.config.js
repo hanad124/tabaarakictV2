@@ -20,6 +20,7 @@ module.exports = {
         // ====== Custom styles ======
         custom_primary: "#0B63E5",
         custom_secondary: "#323F7C",
+        custom_tertiary: "#18181b",
         custom_border: "#E6E8EC",
         custom_textColor: "#637381",
         custom_shadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",

@@ -87,10 +87,10 @@ const Hero = () => {
           </div>
 
           {/* <!-- Buttons --> */}
-          <div className="mt-8 gridgap-3 w-full sm:inline-flex sm:justify-center">
+          <div className="mt-8 gridgap-3 w-full inline-flex justify-center">
             <Button
               size={"lg"}
-              className="group inline-flex justify-center items-center gap-x-3 text-center bg-custom_primary border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800"
+              className="group w-full md:w-2/6 lg:w-1/6 inline-flex justify-center items-center gap-x-3 text-center bg-custom_primary border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800"
               // href="#"
             >
               Contact us now

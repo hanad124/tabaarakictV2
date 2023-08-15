@@ -109,7 +109,7 @@ function Header() {
               Contact us
             </Button>
 
-            <div className="absolute top-6 right-8">
+            <div className="absolute top-5 right-8">
               <Sheet>
                 <SheetTrigger onClick={handleSheetClose}>
                   {" "}
