@@ -67,7 +67,7 @@ const Clients = () => {
                 <div
                   className={
                     index === activeIndex
-                      ? "active ring-[2px] ring-custom_primary rounded-md scale-110"
+                      ? "active ring-[2px] ring-custom_primary rounded-md scale-105 transition-transform ease-in-out delay-150  duration-300 "
                       : "opacity-50"
                   }
                   key={client.name}
