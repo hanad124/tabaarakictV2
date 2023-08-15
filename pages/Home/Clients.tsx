@@ -79,7 +79,7 @@ const Clients = () => {
                   <img
                     src={client.img}
                     alt={client.name}
-                    className="w-36 h-36 max-h-36 rounded-md cursor-pointer"
+                    className="w-32 h-32 md:w-40 md:h-40  max-h-36 rounded-md cursor-pointer"
                   />
                 </div>
               ))}
