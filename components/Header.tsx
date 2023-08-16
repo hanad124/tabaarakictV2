@@ -1,7 +1,7 @@
+"use client"
+
 import React, { useState } from "react";
 import Image from "next/image";
-import { Transition } from "@headlessui/react";
-import { BiSearch } from "react-icons/bi";
 import Link from "next/link";
 import {
   Sheet,
@@ -12,7 +12,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import ScrollIndicator from "./ScrollIndicator";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,19 +60,19 @@ function Header() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className=" hover:text-blue-500 text-custom_secondary px-3 py-2 rounded-md text-md font-medium"
                 >
                   Home
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  href="/services"
                   className="text-custom_secondary hover:text-[#0B63E5] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Services
-                </a>
+                </Link>
 
                 <a
                   href="#"

@@ -66,7 +66,7 @@ const Clients = () => {
                       ? "active ring-[2px] ring-custom_primary rounded-md scale-105 transition-transform ease-in-out delay-150  duration-300 "
                       : "opacity-50"
                   }
-                  key={client.name}
+                  key={index}
                   onClick={() => {
                     handleClick(index);
                     setClient(client);

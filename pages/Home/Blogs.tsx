@@ -41,7 +41,7 @@ const Blogs = () => {
                   onLoad={handleImageLoad}
                 />
 
-                <p className="text-custom_primary text-sm font-medium mt-2 inline-block">
+                <p className="text-custom_primary text-sm font-medium mt-2 inline-block flex-1">
                   #{blog.category}
                 </p>
                 <p className="mt-3 text-custom_secondary font-medium flex-1 ">
