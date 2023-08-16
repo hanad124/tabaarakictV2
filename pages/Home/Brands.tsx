@@ -1,0 +1,43 @@
+"use client";
+import { useState } from "react";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+import { brands } from "@/data";
+
+const Brands = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
+  return (
+    <div className="bg-custom_primary/5">
+      <div className="py-16 container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="mt-3 text-custom_secondary text-3xl font-bold leading-normal lg:leading-relaxed lg:text-5xl md:text-4xl  text-center lg:mx-60 md:mx-24  mb-0">
+          Our Collaborations with Leading Brands
+        </h2>
+
+        <div className="flex flex-wrap gap-16 mt-14 justify-center">
+          {brands.map((brand) => {
+            return (
+              <>
+                {/* {imageLoaded && (
+                  <Skeleton className="w-300 flex-1" height={100} />
+                )} */}
+                <img
+                  className={`cursor-pointer grayscale hover:grayscale-0 hover:scale-105 transition-transform`}
+                  src={brand}
+                  alt="post image"
+                  onLoad={handleImageLoad}
+                />
+              </>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Brands;

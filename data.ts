@@ -51,3 +51,12 @@ export const blogsData: TBlogs[] = [
     blogDate: "July 20, 2023",
   },
 ];
+
+export const brands = [
+  "https://drive.google.com/uc?export=download&id=1HG5JR94brAwUDoamNm56d8NEFAcGTC4P",
+  "https://drive.google.com/uc?export=download&id=1NB70LvPIX-VM-gjZlAZcgREwGep0mDfZ",
+  "https://drive.google.com/uc?export=download&id=1nLwU8huCGbwJgGqBBIW5ZGKkKJno1HyV",
+  "https://drive.google.com/uc?export=download&id=1LcrktGPsNLZoT3tg_lm6CvzsAnpuXnwx",
+  "https://drive.google.com/uc?export=download&id=1HKHw4mq5CXT4VNMNgP72uwIKub4_GoNY",
+  "https://drive.google.com/uc?export=download&id=1kLylo9xOpzfv2yiaCj6uUqHIdYwmEhbz",
+];

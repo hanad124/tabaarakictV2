@@ -8,7 +8,7 @@ const About = () => {
       <div className="mt-32 mb-24 px-10 md:flex gap-10 lg:gap-20 items-center justify-center md:w-full md:justify-center">
         <div className="flex-2">
           <Image
-            className="w-auto border rounded-[18px] md:h-[36.9rem]"
+            className="shrink w-auto border rounded-[18px] md:h-[36.9rem]"
             src="https://drive.google.com/uc?export=download&id=1opIGfiwwltzVj1rr-fgixBSWJu80vBJi"
             alt="girl image"
             width={500}
