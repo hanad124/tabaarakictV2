@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Transition } from "@headlessui/react";
 import { BiSearch } from "react-icons/bi";
+import Link from "next/link";
 import {
   Sheet,
   SheetContent,
@@ -48,13 +49,15 @@ function Header() {
         <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-4  }`}>
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
-              <Image
-                className="h-10 w-10"
-                src="https://drive.google.com/uc?export=download&id=1BoJ_KOqK9mgnqjf5Hh0WJF-7ZY5eNpk4"
-                alt="logo image"
-                width={500}
-                height={300}
-              />
+              <Link href={"/"}>
+                <Image
+                  className="h-10 w-10"
+                  src="https://drive.google.com/uc?export=download&id=1BoJ_KOqK9mgnqjf5Hh0WJF-7ZY5eNpk4"
+                  alt="logo image"
+                  width={500}
+                  height={300}
+                />
+              </Link>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">

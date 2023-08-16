@@ -23,6 +23,7 @@ module.exports = {
         custom_tertiary: "#18181b",
         custom_border: "#E6E8EC",
         custom_textColor: "#637381",
+        fuct_1Bg: "#7534FF",
         custom_shadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
         // ===========================
         border: "hsl(var(--border))",
