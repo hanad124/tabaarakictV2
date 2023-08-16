@@ -1,4 +1,4 @@
-import { TClients } from "./types/GeneralTypes";
+import { TClients, TBlogs } from "./types/GeneralTypes";
 
 export const clients: TClients[] = [
   {
@@ -18,5 +18,36 @@ export const clients: TClients[] = [
     name: "ABDISHAKUR MOALLIAM ",
     title: "Digital Media Officer, Hormuud Telecom",
     img: "https://drive.google.com/uc?export=download&id=1n2_ysl9dXEFvy6D6nFw7SOLrZM3vUFqO",
+  },
+];
+
+// BLogs
+export const blogsData: TBlogs[] = [
+  {
+    img: "https://drive.google.com/uc?export=download&id=1jJiMsLygfyxVpAaPQkhmR-u-jrksfmvc",
+    category: "Full-stack Development",
+    title: "Building Dynamic Websites: The Essentials of Web Development",
+    autherImg:
+      "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD",
+    autherName: "Hanad Mohamed",
+    blogDate: "July 20, 2023",
+  },
+  {
+    img: "https://drive.google.com/uc?export=download&id=1BCRngVgANItNHjhZAP1AbFQy4vQKPPxX",
+    category: "Cryptography",
+    title: "Securing the Digital World: Cybersecurity Essentials",
+    autherImg:
+      "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD",
+    autherName: "Hanad Mohamed",
+    blogDate: "July 20, 2023",
+  },
+  {
+    img: "https://drive.google.com/uc?export=download&id=1WaMY7gRxzwHgvSP_hKBMuiddw8PiBaiI",
+    category: "Machine Learning (ML)",
+    title: "Exploring the Fascinating World of Artificial Intelligence",
+    autherImg:
+      "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD",
+    autherName: "Hanad Mohamed",
+    blogDate: "July 20, 2023",
   },
 ];

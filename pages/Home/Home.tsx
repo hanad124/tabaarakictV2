@@ -9,8 +9,10 @@ import Products from "@/pages/Home/Products";
 import Portfolio from "./Portfolio";
 import Clients from "./Clients";
 import FunFact from "@/pages/Home/FunFact";
+import Blogs from "./Blogs";
 
 export default function Home() {
+  
   return (
     <>
       <Header />
@@ -22,6 +24,7 @@ export default function Home() {
       <Portfolio />
       <Clients />
       <FunFact />
+      <Blogs />
     </>
   );
 }
