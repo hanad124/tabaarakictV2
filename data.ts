@@ -22,6 +22,16 @@ import postImage_1 from "@/public/assets/postImage-1.png";
 import postImage_2 from "@/public/assets/postImage-2.png";
 import postImage_3 from "@/public/assets/postImage-3.png";
 
+import bran_1_img from "@/public/assets/brand-1.png";
+import bran_2_img from "@/public/assets/brand-2.png";
+import bran_3_img from "@/public/assets/brand-3.png";
+import bran_4_img from "@/public/assets/brand-4.png";
+import bran_5_img from "@/public/assets/brand-5.png";
+import bran_6_img from "@/public/assets/brand-6.png";
+import bran_7_img from "@/public/assets/brand-7.png";
+import bran_8_img from "@/public/assets/brand-8.png";
+import bran_9_img from "@/public/assets/brand-9.png";
+
 // CLients
 export const testtimonialsData: Ttesttimonials[] = [
   {
@@ -77,12 +87,15 @@ export const blogsData: TBlogs[] = [
 
 // Brands
 export const brands = [
-  "https://drive.google.com/uc?export=download&id=1HG5JR94brAwUDoamNm56d8NEFAcGTC4P",
-  "https://drive.google.com/uc?export=download&id=1NB70LvPIX-VM-gjZlAZcgREwGep0mDfZ",
-  "https://drive.google.com/uc?export=download&id=1nLwU8huCGbwJgGqBBIW5ZGKkKJno1HyV",
-  "https://drive.google.com/uc?export=download&id=1LcrktGPsNLZoT3tg_lm6CvzsAnpuXnwx",
-  "https://drive.google.com/uc?export=download&id=1HKHw4mq5CXT4VNMNgP72uwIKub4_GoNY",
-  "https://drive.google.com/uc?export=download&id=1kLylo9xOpzfv2yiaCj6uUqHIdYwmEhbz",
+  bran_1_img,
+  bran_2_img,
+  bran_3_img,
+  bran_4_img,
+  bran_5_img,
+  bran_6_img,
+  bran_7_img,
+  bran_8_img,
+  bran_9_img,
 ];
 
 // Portfolio

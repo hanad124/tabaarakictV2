@@ -3,3 +3,12 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
 });
+
+
+{!imageLoaded && (
+  <Skeleton circle={true} width={44} height={44} />
+)}
+
+{!imageLoaded && (
+  <Skeleton className="w-full flex-1" height={200} />
+)}

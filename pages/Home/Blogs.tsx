@@ -32,10 +32,6 @@ const Blogs = () => {
                 className="flex flex-col border border-custom_border md:w-[370px] rounded-lg px-5 py-5"
                 key={blog.title}
               >
-                {/* {!imageLoaded && (
-                  <Skeleton className="w-full flex-1" height={200} />
-                )} */}
-
                 <Image
                   className="w-full  flex-1"
                   src={blog.img}
@@ -51,14 +47,8 @@ const Blogs = () => {
                 </p>
 
                 <div className="flex gap-3 items-center mt-4">
-                  {/* {!imageLoaded && (
-                    <Skeleton circle={true} width={44} height={44} />
-                  )} */}
-
                   <Image
-                    className={`w-11 h-11 cursor-pointer ${
-                      imageLoaded ? "" : "hidden"
-                    }`}
+                    className={`w-11 h-11 cursor-pointer `}
                     src={autherImage}
                     alt={"post image"}
                     width={100}
