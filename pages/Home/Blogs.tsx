@@ -25,7 +25,6 @@ const Blogs = () => {
           Stay updated with the latest trends, insights and news in the world of
           ICT.
         </p>{" "}
-        {/* <p className="inline bg-red-600">Hanad mohamed</p> */}
         <div className="flex flex-col justify-center  gap-10 md:flex-row md:flex-wrap mt-16">
           {blogsData.map((blog) => {
             return (

@@ -4,6 +4,7 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import Image from "next/image";
 import { brands } from "@/data";
+import React from "react";
 
 const Brands = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -20,13 +21,9 @@ const Brands = () => {
         </h2>
 
         <div className="flex flex-wrap gap-16 mt-14 justify-center">
-          {brands.map((brand) => {
+          {brands.map((brand, index) => {
             return (
-              <>
-                {/* {imageLoaded && (
-                  <Skeleton className="w-300 flex-1" height={100} />
-                )} */}
-
+              <React.Fragment key={index}>
                 <Image
                   className="cursor-pointer grayscale hover:grayscale-0 hover:scale-105 transition-transform w-24 h-16 md:h-20 md:w-28"
                   src={brand}
@@ -35,8 +32,7 @@ const Brands = () => {
                   height={50}
                   onLoad={handleImageLoad}
                 />
-               
-              </>
+              </React.Fragment>
             );
           })}
         </div>

@@ -14,7 +14,10 @@ const Products = () => {
           {/* Single card */}
           {productsData.map((product) => {
             return (
-              <div className="flex flex-col border border-custom_border  md:w-[370px]  rounded-lg px-5 py-5">
+              <div
+                className="flex flex-col border border-custom_border  md:w-[370px]  rounded-lg px-5 py-5"
+                key={product.title}
+              >
                 <Image
                   className="w-full  flex-1"
                   src={product.img}

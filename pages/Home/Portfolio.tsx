@@ -57,7 +57,10 @@ const Portfolio = () => {
         {/* signle project */}
         {portfolioData.map((project) => {
           return (
-            <div className="flex flex-col border md:w-[370px] border-custom_border rounded-b-lg pb-4">
+            <div
+              className="flex flex-col border md:w-[370px] border-custom_border rounded-b-lg pb-4"
+              key={project.title}
+            >
               <Image
                 className="w-full  flex-1"
                 src={project.img}
