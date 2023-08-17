@@ -7,10 +7,11 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 import Services from "@/pages/Home/Services";
 import Products from "@/pages/Home/Products";
 import Portfolio from "./Portfolio";
-import Clients from "./Clients";
+import Testtimonials from "./Testtimonials";
 import FunFact from "@/pages/Home/FunFact";
 import Blogs from "./Blogs";
 import Brands from "./Brands";
+import Banner from "./Banner";
 
 export default function Home() {
   return (
@@ -22,10 +23,11 @@ export default function Home() {
       <Services />
       <Products />
       <Portfolio />
-      <Clients />
+      <Testtimonials />
       <FunFact />
       <Blogs />
       <Brands />
+      <Banner />
     </>
   );
 }

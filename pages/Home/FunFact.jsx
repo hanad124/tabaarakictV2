@@ -38,7 +38,7 @@ const FunFact = () => {
           Our Company Growth
         </h2>
         <p className="text-custom_textColor my-3 leading-relaxed text-center mx-3 lg:mx-80 md:mx-36">
-          To meet our customers’ demands, we give clear navigation.
+          To meet our customer’s demands, we give clear navigation.
         </p>
         <ScrollTrigger
           onEnter={() => setCounterOn(true)}

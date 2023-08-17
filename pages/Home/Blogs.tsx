@@ -3,8 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { blogsData } from "@/data";
 import { useState } from "react";
+import Image from "next/image";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+
+import autherImage from "@/public/assets/avator.png";
 
 const Blogs = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -30,33 +33,37 @@ const Blogs = () => {
                 className="flex flex-col border border-custom_border md:w-[370px] rounded-lg px-5 py-5"
                 key={blog.title}
               >
-                {!imageLoaded && (
+                {/* {!imageLoaded && (
                   <Skeleton className="w-full flex-1" height={200} />
-                )}
+                )} */}
 
-                <img
-                  className={`w-full flex-1 ${imageLoaded ? "" : "hidden"}`}
+                <Image
+                  className="w-full  flex-1"
                   src={blog.img}
-                  alt="post image"
-                  onLoad={handleImageLoad}
+                  alt={blog.title + " image"}
+                  width={500}
+                  height={300}
                 />
-
-                <p className="text-custom_primary text-sm font-medium mt-2 inline-block flex-1">
+                <p className="text-custom_primary text-sm font-medium mt-2 inline-block flex-1 cursor-pointer">
                   #{blog.category}
                 </p>
-                <p className="mt-3 text-custom_secondary font-medium flex-1 ">
+                <p className="mt-3 text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/70 flex-1 ">
                   {blog.title}
                 </p>
 
                 <div className="flex gap-3 items-center mt-4">
-                  {!imageLoaded && (
+                  {/* {!imageLoaded && (
                     <Skeleton circle={true} width={44} height={44} />
-                  )}
+                  )} */}
 
-                  <img
-                    className={`w-11 h-11 ${imageLoaded ? "" : "hidden"}`}
-                    src={blog.autherImg}
-                    alt="post image"
+                  <Image
+                    className={`w-11 h-11 cursor-pointer ${
+                      imageLoaded ? "" : "hidden"
+                    }`}
+                    src={autherImage}
+                    alt={"post image"}
+                    width={100}
+                    height={100}
                     onLoad={handleImageLoad}
                   />
 

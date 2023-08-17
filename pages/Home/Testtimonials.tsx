@@ -1,20 +1,22 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { clients } from "@/data";
+import { testtimonialsData } from "@/data";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import React from "react";
+import Image from "next/image";
+import QuoteImg from "@/public/assets/quote-img.png";
 
-const Clients = () => {
-  const [client, setClient] = useState(clients[0]);
+const Testtimonials = () => {
+  const [client, setClient] = useState(testtimonialsData[0]);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Simulating image loading delay
     const timer = setTimeout(() => {
-      setClient(clients[activeIndex]);
+      setClient(testtimonialsData[activeIndex]);
       setIsLoading(false);
     }, 2000);
   }, []);
@@ -41,10 +43,12 @@ const Clients = () => {
           <div className="md:mt-16 mt-32 flex flex-col gap-0 md:gap-20 items-center lg:flex-row ">
             <div className="lg:w-2/5">
               <div className="flex justify-center lg:justify-start w-full">
-                <img
-                  src="https://drive.google.com/uc?export=download&id=1LV5pkMGtPPMOFdmB3V0BN2GTObnPWi-o"
+                <Image
+                  src={QuoteImg}
+                  width={200}
+                  height={100}
                   alt="quote icon"
-                  className="w-24 md:w-36 -mb-16"
+                  className="w-24 md:w-36 -mb-16 md:-mb-20 md:-ml-10"
                 />
               </div>
               <p className="text-custom_tertiary leading-[34px] md:leading-[46px]   text-lg md:text-2xl  ">
@@ -59,7 +63,7 @@ const Clients = () => {
             </div>
 
             <div className="flex gap-5 justify-center md:justify-start md:flex-row md:flex-nowrap flex-wrap  mt-10">
-              {clients.map((client, index) => (
+              {testtimonialsData.map((client, index) => (
                 <div
                   className={
                     index === activeIndex
@@ -75,10 +79,12 @@ const Clients = () => {
                   {!client.img ? (
                     <Skeleton height={120} width={180} />
                   ) : (
-                    <img
+                    <Image
                       src={client.img}
                       alt={client.name}
-                      className="w-32 h-32 md:w-40 md:h-40  max-h-36 rounded-md cursor-pointer"
+                      width={500}
+                      height={300}
+                      className="w-32 h-32 md:w-36 md:h-36 max-h-36 rounded-md cursor-pointer"
                     />
                   )}
                 </div>
@@ -91,4 +97,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default Testtimonials;

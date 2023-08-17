@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import Image from "next/image";
 import { brands } from "@/data";
 
 const Brands = () => {
@@ -25,12 +26,16 @@ const Brands = () => {
                 {/* {imageLoaded && (
                   <Skeleton className="w-300 flex-1" height={100} />
                 )} */}
-                <img
-                  className={`cursor-pointer grayscale hover:grayscale-0 hover:scale-105 transition-transform`}
+
+                <Image
+                  className="cursor-pointer grayscale hover:grayscale-0 hover:scale-105 transition-transform w-24 h-16 md:h-20 md:w-28"
                   src={brand}
-                  alt="post image"
+                  alt={"brand image"}
+                  width={100}
+                  height={50}
                   onLoad={handleImageLoad}
                 />
+               
               </>
             );
           })}

@@ -1,16 +1,11 @@
 import Header from "@/components/Header";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
+import GoTopButton from "@/components/GoTopButton";
 
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  style: ["normal", "italic"],
-});
 
 export const metadata: Metadata = {
   title: "Tabaarak ICT Solutions",
@@ -28,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <GoTopButton />
       </body>
     </html>
   );

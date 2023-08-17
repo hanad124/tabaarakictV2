@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
+import aboutImage from "@/public/assets/about-img.png";
+
 const About = () => {
   return (
     <div>
@@ -9,10 +11,10 @@ const About = () => {
         <div className="flex-2">
           <Image
             className="shrink w-auto border rounded-[18px] md:h-[36.9rem]"
-            src="https://drive.google.com/uc?export=download&id=1opIGfiwwltzVj1rr-fgixBSWJu80vBJi"
+            src={aboutImage}
             alt="girl image"
-            width={500}
-            height={300}
+            width={570}
+            height={710}
           />
         </div>
         <div className="mt-10 flex-1 md:mt-0 lg:max-w-[34rem]">

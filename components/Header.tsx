@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -12,6 +12,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import logo from "@/public/assets/header-logo.png";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,10 +52,10 @@ function Header() {
               <Link href={"/"}>
                 <Image
                   className="h-10 w-10"
-                  src="https://drive.google.com/uc?export=download&id=1BoJ_KOqK9mgnqjf5Hh0WJF-7ZY5eNpk4"
+                  src={logo}
                   alt="logo image"
-                  width={500}
-                  height={300}
+                  width={30}
+                  height={30}
                 />
               </Link>
             </div>
@@ -138,26 +139,26 @@ function Header() {
                     <SheetTitle>
                       <Image
                         className="h-10 w-10 flex-shrink-0 text-center -mt-3"
-                        src="https://drive.google.com/uc?export=download&id=1BoJ_KOqK9mgnqjf5Hh0WJF-7ZY5eNpk4"
+                        src={logo}
                         alt="logo image"
-                        width={500}
-                        height={300}
+                        width={30}
+                        height={30}
                       />
                     </SheetTitle>
                     <SheetDescription>
                       <span className=" flex flex-col gap-1 justify-start text-left  mt-7">
-                        <a
-                          href="#"
+                        <Link
+                          href="/"
                           className=" text-[#323F7C] hover:text-[#0B63E5] px-3 py-3 rounded-md text-sm font-medium"
                         >
                           Home
-                        </a>
-                        <a
-                          href="#"
-                          className=" text-[#323F7C] px-3 py-3 rounded-md text-sm font-medium"
+                        </Link>
+                        <Link
+                          href="/services"
+                          className=" text-[#323F7C] hover:text-[#0B63E5] px-3 py-3 rounded-md text-sm font-medium"
                         >
                           Services
-                        </a>
+                        </Link>
 
                         <a
                           href="#"
