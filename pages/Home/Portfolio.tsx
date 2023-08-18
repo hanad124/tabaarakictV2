@@ -1,9 +1,25 @@
+"use client";
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 import { portfolioData } from "@/data";
 
 const Portfolio = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Simulate loading delay
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="py-16 max-w-7xl md:flex-row md:gap-0 md:justify-between  mx-auto px-4 sm:px-6 lg:px-4">
       {/* title */}
@@ -61,48 +77,86 @@ const Portfolio = () => {
               className="flex flex-col border md:w-[370px] border-custom_border rounded-b-lg pb-4"
               key={project.title}
             >
-              <Image
-                className="w-full  flex-1"
-                src={project.img}
-                alt="Shaafi image"
-                width={500}
-                height={300}
-              />
-              <p className="text-custom_secondary font-bold text-2xl mt-7 flex-1 ml-4">
-                {project.title}
-              </p>
-              <p className="mt-2  ml-4 text-custom_textColor flex-1">
-                {project.desc}
-              </p>
+              {isLoading ? (
+                <Skeleton height={300} />
+              ) : (
+                <Image
+                  className="w-full  flex-1"
+                  src={project.img}
+                  alt="Shaafi image"
+                  width={500}
+                  height={300}
+                />
+              )}
+
+              {isLoading ? (
+                <Skeleton
+                  height={20}
+                  width={100}
+                  style={{ marginTop: "22px", marginLeft: "13px" }}
+                />
+              ) : (
+                <p className="text-custom_secondary font-bold text-2xl mt-7 flex-1 ml-4">
+                  {project.title}
+                </p>
+              )}
+
+              {isLoading ? (
+                <>
+                  <Skeleton
+                    height={15}
+                    width={260}
+                    style={{ marginTop: "8px", marginLeft: "13px" }}
+                  />
+                  <Skeleton
+                    height={15}
+                    width={240}
+                    style={{ marginTop: "8px", marginLeft: "13px" }}
+                  />
+                </>
+              ) : (
+                <p className="mt-2  ml-4 text-custom_textColor flex-1">
+                  {project.desc}
+                </p>
+              )}
+
               <div className="flex justify-start">
-                <Button
-                  className=" mt-4 flex gap-3 text-custom_primary font-semibold"
-                  variant={"link"}
-                >
-                  Learn More
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
+                {isLoading ? (
+                  <Skeleton
+                    height={28}
+                    width={130}
+                    style={{ marginTop: "13px", marginLeft: "13px" }}
+                  />
+                ) : (
+                  <Button
+                    className=" mt-4 flex gap-3 text-custom_primary font-semibold"
+                    variant={"link"}
                   >
-                    <path
-                      d="M3.75 12H20.25"
-                      stroke="#0B63E5"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M13.5 5.25L20.25 12L13.5 18.75"
-                      stroke="#0B63E5"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </Button>
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.75 12H20.25"
+                        stroke="#0B63E5"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M13.5 5.25L20.25 12L13.5 18.75"
+                        stroke="#0B63E5"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </Button>
+                )}
               </div>
             </div>
           );

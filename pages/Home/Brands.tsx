@@ -28,7 +28,7 @@ const Brands = () => {
             return (
               <React.Fragment key={index}>
                 <Image
-                  className="cursor-pointer grayscale hover:grayscale-0 hover:scale-105 transition-transform  shrink"
+                  className="cursor-pointer grayscale hover:grayscale-0 hover:scale-105 transition-transform  md:h-16 md:w-auto shrink"
                   src={brand}
                   alt={"brand image"}
                   width={100}
