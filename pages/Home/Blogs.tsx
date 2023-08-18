@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { blogsData } from "@/data";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
@@ -26,8 +26,7 @@ const Blogs = () => {
           Latest blog & news
         </h2>
         <p className="text-custom_textColor my-3 leading-relaxed text-center mx-2 lg:mx-86 md:mx-44">
-          Stay updated with the latest trends, insights and news in the world of
-          ICT.
+          Stay updated with the latest trends, insights and news in the world of ICT.
         </p>
         <div className="flex flex-col justify-center gap-10 md:flex-row md:flex-wrap mt-16">
           {blogsData.map((blog) => {
@@ -48,36 +47,23 @@ const Blogs = () => {
                   />
                 )}
                 {isLoading ? (
-                  <Skeleton
-                    height={20}
-                    width={100}
-                    style={{ marginTop: "8px" }}
-                  />
+                  <Skeleton height={20} width={100} style={{ marginTop: "8px" }} />
                 ) : (
                   <p className="text-custom_primary text-sm font-medium mt-2 inline-block flex-1 cursor-pointer">
                     #{blog.category}
                   </p>
                 )}
                 {isLoading ? (
-                  <Skeleton
-                    height={30}
-                    width={200}
-                    style={{ marginTop: "8px" }}
-                  />
+                  <Skeleton height={30} width={260} style={{ marginTop: "8px" }} />
                 ) : (
                   <p className="mt-3 text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/70 flex-1 ">
                     {blog.title}
                   </p>
                 )}
-                {isLoading ? (
-                  <Skeleton
-                    circle
-                    height={44}
-                    width={44}
-                    style={{ marginTop: "12px" }}
-                  />
-                ) : (
-                  <div className="flex gap-3 items-center mt-4">
+                <div className="flex gap-3 items-center mt-4">
+                  {isLoading ? (
+                    <Skeleton circle height={44} width={44} />
+                  ) : (
                     <Image
                       className="w-11 h-11 cursor-pointer"
                       src={autherImage}
@@ -85,13 +71,20 @@ const Blogs = () => {
                       width={100}
                       height={100}
                     />
-
-                    <div className="text-custom_textColor">
+                  )}
+                  <div className="text-custom_textColor">
+                    {isLoading ? (
+                      <Skeleton height={16} width={100} style={{ marginBottom: "4px" }} />
+                    ) : (
                       <p>Hanad Mohamed</p>
+                    )}
+                    {isLoading ? (
+                      <Skeleton height={16} width={80} />
+                    ) : (
                       <p>July 20, 2023</p>
-                    </div>
+                    )}
                   </div>
-                )}
+                </div>
               </div>
             );
           })}
