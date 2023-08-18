@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useSearchParams } from "next/navigation";
+
 import {
   Sheet,
   SheetContent,
@@ -13,8 +15,11 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import logo from "@/public/assets/header-logo.png";
+import { menuItems } from "@/data";
 
 function Header() {
+  const pathname = usePathname();
+
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -61,47 +66,23 @@ function Header() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link
-                  href="/"
-                  className=" hover:text-blue-500 text-custom_secondary px-3 py-2 rounded-md text-md font-medium"
-                >
-                  Home
-                </Link>
-
-                <Link
-                  href="/services"
-                  className="text-custom_secondary hover:text-[#0B63E5] px-3 py-2 rounded-md text-md font-medium"
-                >
-                  Services
-                </Link>
-
-                <a
-                  href="#"
-                  className="text-custom_secondary hover:text-[#0B63E5] px-3 py-2 rounded-md text-md font-medium"
-                >
-                  Portfolio
-                </a>
-
-                <a
-                  href="#"
-                  className="text-custom_secondary hover:text-[#0B63E5] px-3 py-2 rounded-md text-md font-medium"
-                >
-                  Blog
-                </a>
-
-                <a
-                  href="#"
-                  className="text-custom_secondary hover:text-blue-500 px-3 py-2 rounded-md text-md font-medium"
-                >
-                  Careers
-                </a>
-
-                <a
-                  href="#"
-                  className="text-custom_secondary hover:text-blue-500 px-3 py-2 rounded-md text-md font-medium"
-                >
-                  About
-                </a>
+                {menuItems.map((item) => {
+                  return (
+                    <>
+                      <Link
+                        key={item.path}
+                        href={item.path}
+                        className={` hover:text-blue-500 text-custom_secondary px-3 py-2 text-md font-medium ${
+                          pathname === item.path
+                            ? "text-blue-700 border-custom_primary border-b-2 hover:text-background"
+                            : ""
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    </>
+                  );
+                })}
               </div>
             </div>
 

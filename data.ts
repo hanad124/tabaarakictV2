@@ -3,6 +3,7 @@ import {
   TBlogs,
   TProducts,
   TPortfolio,
+  TmenuItems,
 } from "./types/GeneralTypes";
 
 import product_1_img from "@/public/assets/product1.png";
@@ -83,6 +84,16 @@ export const blogsData: TBlogs[] = [
     autherName: "Hanad Mohamed",
     blogDate: "July 20, 2023",
   },
+];
+
+// Menu Items
+export const menuItems: TmenuItems[] = [
+  { label: "Home", path: "/" },
+  { label: "Services", path: "/services" },
+  { label: "Portfolio", path: "/Portfolio" },
+  { label: "Blog", path: "/blog" },
+  { label: "Careers", path: "/careers" },
+  { label: "About", path: "/about" },
 ];
 
 // Brands

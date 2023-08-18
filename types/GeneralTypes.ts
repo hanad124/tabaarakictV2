@@ -27,3 +27,8 @@ export type TPortfolio = {
   title: string;
   desc: string;
 };
+
+export type TmenuItems = {
+  label: string;
+  path: string;
+};

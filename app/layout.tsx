@@ -4,6 +4,7 @@ import GoTopButton from "@/components/GoTopButton";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <Footer />
         <GoTopButton />
       </body>
     </html>
