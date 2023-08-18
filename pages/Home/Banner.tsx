@@ -28,10 +28,10 @@ const Banner = () => {
             }}
           ></div>
           <div className="flex flex-col gap-5 text-background">
-            <p className="font-medium relative z-10">
+            <p className="font-medium relative z-0">
               Start your business with us
             </p>
-            <p className="  text-3xl font-semibold leading-normal  md:w-96 md:text-4xl relative z-10">
+            <p className="  text-3xl font-semibold leading-normal  md:w-96 md:text-4xl relative z-0">
               Request for a Quote and get started
             </p>
           </div>
