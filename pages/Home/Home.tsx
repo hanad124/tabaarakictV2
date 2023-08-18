@@ -16,8 +16,6 @@ import Banner from "./Banner";
 export default function Home() {
   return (
     <>
-      <Header />
-      <ScrollIndicator />
       <Hero />
       <About />
       <Services />

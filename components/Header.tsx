@@ -68,19 +68,16 @@ function Header() {
               <div className="ml-10 flex items-baseline space-x-4">
                 {menuItems.map((item) => {
                   return (
-                    <>
+                    <React.Fragment key={item.path}>
                       <Link
-                        key={item.path}
                         href={item.path}
                         className={` hover:text-blue-500 text-custom_secondary px-3 py-2 text-md font-medium ${
-                          pathname === item.path
-                            ? "text-blue-700 border-custom_primary border-b-2 hover:text-background"
-                            : ""
+                          pathname === item.path ? "text-blue-700" : ""
                         }`}
                       >
                         {item.label}
                       </Link>
-                    </>
+                    </React.Fragment>
                   );
                 })}
               </div>
