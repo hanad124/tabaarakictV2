@@ -14,7 +14,7 @@ const Brands = () => {
   };
 
   return (
-    <div className="bg-custom_primary/5">
+    <div className="">
       <div className="py-16 container mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-custom_primary font-bold text-lg">
           Some of the Brands
@@ -23,7 +23,7 @@ const Brands = () => {
           we worked with 😊
         </h2>
 
-        <div className="flex flex-wrap gap-14 md:gap-x-20 mt-20 justify-center">
+        <div className="flex flex-wrap gap-14 md:gap-x-36 mt-20 justify-center">
           {brands.map((brand, index) => {
             return (
               <React.Fragment key={index}>

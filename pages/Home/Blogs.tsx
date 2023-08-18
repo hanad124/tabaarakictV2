@@ -16,9 +16,9 @@ const Blogs = () => {
     setImageLoaded(true);
   };
   return (
-    <div>
-      <div className="py-16 container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="mt-3 text-custom_secondary text-3xl font-bold leading-normal lg:leading-relaxed lg:text-5xl md:text-4xl md:mx-24 text-center lg:mx-36 mb-0">
+    <div className="py-16 bg-custom_primary/5">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className=" text-custom_secondary text-3xl font-bold leading-normal lg:leading-relaxed lg:text-5xl md:text-4xl md:mx-24 text-center lg:mx-36 mb-0">
           Latest blog & news
         </h2>
         <p className="text-custom_textColor my-3 leading-relaxed text-center mx-2 lg:mx-86 md:mx-44">
