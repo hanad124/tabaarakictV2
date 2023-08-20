@@ -74,6 +74,20 @@
   border: 2px solid #0b63e5;
 }
 
+/* hero animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+
 /* Scroll indicator styles */
 
 .progress-wrapper {
@@ -103,4 +117,33 @@
   border-radius: 50%;
   /* transform: rotate(360deg); */
   /* animation: spin 0.8s linear; */
+}
+
+/* hero section */
+.bg-hero-image-1 {
+  background-image: linear-gradient(
+      126deg,
+      rgba(13, 21, 34, 0.75) 0%,
+      rgba(0, 39, 98, 0.47) 100%
+    ),
+    linear-gradient(
+      179deg,
+      rgba(13, 21, 34, 0.9) 0%,
+      rgba(0, 39, 98, 0.81) 98.98%
+    ),
+    url("../public/assets/postImage-2.png");
+}
+
+.bg-hero-image-2 {
+  background-image: linear-gradient(
+      126deg,
+      rgba(13, 21, 34, 0.75) 0%,
+      rgba(0, 39, 98, 0.47) 100%
+    ),
+    linear-gradient(
+      179deg,
+      rgba(13, 21, 34, 0.9) 0%,
+      rgba(0, 39, 98, 0.81) 98.98%
+    ),
+    url("../public/assets/hero-background-image-2.jpg");
 }

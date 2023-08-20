@@ -42,7 +42,7 @@ function Header() {
   return (
     <div>
       <nav
-        className={`fixed top-0 left-0 w-full z-10 py-2${
+        className={`fixed top-0 left-0 w-full z-20 py-2${
           isVisible
             ? " w-full backdrop-blur-3xl border-b-2 border-custom_border"
             : ""
@@ -71,8 +71,10 @@ function Header() {
                     <React.Fragment key={item.path}>
                       <Link
                         href={item.path}
-                        className={` hover:text-blue-500 text-custom_secondary px-3 py-2 text-md font-medium ${
-                          pathname === item.path ? "text-blue-700" : ""
+                        className={` hover:text-custom_primary px-3 py-2 text-md font-medium ${
+                          pathname === item.path
+                            ? "text-custom_primary"
+                            : " text-background"
                         }`}
                       >
                         {item.label}

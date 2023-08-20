@@ -39,8 +39,7 @@ const Testtimonials = () => {
             See what our satisfied customers have to say about Tabaarak ICT
             solutions
           </p>
-
-          <div className="md:mt-16 mt-32 flex flex-col gap-0 md:gap-20 items-center lg:flex-row ">
+            <div className="md:mt-16 mt-32 flex flex-col gap-0 md:gap-20 items-center justify-center lg:flex-row ">
             <div className="lg:w-2/5">
               <div className="flex justify-center lg:justify-start w-full">
                 <Image
