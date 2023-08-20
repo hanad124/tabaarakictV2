@@ -45,7 +45,7 @@ const Hero = () => {
               <div className="flex flex-col justify-center items-center mt-16 md:mt-0">
                 <div className="md:w-4/6">
                   <h1
-                    className="text-3xl md:text-6xl text-white font-bold mb-4 text-center"
+                    className="text-2xl md:text-6xl text-white font-bold mb-4 text-center"
                     style={{ lineHeight: "138.5%" }}
                   >
                     Empower Your Business with Innovative ICT Solutions
@@ -75,7 +75,7 @@ const Hero = () => {
               <div className="flex flex-col justify-center items-center mt-24 md:mt-0">
                 <div className="md:w-4/6">
                   <h1
-                    className="text-3xl md:text-6xl text-white font-bold mb-4 text-center"
+                    className="text-2xl md:text-6xl text-white font-bold mb-4 text-center"
                     style={{ lineHeight: "138.5%" }}
                   >
                     Empower Your Business with Innovative ICT Solutions
