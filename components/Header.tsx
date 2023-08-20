@@ -42,18 +42,8 @@ function Header() {
   return (
     <div>
       <nav
-        className={`fixed top-0 left-0 w-full z-20 py-2${
-          isVisible
-            ? " w-full backdrop-blur-3xl border-b-2 border-custom_border bg-slate-600"
-            : ""
+        className={`fixed top-0 left-0  z-20 py-2" w-full backdrop-blur-3xl border-b-2 border-custom_border bg-background "
         }`}
-        // style={{
-        //   background: `${
-        //     isVisible
-        //       ? "linear-gradient(126deg, #0D1522 100%, rgba(0, 39, 98, 1) 100%), linear-gradient(179deg, rgba(13, 21, 34, 0.996) 100%, rgb(0, 39, 98) 98.98%))"
-        //       : ""
-        //   }`,
-        // }}
       >
         <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-4  }`}>
           <div className="flex items-center justify-between h-16">
@@ -75,10 +65,10 @@ function Header() {
                     <React.Fragment key={item.path}>
                       <Link
                         href={item.path}
-                        className={` hover:text-custom_primary px-3 py-2 text-md font-medium ${
+                        className={` px-3 py-2 text-md font-medium  ${
                           pathname === item.path
                             ? "text-custom_primary"
-                            : " text-background"
+                            : " text-custom_secondary hover:text-custom_primary"
                         }`}
                       >
                         {item.label}
@@ -133,27 +123,27 @@ function Header() {
                       <span className=" flex flex-col gap-1 justify-start text-left  mt-7">
                         <Link
                           href="/"
-                          className=" text-[#323F7C] hover:text-[#0B63E5] px-3 py-3 rounded-md text-sm font-medium"
+                          className=" text-custom_secondary hover:text-custom_primary px-3 py-3 rounded-md text-sm font-medium"
                         >
                           Home
                         </Link>
                         <Link
                           href="/services"
-                          className=" text-[#323F7C] hover:text-[#0B63E5] px-3 py-3 rounded-md text-sm font-medium"
+                          className=" text-custom_secondary hover:text-custom_primary px-3 py-3 rounded-md text-sm font-medium"
                         >
                           Services
                         </Link>
 
                         <a
                           href="#"
-                          className=" text-[#323F7C] hover:text-[#0B63E5] px-3 py-3 rounded-md text-sm font-medium"
+                          className=" text-custom_secondary hover:text-custom_primary px-3 py-3 rounded-md text-sm font-medium"
                         >
                           Portfolio
                         </a>
 
                         <a
                           href="#"
-                          className=" text-[#323F7C] hover:text-[#0B63E5] px-3 py-3 rounded-md text-sm font-medium"
+                          className=" text-custom_secondary hover:text-custom_primary px-3 py-3 rounded-md text-sm font-medium"
                         >
                           Blog
                         </a>

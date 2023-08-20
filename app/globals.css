@@ -152,10 +152,7 @@
 
 /* BreadCrumb section */
 .breadcrumb {
-  background-image: linear-gradient(
-      179deg,
-      rgba(13, 21, 34, 0.96) 0%,
-      rgba(8, 61, 139, 0.85) 98.98%
-    ),
-    url("../public/assets/breadcrumb-background.png");
+  background-image: url("../public/assets/breadcrumb-background.png");
 }
+
+

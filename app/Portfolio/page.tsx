@@ -12,7 +12,6 @@ const Portfolio = () => {
         <h1 className="text-3xl font-bold mb-4">Portfolio</h1>
         <p className="text-gray-700">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          similique reprehenderit dolor fugit consequatur? Magni ad
         </p>
       </div>
     </div>
