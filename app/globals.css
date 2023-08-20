@@ -121,6 +121,8 @@
 
 /* hero section */
 .bg-hero-image-1 {
+  /* background: linear-gradient(126deg, #0d1522 100%, rgba(0, 39, 98, 1) 100%),
+    linear-gradient(179deg, rgba(13, 21, 34, 1) 100%, rgb(0, 39, 98) 100%); */
   background-image: linear-gradient(
       126deg,
       rgba(13, 21, 34, 0.75) 0%,
@@ -146,4 +148,14 @@
       rgba(0, 39, 98, 0.81) 98.98%
     ),
     url("../public/assets/hero-background-image-2.jpg");
+}
+
+/* BreadCrumb section */
+.breadcrumb {
+  background-image: linear-gradient(
+      179deg,
+      rgba(13, 21, 34, 0.96) 0%,
+      rgba(8, 61, 139, 0.85) 98.98%
+    ),
+    url("../public/assets/breadcrumb-background.png");
 }

@@ -44,12 +44,16 @@ function Header() {
       <nav
         className={`fixed top-0 left-0 w-full z-20 py-2${
           isVisible
-            ? " w-full backdrop-blur-3xl border-b-2 border-custom_border"
+            ? " w-full backdrop-blur-3xl border-b-2 border-custom_border bg-slate-600"
             : ""
         }`}
-        style={{
-          background: `${isVisible ? "rgba(255,255,255,70%)" : ""}`,
-        }}
+        // style={{
+        //   background: `${
+        //     isVisible
+        //       ? "linear-gradient(126deg, #0D1522 100%, rgba(0, 39, 98, 1) 100%), linear-gradient(179deg, rgba(13, 21, 34, 0.996) 100%, rgb(0, 39, 98) 98.98%))"
+        //       : ""
+        //   }`,
+        // }}
       >
         <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-4  }`}>
           <div className="flex items-center justify-between h-16">

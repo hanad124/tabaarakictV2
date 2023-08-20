@@ -5,7 +5,6 @@ import GoTopButton from "@/components/GoTopButton";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
-import ScrollIndicator from "@/components/ScrollIndicator";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +23,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <ScrollIndicator />
         {children}
         <Footer />
         <GoTopButton />

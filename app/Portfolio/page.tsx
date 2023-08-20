@@ -1,24 +1,22 @@
 import React from "react";
 import BreadCrumb from "@/components/BreadCrumb";
 
-const Services = () => {
+const Portfolio = () => {
   const breadcrumbItems = [{ label: "Home", link: "/" }];
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      <BreadCrumb items={breadcrumbItems} title="Services" />
+      <BreadCrumb items={breadcrumbItems} title="Portfolio" />
 
       <div className="bg-white rounded-lg shadow-lg p-6 mt-8">
-        <h1 className="text-3xl font-bold mb-4">Services</h1>
+        <h1 className="text-3xl font-bold mb-4">Portfolio</h1>
         <p className="text-gray-700">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          similique reprehenderit dolor fugit consequatur? Magni ad sint numquam
-          explicabo molestias, consequuntur delectus velit similique in, natus
-          asperiores. Quibusdam, dicta eligendi.
+          similique reprehenderit dolor fugit consequatur? Magni ad
         </p>
       </div>
     </div>
   );
 };
 
-export default Services;
+export default Portfolio;
