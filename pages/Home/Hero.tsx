@@ -40,7 +40,7 @@ const Hero = () => {
       >
         {/* first slide */}
         <SwiperSlide>
-          <div className="bg-hero-image-1 bg-cover bg-center h-[53rem]">
+          <div className="bg-hero-image-1 bg-cover bg-center h-[50rem] overflow-hidden">
             <div className="container mx-auto px-4 py-8 h-screen flex justify-center items-center">
               <div className="flex flex-col justify-center items-center mt-28 md:mt-0">
                 <div className="md:w-4/6">
@@ -58,7 +58,10 @@ const Hero = () => {
                   optimize efficiency, and elevate customer experiences to
                   unprecedented levels.
                 </p>
-                <Button className="btn-primary px-14" size={"lg"}>
+                <Button
+                  className="btn-primary px-14 w-full md:w-[20rem]"
+                  size={"lg"}
+                >
                   Get Started
                 </Button>
               </div>
@@ -67,7 +70,7 @@ const Hero = () => {
         </SwiperSlide>
         {/* 2nd slide */}
         <SwiperSlide>
-          <div className="bg-hero-image-2 bg-cover bg-center h-[53rem]">
+          <div className="bg-hero-image-2 bg-cover bg-center h-[50rem]">
             <div className="container mx-auto px-4 py-8 h-screen flex justify-center items-center">
               <div className="flex flex-col justify-center items-center mt-28 md:mt-0">
                 <div className="md:w-4/6">
@@ -82,7 +85,10 @@ const Hero = () => {
                   At Tabaarak ICT Solutions, we are dedicated to transforming
                   businesses with our advanced ICT solutions.
                 </p>
-                <Button className="btn-primary px-14" size={"lg"}>
+                <Button
+                  className="btn-primary px-14 w-full  md:w-[20rem]"
+                  size={"lg"}
+                >
                   Contact us
                 </Button>
               </div>
