@@ -55,14 +55,14 @@ const Blogs = () => {
                     style={{ marginTop: "8px" }}
                   />
                 ) : (
-                  <p className=" text-sm font-medium mt-2 inline-block flex-1 cursor-pointer">
+                  <div className=" text-sm font-medium mt-2 inline-block flex-1 cursor-pointer">
                     <Badge
                       variant="outline"
                       className="text-custom_primary bg-custom_primary/5 ring-none hover:ring-[1px] hover:ring-custom_primary"
                     >
                       #{blog.category}
                     </Badge>
-                  </p>
+                  </div>
                 )}
                 {isLoading ? (
                   <Skeleton

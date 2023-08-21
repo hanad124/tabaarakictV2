@@ -94,9 +94,9 @@ const Hero = () => {
                             <path
                               d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
                               stroke="white"
-                              stroke-width="3"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="3"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               className="mt-3"
                             />
                           </svg>
@@ -117,9 +117,9 @@ const Hero = () => {
                             <path
                               d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
                               stroke="white"
-                              stroke-width="3"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="3"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               className="mt-3"
                             />
                           </svg>
@@ -140,9 +140,9 @@ const Hero = () => {
                             <path
                               d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
                               stroke="white"
-                              stroke-width="3"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="3"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               className="mt-3"
                             />
                           </svg>
@@ -163,9 +163,9 @@ const Hero = () => {
                             <path
                               d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
                               stroke="white"
-                              stroke-width="3"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="3"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               className="mt-3"
                             />
                           </svg>
@@ -186,9 +186,9 @@ const Hero = () => {
                             <path
                               d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
                               stroke="white"
-                              stroke-width="3"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="3"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               className="mt-3"
                             />
                           </svg>
@@ -209,9 +209,9 @@ const Hero = () => {
                             <path
                               d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
                               stroke="white"
-                              stroke-width="3"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="3"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               className="mt-3"
                             />
                           </svg>

@@ -35,7 +35,7 @@ const Footer = () => {
                 <Tooltip>
                   <TooltipTrigger>
                     {" "}
-                    <div className="group hover hover:ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center">
+                    <div className="group hover ring-2 ring-custom_border hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center">
                       <Link
                         href="https://www.facebook.com/TabaarakICT/"
                         target="_blank"
@@ -66,7 +66,7 @@ const Footer = () => {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger>
-                    <div className="group hover hover:ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center">
+                    <div className="group ring-custom_border ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center">
                       <Link
                         href="https://www.linkedin.com/in/tabaarak-ict-solutions-77421080"
                         target="_blank"
@@ -97,7 +97,7 @@ const Footer = () => {
                 <Tooltip>
                   <TooltipTrigger>
                     {" "}
-                    <div className="group hover hover:ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center">
+                    <div className="group hover ring-custom_border ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center">
                       {" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +226,8 @@ const Footer = () => {
               </div>
 
               <p className="text-custom_textColor w-70 ">
-                © Copyright 2023 - Tabaarak ICT Solutions
+                © Copyright 2023 -{" "}
+                <Link href={"/"}>Tabaarak ICT Solutions</Link>
               </p>
             </div>
           </div>

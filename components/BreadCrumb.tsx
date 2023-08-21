@@ -14,7 +14,7 @@ const BreadCrumb = ({ items, title }: BreadCrumbProps) => {
     <nav className="breadcrumb bg-cover bg-center h-[20rem] overflow-hidden mt-16">
       <div className="container mx-auto px-4 py-8 h-full  ">
         <div className="flex justify-center h-full items-center flex-col">
-          <p className="text-2xl md:text-6xl text-background font-bold mb-4 text-center">
+          <p className="text-4xl md:text-6xl text-background font-bold mb-4 text-center">
             {title}
           </p>
           <div className="flex justify-center items-center gap-1">
