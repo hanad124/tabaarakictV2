@@ -106,7 +106,10 @@ const FunFact = () => {
                   </svg>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <div className="text-custom_primary text-4xl font-medium">
+                  <div
+                    style={{ fontSize: "2.1rem" }}
+                    className="text-custom_primary text-4xl font-medium"
+                  >
                     {counterOn && (
                       <CountUp start={0} end={17} duration={2} delay={0} />
                     )}
@@ -168,7 +171,10 @@ const FunFact = () => {
                   </svg>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <div className="text-custom_primary   text-4xl font-medium">
+                  <div
+                    style={{ fontSize: "2.1rem" }}
+                    className="text-custom_primary text-4xl font-medium"
+                  >
                     {counterOn && (
                       <CountUp start={0} end={18} duration={2} delay={0} />
                     )}
@@ -227,7 +233,10 @@ const FunFact = () => {
                   </svg>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <div className="text-custom_primary   text-4xl font-medium">
+                  <div
+                    style={{ fontSize: "2.1rem" }}
+                    className="text-custom_primary text-4xl font-medium"
+                  >
                     {counterOn && (
                       <CountUp start={0} end={183} duration={2} delay={0} />
                     )}
@@ -288,7 +297,10 @@ const FunFact = () => {
                   </svg>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <div className="text-custom_primary   text-4xl font-medium">
+                  <div
+                    style={{ fontSize: "2.1rem" }}
+                    className="text-custom_primary text-4xl font-medium"
+                  >
                     {counterOn && (
                       <CountUp start={0} end={315} duration={2} delay={0} />
                     )}

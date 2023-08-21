@@ -56,7 +56,10 @@ const Blogs = () => {
                   />
                 ) : (
                   <p className=" text-sm font-medium mt-2 inline-block flex-1 cursor-pointer">
-                    <Badge variant="outline" className="text-custom_primary bg-custom_primary/5">
+                    <Badge
+                      variant="outline"
+                      className="text-custom_primary bg-custom_primary/5 ring-none hover:ring-[1px] hover:ring-custom_primary"
+                    >
                       #{blog.category}
                     </Badge>
                   </p>
@@ -68,7 +71,7 @@ const Blogs = () => {
                     style={{ marginTop: "8px" }}
                   />
                 ) : (
-                  <p className="mt-3 text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/70 flex-1 ">
+                  <p className="mt-3 text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/80 flex-1 ">
                     {blog.title}
                   </p>
                 )}

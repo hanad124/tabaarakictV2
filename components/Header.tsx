@@ -43,7 +43,7 @@ function Header() {
     <div>
       <nav
         className={`fixed top-0 left-0  z-20 py-2" w-full backdrop-blur-3xl border-b-2 border-custom_border bg-background ${
-          isVisible ? "bg-background/95" : "bg-background"
+          isVisible ? "bg-background/90" : "bg-background"
         } "
         }`}
       >
