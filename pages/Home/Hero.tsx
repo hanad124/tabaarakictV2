@@ -73,24 +73,161 @@ const Hero = () => {
           <div className="bg-hero-image-2 bg-cover bg-center h-[50rem]">
             <div className="container mx-auto px-4 py-8 h-screen flex justify-center items-center">
               <div className="flex flex-col justify-center items-center mt-24 md:mt-0">
-                <div className="md:w-4/6">
+                <div className="">
                   <h1
-                    className="text-2xl md:text-6xl text-white font-bold mb-4 text-center"
-                    style={{ lineHeight: "138.5%" }}
+                    className="text-4xl font-bold md:text-6xl leading-relaxed text-white text-start"
+                    style={{ lineHeight: "73px" }}
                   >
-                    Empower Your Business with Innovative ICT Solutions
+                    Our Featured Products
                   </h1>
+                  <div className=" flex flex-col items-start gap-y-10 md:flex-row md:gap-y-0  md:items-center justify-between mt-16 ">
+                    <div className="flex flex-col gap-10">
+                      <div className="flex gap-4 items-center">
+                        <div className="bg-custom_primary w-6 h-6 flex justify-center items-center rounded-full p-[7px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="15"
+                            viewBox="0 0 20 15"
+                            fill="none"
+                          >
+                            <path
+                              d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
+                              stroke="white"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              className="mt-3"
+                            />
+                          </svg>
+                        </div>
+                        <p className="text-background text-2xl">
+                          Software Development
+                        </p>
+                      </div>
+                      <div className="flex gap-4 items-center">
+                        <div className="bg-custom_primary w-6 h-6 flex justify-center items-center rounded-full p-[7px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="15"
+                            viewBox="0 0 20 15"
+                            fill="none"
+                          >
+                            <path
+                              d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
+                              stroke="white"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              className="mt-3"
+                            />
+                          </svg>
+                        </div>
+                        <p className="text-background text-2xl">
+                          Mobile App Development
+                        </p>
+                      </div>
+                      <div className="flex gap-4 items-center">
+                        <div className="bg-custom_primary w-6 h-6 flex justify-center items-center rounded-full p-[7px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="15"
+                            viewBox="0 0 20 15"
+                            fill="none"
+                          >
+                            <path
+                              d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
+                              stroke="white"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              className="mt-3"
+                            />
+                          </svg>
+                        </div>
+                        <p className="text-background text-2xl">Bulk sms Api</p>
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-10">
+                      <div className="flex gap-4 items-center">
+                        <div className="bg-custom_primary w-6 h-6 flex justify-center items-center rounded-full p-[7px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="15"
+                            viewBox="0 0 20 15"
+                            fill="none"
+                          >
+                            <path
+                              d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
+                              stroke="white"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              className="mt-3"
+                            />
+                          </svg>
+                        </div>
+                        <p className="text-background text-2xl">
+                          Web design & Hosting
+                        </p>
+                      </div>
+                      <div className="flex gap-4 items-center">
+                        <div className="bg-custom_primary w-6 h-6 flex justify-center items-center rounded-full p-[7px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="15"
+                            viewBox="0 0 20 15"
+                            fill="none"
+                          >
+                            <path
+                              d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
+                              stroke="white"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              className="mt-3"
+                            />
+                          </svg>
+                        </div>
+                        <p className="text-background text-2xl">
+                          IT Consultant{" "}
+                        </p>
+                      </div>
+                      <div className="flex gap-4 items-center">
+                        <div className="bg-custom_primary w-6 h-6 flex justify-center items-center rounded-full p-[7px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="15"
+                            viewBox="0 0 20 15"
+                            fill="none"
+                          >
+                            <path
+                              d="M18.6581 1.97363L7.44097 14.2105L2.34229 8.64827"
+                              stroke="white"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              className="mt-3"
+                            />
+                          </svg>
+                        </div>
+                        <p className="text-background text-2xl">
+                          Network Infrastructure
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex justify-center">
+                    <Button className="w-full px-16 mt-24 md:w-2/6" size={"lg"}>
+                      Get started
+                    </Button>
+                  </div>
                 </div>
-                <p className="text-white text-md md:text-lg mb-8 lg:w-[681px] leading-[30px] text-center font-light">
-                  At Tabaarak ICT Solutions, we are dedicated to transforming
-                  businesses with our advanced ICT solutions.
-                </p>
-                <Button
-                  className="btn-primary px-14 w-full  md:w-[20rem]"
-                  size={"lg"}
-                >
-                  Contact us
-                </Button>
               </div>
             </div>
           </div>
