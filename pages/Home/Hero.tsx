@@ -75,13 +75,13 @@ const Hero = () => {
               <div className="flex flex-col justify-center items-center mt-24 md:mt-0">
                 <div className="">
                   <h1
-                    className="text-4xl font-bold md:text-6xl leading-relaxed text-white text-start"
+                    className="text-4xl font-bold md:text-6xl leading-relaxed text-white text-center md:text-start"
                     style={{ lineHeight: "73px" }}
                   >
                     Our Featured Products
                   </h1>
-                  <div className=" flex flex-col items-start gap-y-10 md:flex-row md:gap-y-0  md:items-center justify-between mt-16 ">
-                    <div className="flex flex-col gap-10">
+                  <div className=" flex flex-col items-start gap-y-5  md:flex-row md:gap-y-0  md:items-center justify-between mt-6 md:mt-16 ">
+                    <div className="flex flex-col gap-5">
                       <div className="flex gap-4 items-center">
                         <div className="bg-custom_primary w-6 h-6 flex justify-center items-center rounded-full p-[7px]">
                           <svg
@@ -150,7 +150,7 @@ const Hero = () => {
                         <p className="text-background text-2xl">Bulk sms Api</p>
                       </div>
                     </div>
-                    <div className="flex flex-col gap-10">
+                    <div className="flex flex-col gap-5">
                       <div className="flex gap-4 items-center">
                         <div className="bg-custom_primary w-6 h-6 flex justify-center items-center rounded-full p-[7px]">
                           <svg
@@ -222,8 +222,8 @@ const Hero = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex justify-center">
-                    <Button className="w-full px-16 mt-24 md:w-2/6" size={"lg"}>
+                  <div className="flex justify-center mt-10 md:mt-24 ">
+                    <Button className="w-full px-16 md:w-2/6" size={"lg"}>
                       Get started
                     </Button>
                   </div>
