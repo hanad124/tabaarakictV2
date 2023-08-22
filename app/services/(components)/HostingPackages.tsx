@@ -1,20 +1,25 @@
 "use client";
 
+// Importing necessary dependencies and data
 import { hostingPackages } from "@/data/hostingPackages";
 import { Button } from "@/components/ui/button";
 import React from "react";
 
+// HostingPackages component
 const HostingPackages = () => {
   return (
     <div className="bg-custom_border/20">
       <div className="py-14 max-w-8xl mx-auto px-4 sm:px-6 lg:px-4 mt-10">
+        {/* Title */}
         <h2 className="mt-3 text-custom_secondary text-3xl font-bold leading-normal lg:leading-relaxed lg:text-5xl md:text-4xl md:mx-24 text-center lg:mx-36 mb-0">
           Explore our Hosting Packages{" "}
         </h2>
+        {/* Description */}
         <p className="text-custom_textColor my-3 leading-relaxed text-center mx-3 lg:mx-80 md:mx-36">
           we offer a range of hosting packages designed to meet the needs of
           businesses of all sizes 👌.
         </p>
+        {/* Hosting packages */}
         <div className="flex flex-col justify-center gap-y-20 gap-x-6 md:flex-row md:flex-wrap mt-16">
           {hostingPackages.map((packages, index) => {
             return (
@@ -30,6 +35,7 @@ const HostingPackages = () => {
                     : "border-background"
                 } shadow-lg`}
               >
+                {/* Recommended label */}
                 {packages.isRecommended && (
                   <div className="flex justify-center">
                     <div className="absolute -top-8 rounded-t-lg px-5 py-1 bg-custom_primary text-background font-normal ">
@@ -38,7 +44,9 @@ const HostingPackages = () => {
                   </div>
                 )}
                 <div className="p-5 flex flex-col  border-b border-custom_border">
+                  {/* Package type and price */}
                   <div className="flex justify-between items-center flex-1 ">
+                    {/* Package type icon */}
                     <div
                       className={`${
                         packages.type === "standard"
@@ -50,6 +58,7 @@ const HostingPackages = () => {
                           : "bg-red-600"
                       }  px-3 py-2 rounded-md`}
                     >
+                      {/* SVG icons for different package types */}
                       {packages.type === "standard" ? (
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -58,6 +67,7 @@ const HostingPackages = () => {
                           viewBox="0 0 40 40"
                           fill="none"
                         >
+                          {/* SVG code for the standard package */}
                           <path
                             opacity="0.2"
                             d="M5.1731 11.6589C5.05973 11.8512 4.99996 12.0704 5 12.2936V27.7065C5 27.9283 5.05902 28.1461 5.17099 28.3375C5.28296 28.529 5.44386 28.6872 5.63717 28.7959L19.3872 36.5303C19.5743 36.6356 19.7853 36.6909 20 36.6908L20.0016 36.6909L20.1483 20L5.17313 11.659L5.1731 11.6589Z"
@@ -100,6 +110,7 @@ const HostingPackages = () => {
                           viewBox="0 0 40 40"
                           fill="none"
                         >
+                          {/* SVG code for the premium package */}
                           <path
                             opacity="0.2"
                             d="M5 12.5L20 21.25L35 12.5L20 3.75L5 12.5Z"
@@ -135,6 +146,7 @@ const HostingPackages = () => {
                           viewBox="0 0 40 40"
                           fill="none"
                         >
+                          {/* SVG code for the business package */}
                           <path
                             opacity="0.2"
                             d="M14.6967 28.8389C12.929 34.1422 5.85791 34.1422 5.85791 34.1422C5.85791 34.1422 5.85791 27.0711 11.1612 25.3033L14.6967 28.8389Z"
@@ -185,6 +197,7 @@ const HostingPackages = () => {
                         </svg>
                       )}
                     </div>
+                    {/* Package price */}
                     <p className="text-[#F249C8] text-4xl font-extrabold ">
                       {packages.money}
                       <span className="text-custom_secondary text-lg font-normal">
@@ -193,15 +206,18 @@ const HostingPackages = () => {
                     </p>
                   </div>
                   <div className=" flex-1">
+                    {/* Package type */}
                     <p className="text-custom_secondary mt-7 text-2xl font-semibold">
                       {packages.type.charAt(0).toUpperCase() +
                         packages.type.slice(1)}
                     </p>
+                    {/* Package description */}
                     <p className="text-custom_secondary mt-2">
                       {packages.description}
                     </p>
                   </div>
                   <div className="mt-5 ">
+                    {/* "Get Started" button */}
                     <Button
                       variant={"outline"}
                       size={"lg"}
