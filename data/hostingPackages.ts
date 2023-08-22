@@ -4,6 +4,7 @@ import { THostingPackages } from "@/types/hostingPackagesTypes";
 export const hostingPackages: THostingPackages[] = [
   // package 1
   {
+    id: 1,
     type: "standard",
     isRecommended: false,
     iconBackgroundColor: "#FEEDFA",
@@ -36,6 +37,7 @@ export const hostingPackages: THostingPackages[] = [
 
   // package 2
   {
+    id: 2,
     type: "premium",
     isRecommended: true,
     iconBackgroundColor: "#FEEDFA",
@@ -68,6 +70,7 @@ export const hostingPackages: THostingPackages[] = [
 
   // package 3
   {
+    id: 3,
     type: "business",
     isRecommended: false,
     iconBackgroundColor: "#fcba03",

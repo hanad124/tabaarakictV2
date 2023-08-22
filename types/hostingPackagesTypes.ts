@@ -1,4 +1,5 @@
 export type THostingPackages = {
+  id: number;
   type: "standard" | "premium" | "business";
   iconBackgroundColor: string;
   money: string;
@@ -7,5 +8,4 @@ export type THostingPackages = {
   buttonIcon: string;
   features: string[];
   isRecommended: boolean;
-
 };
