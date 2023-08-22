@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import { portfolioData } from "@/data";
+import { portfolioData } from "@/data/generalData";
 
 const Portfolio = () => {
   const [isLoading, setIsLoading] = useState(true);

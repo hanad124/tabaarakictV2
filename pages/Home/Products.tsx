@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { Button } from "@/components/ui/button";
-import { productsData } from "@/data";
+import { productsData } from "@/data/generalData";
 
 const Products = () => {
   const [isLoading, setIsLoading] = useState(true);

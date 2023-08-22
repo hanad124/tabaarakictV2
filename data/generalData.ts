@@ -4,7 +4,7 @@ import {
   TProducts,
   TPortfolio,
   TmenuItems,
-} from "./types/GeneralTypes";
+} from "../types/GeneralTypes";
 
 import product_1_img from "@/public/assets/product1.png";
 import product_2_img from "@/public/assets/product2.png";
@@ -151,3 +151,5 @@ export const productsData: TProducts[] = [
     desc: "HRM is a software that combines a number of systems and processes to ensure the easy management of hr, business processes.",
   },
 ];
+
+

@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import logo from "@/public/assets/header-logo.png";
-import { menuItems } from "@/data";
+import { menuItems } from "@/data/generalData";
 
 function Header() {
   const pathname = usePathname();

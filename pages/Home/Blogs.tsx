@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { blogsData } from "@/data";
+import { blogsData } from "@/data/generalData";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Skeleton from "react-loading-skeleton";
@@ -66,8 +66,9 @@ const Blogs = () => {
                 )}
                 {isLoading ? (
                   <Skeleton
-                    height={30}
+                    height={20}
                     width={260}
+                    count={2}
                     style={{ marginTop: "8px" }}
                   />
                 ) : (

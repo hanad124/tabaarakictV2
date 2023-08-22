@@ -3,7 +3,7 @@ import { useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import Image from "next/image";
-import { brands } from "@/data";
+import { brands } from "@/data/generalData";
 import React from "react";
 
 const Brands = () => {

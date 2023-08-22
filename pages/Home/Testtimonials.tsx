@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { testtimonialsData } from "@/data";
+import { testtimonialsData } from "@/data/generalData";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import React from "react";
@@ -39,7 +39,7 @@ const Testtimonials = () => {
             See what our satisfied customers have to say about Tabaarak ICT
             solutions
           </p>
-            <div className="md:mt-16 mt-32 flex flex-col gap-0 md:gap-20 items-center justify-center lg:flex-row ">
+          <div className="md:mt-16 mt-32 flex flex-col gap-0 md:gap-20 items-center justify-center lg:flex-row ">
             <div className="lg:w-2/5">
               <div className="flex justify-center lg:justify-start w-full">
                 <Image
