@@ -9,7 +9,7 @@ import React from "react";
 const HostingPackages = () => {
   return (
     <div className="bg-custom_primary/5">
-      <div className="py-14 max-w-8xl mx-auto px-4 sm:px-6 lg:px-4 mt-10">
+      <div className="py-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mt-10">
         {/* Title */}
         <h2 className="mt-3 text-custom_secondary text-3xl font-bold leading-normal lg:leading-relaxed lg:text-5xl md:text-4xl md:mx-24 text-center lg:mx-36 mb-0">
           Explore our Hosting Packages{" "}
@@ -21,7 +21,7 @@ const HostingPackages = () => {
         </p>
         {/* Hosting packages */}
 
-        <div className="flex flex-col justify-center gap-y-20 gap-x-6 md:flex-row md:flex-wrap mt-16 md:mt-24">
+        <div className="flex flex-col justify-center md:justify-start gap-y-20 gap-x-6 md:flex-row md:flex-wrap mt-16 md:mt-24">
           {hostingPackages.map((packages, index) => {
             return (
               <div

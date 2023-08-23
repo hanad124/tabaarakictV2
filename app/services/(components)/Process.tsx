@@ -8,17 +8,17 @@ import elipse from "@/public/assets/process-elipse.png";
 const Process = () => {
   return (
     <div className="">
-      <div className="py-11 max-w-8xl mx-auto px-4 sm:px-6 lg:px-4 my-5 mb-16">
+      <div className="py-11 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 my-5 mb-16">
         {/* Title */}
         <h2 className="mt-3 text-custom_secondary text-3xl font-bold leading-normal lg:leading-relaxed lg:text-5xl md:text-4xl md:mx-24 text-center lg:mx-36 mb-0">
           Process we follow
         </h2>
         {/* Process */}
-        <div className="flex flex-col justify-center items-center gap-y-20 gap-x-16 md:flex-row md:flex-wrap mt-16 md:mt-24">
+        <div className="flex flex-col justify-center md:justify-start items-center gap-y-20 gap-x-16 md:flex-row md:flex-wrap mt-16 md:mt-24">
           {processesData.map((process) => (
             <div
               key={process.id}
-              className={`relative flex flex-col items-center justify-center gap-y-4 w-[260px] text-background rounded-md p-5 ${
+              className={`relative flex flex-col items-center justify-center gap-y-4 w-full md:w-[260px] text-background rounded-md p-5 ${
                 process.id === 1
                   ? "bg-[#FC5732]"
                   : process.id === 2
