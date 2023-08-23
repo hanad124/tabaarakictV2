@@ -96,7 +96,7 @@ export const blogsData: TBlogs[] = [
 export const menuItems: TmenuItems[] = [
   { label: "Home", path: "/" },
   { label: "Services", path: "/services" },
-  { label: "Portfolio", path: "/Portfolio" },
+  { label: "Portfolio", path: "/portfolio" },
   { label: "Blog", path: "/blog" },
   { label: "Careers", path: "/careers" },
   { label: "About", path: "/about" },

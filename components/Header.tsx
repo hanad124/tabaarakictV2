@@ -137,7 +137,7 @@ function Header() {
                         </Link>
 
                         <a
-                          href="#"
+                          href="/portfolio"
                           className=" text-custom_secondary hover:text-custom_primary px-3 py-3 rounded-md text-sm font-medium"
                         >
                           Portfolio
