@@ -5,7 +5,7 @@ import React from "react";
 const Brands = () => {
   return (
     <div className="">
-      <div className="py-16 container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="py-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-custom_primary font-bold text-lg">
           Some of the Brands
         </p>
@@ -18,7 +18,7 @@ const Brands = () => {
             return (
               <React.Fragment key={index}>
                 <Image
-                  className="cursor-pointer grayscale hover:grayscale-0 hover:scale-105 transition-transform  md:h-16 md:w-auto shrink"
+                  className="cursor-pointer grayscale hover:grayscale-0 hover:scale-105 transition-transform h-16 w-auto object-contain"
                   src={brand}
                   alt={"brand image"}
                   width={100}

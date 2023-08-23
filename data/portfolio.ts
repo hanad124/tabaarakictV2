@@ -36,7 +36,7 @@ export const projects: TProjects[] = [
 // Tabs
 export const tabs: string[] = [
   "All",
-  "Mobile Apps",
+  "Mobile App",
   "Web Apps",
   "Desktop Apps",
 ];
