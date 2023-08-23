@@ -20,7 +20,8 @@ const HostingPackages = () => {
           businesses of all sizes 👌.
         </p>
         {/* Hosting packages */}
-        <div className="flex flex-col justify-center gap-y-20 gap-x-6 md:flex-row md:flex-wrap mt-16">
+
+        <div className="flex flex-col justify-center gap-y-20 gap-x-6 md:flex-row md:flex-wrap mt-16 md:mt-24">
           {hostingPackages.map((packages, index) => {
             return (
               <div
@@ -33,7 +34,7 @@ const HostingPackages = () => {
                     : packages.type === "business"
                     ? "border-[#E54545]"
                     : "border-background"
-                } shadow-lg`}
+                } shadow-lg ${packages.isRecommended && "md:scale-105"}`}
               >
                 {/* Recommended label */}
                 {packages.isRecommended && (
