@@ -5,6 +5,7 @@ import {
   TPortfolio,
   TmenuItems,
 } from "../types/GeneralTypes";
+import { Tprocesses } from "../types/process";
 
 import product_1_img from "@/public/assets/product1.png";
 import product_2_img from "@/public/assets/product2.png";
@@ -22,6 +23,11 @@ import testtimonial_3_img from "@/public/assets/testimonial-3.jpg";
 import postImage_1 from "@/public/assets/postImage-1.png";
 import postImage_2 from "@/public/assets/postImage-2.png";
 import postImage_3 from "@/public/assets/postImage-3.png";
+
+import process_1_img from "@/public/assets/requirement-icon.png";
+import process_2_img from "@/public/assets/ui_ux_design-icon.png";
+import process_3_img from "@/public/assets/prototyping-icon.png";
+import process_4_img from "@/public/assets/developement-icon.png";
 
 import bran_1_img from "@/public/assets/brand-1.png";
 import bran_2_img from "@/public/assets/brand-2.png";
@@ -152,4 +158,37 @@ export const productsData: TProducts[] = [
   },
 ];
 
-
+export const processesData: Tprocesses[] = [
+  {
+    id: 1,
+    icon: process_1_img,
+    backgroundColor: "#FC5732",
+    title: "Requirement",
+    description:
+      "Identify goals, features & needs of client. Gather technical & design specs to inform development process.",
+  },
+  {
+    id: 2,
+    icon: process_2_img,
+    backgroundColor: "#0070E2",
+    title: "UI/UX Design",
+    description:
+      "Design an intuitive interface for users. Consider navigation, accessibility, branding & aesthetics",
+  },
+  {
+    id: 3,
+    icon: process_3_img,
+    backgroundColor: "#7B3DD9",
+    title: "Prototype",
+    description:
+      "Create a functional model of the website. Test for functionality, identify and resolve issues.",
+  },
+  {
+    id: 4,
+    icon: process_4_img,
+    backgroundColor: "#00B59A",
+    title: "Development",
+    description:
+      "Build & optimize the website, incorporating the design, functionality, and features identified in previous stages.",
+  },
+];

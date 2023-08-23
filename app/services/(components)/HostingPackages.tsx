@@ -8,7 +8,7 @@ import React from "react";
 // HostingPackages component
 const HostingPackages = () => {
   return (
-    <div className="bg-custom_border/20">
+    <div className="bg-custom_primary/5">
       <div className="py-14 max-w-8xl mx-auto px-4 sm:px-6 lg:px-4 mt-10">
         {/* Title */}
         <h2 className="mt-3 text-custom_secondary text-3xl font-bold leading-normal lg:leading-relaxed lg:text-5xl md:text-4xl md:mx-24 text-center lg:mx-36 mb-0">
