@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { HomeIcon } from "@radix-ui/react-icons";
 
 type BreadCrumbProps = {
   items: {
@@ -17,14 +18,15 @@ const BreadCrumb = ({ items, title }: BreadCrumbProps) => {
           <p className="text-5xl md:text-6xl text-background font-bold mb-4 text-center">
             {title}
           </p>
-          <div className="flex justify-center items-center gap-1">
+          <div className="flex justify-center items-center gap-1 font-medium">
             {items.map((item, index) => (
               <React.Fragment key={index}>
                 {index === 0 && (
                   <Link
                     href={item.link}
-                    className="breadcrumb-link text-background hover:text-custom_primary"
+                    className="breadcrumb-link text-background hover:text-custom_primary flex items-center gap-2"
                   >
+                    <HomeIcon />
                     {item.label}
                   </Link>
                 )}
