@@ -85,7 +85,7 @@ function Header() {
               size={"default"}
               className="hidden md:block text-white bg-[#0B63E5] px-4 py-2 rounded-md hover:bg-[#0b62e5db]"
             >
-              Contact us
+              <Link href="/contact">Contact us</Link>
             </Button>
 
             <div className="absolute top-5 right-8">
@@ -123,46 +123,18 @@ function Header() {
                     </SheetTitle>
                     <SheetDescription>
                       <span className=" flex flex-col gap-1 justify-start text-left  mt-7">
-                        <Link
-                          href="/"
-                          className=" text-custom_secondary hover:text-custom_primary px-3 py-3 rounded-md text-sm font-medium"
-                        >
-                          Home
-                        </Link>
-                        <Link
-                          href="/services"
-                          className=" text-custom_secondary hover:text-custom_primary px-3 py-3 rounded-md text-sm font-medium"
-                        >
-                          Services
-                        </Link>
-
-                        <a
-                          href="/portfolio"
-                          className=" text-custom_secondary hover:text-custom_primary px-3 py-3 rounded-md text-sm font-medium"
-                        >
-                          Portfolio
-                        </a>
-
-                        <a
-                          href="#"
-                          className=" text-custom_secondary hover:text-custom_primary px-3 py-3 rounded-md text-sm font-medium"
-                        >
-                          Blog
-                        </a>
-
-                        <a
-                          href="#"
-                          className=" text-[#323F7C] hover:text-blue-500 px-3 py-3 rounded-md text-sm font-medium"
-                        >
-                          Careers
-                        </a>
-
-                        <a
-                          href="#"
-                          className=" text-[#323F7C] hover:text-blue-500 px-3 py-3 rounded-md text-sm font-medium"
-                        >
-                          About
-                        </a>
+                        {menuItems.map((item) => {
+                          return (
+                            <React.Fragment key={item.path}>
+                              <Link
+                                href={item.path}
+                                className={` text-custom_secondary hover:text-custom_primary px-3 py-3 rounded-md text-sm font-medium`}
+                              >
+                                {item.label}
+                              </Link>
+                            </React.Fragment>
+                          );
+                        })}
                         <Button variant={"default"} className="mt-5">
                           Contact us
                         </Button>

@@ -38,7 +38,8 @@ const Projects = () => {
             Our Recent Projects
           </h2>
           <p className="text-custom_textColor my-3 leading-relaxed text-lg text-center mx-3 md:mx-36 lg:mx-96">
-            Welcome to our portfolio, where we showcase some of our best projects and works we have done. ✅
+            Welcome to our portfolio, where we showcase some of our best
+            projects and works we have done. ✅
           </p>
           <div className="mt-16 flex gap-5 items-center justify-center flex-wrap">
             {/* Render tabs */}
@@ -58,10 +59,8 @@ const Projects = () => {
             {/* Render projects */}
             {projects.map((project) => {
               return (
-                <>
-                  {isLoading ? (
-                    <Skeleton height={300} width={350} />
-                  ) : (
+                <React.Fragment key={project.id}>
+                  {activeTab === "All" || activeTab === project.category ? (
                     <div className="w-[350px] rounded-md" key={project.id}>
                       <Image
                         src={project.image}
@@ -86,8 +85,10 @@ const Projects = () => {
                         </Button>
                       </div>
                     </div>
+                  ) : (
+                    <Skeleton height={300} width={300} />
                   )}
-                </>
+                </React.Fragment>
               );
             })}
           </div>

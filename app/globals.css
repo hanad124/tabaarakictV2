@@ -188,3 +188,18 @@
 .breadcrumb {
   background-image: url("../public/assets/breadcrumb-background.png");
 }
+
+/* Blogs */
+.intro-post {
+  background-image: linear-gradient(
+      to top,
+      rgba(13, 21, 34, 0.75) 0%,
+      rgba(0, 39, 98, 0.47) 40%
+    ),
+    linear-gradient(
+      to top,
+      rgba(13, 21, 34, 0.9) 0%,
+      rgba(0, 39, 98, 0.3) 30.98%
+    ),
+    url("../public/assets/intropost-img.png");
+}

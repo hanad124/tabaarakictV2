@@ -4,6 +4,7 @@ import { BiSearch } from "react-icons/bi";
 import { Button } from "@/components/ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 // Import Swiper styles
 import "swiper/css";
