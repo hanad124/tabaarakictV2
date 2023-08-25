@@ -1,10 +1,10 @@
 import { Badge } from "@/components/ui/badge";
 import { AvatarIcon } from "@radix-ui/react-icons";
 
-const IntroPost = () => {
+const FeaturedPost = () => {
   return (
-    <div className=" mt-16 container mx-auto px-4 md:px-6 lg:px-8">
-      <div className="intro-post bg-cover bg-center h-full md:h-[30rem]  rounded-xl flex flex-col pt-16 md:pt-0 justify-center md:justify-end px-4 md:px-6 lg:px-8">
+    <div>
+      <div className="featured-post bg-cover bg-center h-full md:h-[40rem] rounded-xl flex flex-col pt-16 md:pt-0 justify-center md:justify-end px-4 md:px-6 lg:px-8 flex-1 md:w-[50rem]">
         <div className="mb-10">
           <Badge
             variant="default"
@@ -12,7 +12,7 @@ const IntroPost = () => {
           >
             Technology
           </Badge>
-          <p className="text-background text-xl md:text-4xl font-semibold md:w-4/6 leading-relaxed mt-5 cursor-pointer hover:opacity-75">
+          <p className="text-background text-xl md:text-4xl font-semibold md:w-5/6 leading-relaxed mt-5 cursor-pointer hover:opacity-75">
             The Impact of Technology on the <br /> Workplace
           </p>
           <div className="flex items-center mt-5 text-background">
@@ -29,4 +29,4 @@ const IntroPost = () => {
   );
 };
 
-export default IntroPost;
+export default FeaturedPost;

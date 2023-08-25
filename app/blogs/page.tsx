@@ -1,7 +1,8 @@
 import React from "react";
 import BreadCrumb from "@/components/BreadCrumb";
-import IntroPost from "./(components)/IntroPost";
+import IntroPost from "./(components)/IntroPosts";
 import LatestPosts from "./(components)/LatestPosts";
+import Posts from "./(components)/Posts";
 
 const Blogs = () => {
   const breadcrumbItems = [{ label: "Home", link: "/" }];
@@ -9,8 +10,7 @@ const Blogs = () => {
   return (
     <div className="bg-background min-h-screen">
       <BreadCrumb items={breadcrumbItems} title="Blogs" />
-      <IntroPost />
-      <LatestPosts />
+      <Posts />
     </div>
   );
 };
