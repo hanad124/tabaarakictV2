@@ -9,7 +9,7 @@ const Blogs = () => {
 
   return (
     <div className="bg-background min-h-screen">
-      <BreadCrumb items={breadcrumbItems} title="Blogs" />
+      <BreadCrumb  items={breadcrumbItems} title="Blog" />
       <Posts />
     </div>
   );

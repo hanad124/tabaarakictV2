@@ -97,7 +97,7 @@ export const menuItems: TmenuItems[] = [
   { label: "Home", path: "/" },
   { label: "Services", path: "/services" },
   { label: "Portfolio", path: "/portfolio" },
-  { label: "Blogs", path: "/blogs" },
+  { label: "Blog", path: "/blog" },
   { label: "Careers", path: "/careers" },
   { label: "About", path: "/about" },
 ];

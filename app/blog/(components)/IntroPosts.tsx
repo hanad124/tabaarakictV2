@@ -5,7 +5,7 @@ const IntroPosts = () => {
   return (
     <>
       <div className="flex-none ">
-        <div className="flex flex-col gap-y-5 w-full lg:max-w-[34rem] ">
+        <div className="flex flex-col gap-y-3 w-full lg:max-w-[34rem] ">
           {/* intro post 1 */}
           <div className="intro-post-1 bg-cover bg-center h-full md:h-[19rem] rounded-xl flex flex-col pt-16 md:pt-0 justify-center md:justify-end px-4 md:px-6 lg:px-8">
             <div className="mb-10">

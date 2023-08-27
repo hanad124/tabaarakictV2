@@ -4,7 +4,7 @@ import { AvatarIcon } from "@radix-ui/react-icons";
 const FeaturedPost = () => {
   return (
     <div>
-      <div className="featured-post bg-cover bg-center h-full md:h-[40rem] rounded-xl flex flex-col pt-16 md:pt-0 justify-center md:justify-end px-4 md:px-6 lg:px-8 flex-1 md:max-w-[50rem] shrink">
+      <div className="featured-post bg-cover bg-center h-full md:h-[39rem] rounded-xl flex flex-col pt-16 md:pt-0 justify-center md:justify-end px-4 md:px-6 lg:px-8 flex-1 md:max-w-[50rem] shrink">
         <div className="mb-10">
           <Badge
             variant="default"
