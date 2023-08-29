@@ -16,7 +16,7 @@ const PostsBreadCrumb = ({
   catogory,
 }: BreadCrumbProps) => {
   return (
-    <nav className="breadcrumb bg-cover bg-center h-[20rem] overflow-hidden mt-16">
+    <nav className="breadcrumb bg-cover bg-center h-[17rem] overflow-hidden mt-16">
       <div className="container mx-auto px-4 py-8 h-full  ">
         <div className="flex justify-center h-full items-center flex-col">
           <p className="text-2xl md:text-5xl leading-10 text-background font-bold mb-4 text-center md:w-4/6">

@@ -6,14 +6,12 @@ import LatestPosts from "./LatestPosts";
 
 const Posts = () => {
   return (
-    <div className=" mt-16 container mx-auto px-4 md:px-6 lg:px-8 mb-10">
-      <div className="flex flex-col lg:flex-row justify-center gap-5">
+    <div className=" mt-10 container mx-auto px-4 md:px-6 lg:px-8 mb-10">
         {/* featured post */}
         <FeaturedPost />
         {/* Intro posts */}
-        <IntroPosts />
+        {/* <IntroPosts /> */}
         {/* Latest Posts */}
-      </div>
       <LatestPosts />
     </div>
   );

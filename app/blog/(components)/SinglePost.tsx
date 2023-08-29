@@ -75,7 +75,7 @@ const SinglePost = (props: PostMetadata) => {
               height={100}
             />
           )}
-          <div className="text-custom_textColor">
+          <div className="text-custom_textColor text-sm">
             {isLoading ? (
               <Skeleton
                 height={16}

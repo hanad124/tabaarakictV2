@@ -6,6 +6,7 @@ const nextConfig = {
       "dropbox.com",
       "previews.dropbox.com",
       "localhost",
+      "www.amazon.com",
     ],
   },
 };

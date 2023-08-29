@@ -2,9 +2,9 @@
 title: "The Impact of Technology on the Workplace"
 date: "August 20, 2023"
 category: "Technology"
-image: "/public/assets/intropost-img.png"
+image: "https://drive.google.com/uc?export=download&id=1jJiMsLygfyxVpAaPQkhmR-u-jrksfmvc"
 author: "Hanad Mohamed"
-avator: "/public/assets/avator.png"
+avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---
 
 Technology has revolutionized every aspect of our lives, including the way we work. The workplace has undergone significant transformations due to advancements in technology. From communication and collaboration to automation and productivity, technology has left an indelible mark on the modern workplace. In this article, we will explore some key areas where technology has made a profound impact.
