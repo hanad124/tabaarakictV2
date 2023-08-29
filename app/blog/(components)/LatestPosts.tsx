@@ -2,13 +2,16 @@ import { BiSearch } from "react-icons/bi";
 import { Button } from "@/components/ui/button";
 import getPostMetadata from "@/components/getPostMetadata";
 import SinglePost from "./SinglePost";
+import { PostMetadata } from "@/types/PostMetadata";
 
 const LatestPosts = () => {
   const postMetadata = getPostMetadata();
 
-  const blogPosts = postMetadata.map((post) => (
-    <SinglePost key={post.slug} {...post} />
-  ));
+  const blogPosts = postMetadata.map((post) => {
+    console.log("single post", post);
+
+    return <SinglePost key={post.slug} {...post} />;
+  });
 
   return (
     <div>

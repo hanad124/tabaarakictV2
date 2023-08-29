@@ -8,8 +8,10 @@ import { useEffect, useState } from "react";
 import { PostMetadata } from "@/types/PostMetadata";
 import Link from "next/link";
 
+
 const SinglePost = (props: PostMetadata) => {
   const [isLoading, setIsLoading] = useState(true);
+
 
   // Simulate loading delay
   useEffect(() => {

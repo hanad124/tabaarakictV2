@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Loading() {
   // Or a custom loading skeleton component
   return (
-    <div className="h-screen relative z-30 bg-background flex justify-center items-center">
+    <div className="h-screen relative z-30 flex justify-center items-center">
       <Image
         src={loadingSpinner}
         width={300}
