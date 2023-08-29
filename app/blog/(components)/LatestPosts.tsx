@@ -2,14 +2,17 @@ import { BiSearch } from "react-icons/bi";
 import { Button } from "@/components/ui/button";
 import getPostMetadata from "@/components/getPostMetadata";
 import SinglePost from "./SinglePost";
-import { PostMetadata } from "@/types/PostMetadata";
 
 const LatestPosts = () => {
   const postMetadata = getPostMetadata();
 
-  const blogPosts = postMetadata.map((post) => {
-    console.log("single post", post);
+  // Sort the postMetadata array by creation date (birthdate)
+  const sortedPosts = postMetadata
+    .reverse()
+    .sort((a, b) => b.creationDate.getTime() - a.creationDate.getTime())
+    .slice(1);
 
+  const blogPosts = sortedPosts.map((post) => {
     return <SinglePost key={post.slug} {...post} />;
   });
 
@@ -30,7 +33,7 @@ const LatestPosts = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-start gap-10 md:flex-row md:flex-wrap mt-16">
+        <div className="flex flex-col justify-start gap-3 md:flex-row md:flex-wrap mt-16">
           {blogPosts}
         </div>
         <div className="flex justify-center mt-10">

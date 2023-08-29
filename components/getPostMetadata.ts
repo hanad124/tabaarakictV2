@@ -7,8 +7,11 @@ const getPostMetadata = (): PostMetadata[] => {
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
-  //get gra-matter data from each file
+  // Get file creation date for each file
   const posts = markdownPosts.map((fileName) => {
+    const fileStats = fs.statSync(`posts/${fileName}`);
+    const fileCreationDate = new Date(fileStats.birthtime); // Convert birthtime to Date object
+
     const fileContents = fs.readFileSync(`posts/${fileName}`, "utf-8");
     const matterResult = matter(fileContents);
     return {
@@ -19,6 +22,7 @@ const getPostMetadata = (): PostMetadata[] => {
       author: matterResult.data.author,
       avator: matterResult.data.avator,
       category: matterResult.data.category,
+      creationDate: fileCreationDate, // Store creation date as Date object
     };
   });
 

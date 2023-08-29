@@ -8,10 +8,8 @@ import { useEffect, useState } from "react";
 import { PostMetadata } from "@/types/PostMetadata";
 import Link from "next/link";
 
-
 const SinglePost = (props: PostMetadata) => {
   const [isLoading, setIsLoading] = useState(true);
-
 
   // Simulate loading delay
   useEffect(() => {
@@ -60,8 +58,9 @@ const SinglePost = (props: PostMetadata) => {
           />
         ) : (
           <Link href={`/blog/posts/${props.slug}`}>
-            <p className="mt-3 text-custom_secondary font-semibold cursor-pointer hover:text-custom_primary/80 flex-1 ">
-              {props.title}
+            <p className="mt-3 text-custom_secondary font-semibold cursor-pointer hover:text-custom_primary/80 h-10 flex-1 ">
+              {props.title.slice(0, 60) +
+                (props.title.length > 60 ? " ..." : "")}
             </p>
           </Link>
         )}
