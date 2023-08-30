@@ -7,9 +7,6 @@ author: "Hanad Mohamed"
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---
 
-
-# Securing the Digital World
-
 In today's interconnected world, the security of our digital systems and data has become paramount. With cyber threats on the rise, it is crucial to adopt robust security practices to protect ourselves and our assets. In this blog post, we will explore some key measures to secure the digital world.
 
 ## 1. Strong Passwords and Authentication

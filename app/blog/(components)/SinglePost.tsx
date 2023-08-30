@@ -30,7 +30,7 @@ const SinglePost = (props: PostMetadata) => {
           <Skeleton height={200} />
         ) : (
           <Image
-            className="w-full flex-1"
+            className="w-full flex-1 rounded-md"
             src={props.image}
             alt={props.title + " image"}
             width={500}
