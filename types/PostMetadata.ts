@@ -6,6 +6,6 @@ export type PostMetadata = {
   author: string;
   avator: string | any;
   category: string;
-  creationDate: string | number | Date;
+  creationDate: string | number | Date | any;
   // createdAt: string;
 };
