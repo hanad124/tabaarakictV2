@@ -88,7 +88,7 @@ const BlogPost = (props: any) => {
             </p>
             <div className="">
               {recentPosts.map((post) => (
-                <div className="flex items-center gap-4 mt-3">
+                <div className="flex items-center gap-4 mt-3" key={post.title}>
                   <Image
                     src={post.image}
                     alt={post.slug}
@@ -119,6 +119,7 @@ const BlogPost = (props: any) => {
                 <Badge
                   variant="outline"
                   className="text-custom_primary bg-custom_primary/10 py-2 ring-none  cursor-pointer hover:bg-custom_primary hover:text-background"
+                  key={tag.category}
                 >
                   {tag.category}
                 </Badge>
