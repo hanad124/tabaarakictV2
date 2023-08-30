@@ -53,7 +53,7 @@ const BlogPost = (props: any) => {
           catogory={post.data.catogory}
         />
       </div>
-      <div className="mx-auto px-4  md:px-10 py-16  flex justify-center gap-x-10">
+      <div className="mx-auto px-4  md:px-10 py-16  flex flex-col md:flex-row justify-center gap-x-10">
         <div className="max-[398px]:w-[22rem] m-auto break-words sm:mx-4 flex-1">
           <Image
             src={image}
