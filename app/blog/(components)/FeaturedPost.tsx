@@ -8,12 +8,15 @@ import Link from "next/link";
 const FeaturedPost = () => {
   const postMetadata = getPostMetadata();
   const sortedPosts = postMetadata.slice().sort((a, b) => {
-    return Number(new Date(b.creationDate)) - Number(new Date(a.creationDate));
+    return (
+      new Date(b.creationDate).getTime() - new Date(a.creationDate).getTime()
+    );
   });
 
+  console.log("creationDate:", postMetadata[0].creationDate);
   const featuredPost = sortedPosts.length > 0 ? sortedPosts[0] : null;
 
-  // console.log("postMetadata:", postMetadata);
+  console.log("postMetadata:", postMetadata);
 
   if (!featuredPost) {
     return null; // Handle the case when no featured post is available

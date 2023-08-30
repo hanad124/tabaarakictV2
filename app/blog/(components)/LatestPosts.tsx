@@ -9,10 +9,7 @@ const LatestPosts = () => {
   // Sort the postMetadata array by creation date (birthdate)
   const sortedPosts = postMetadata
     .reverse()
-    .sort(
-      (a, b) =>
-        Number(b.creationDate.getTime()) - Number(a.creationDate.getTime())
-    )
+    .sort((a, b) => b.creationDate.getTime() - a.creationDate.getTime())
     .slice(1);
 
   const blogPosts = sortedPosts.map((post) => {

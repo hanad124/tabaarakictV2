@@ -7,8 +7,6 @@ author: "Hanad Mohamed"
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---
 
-# An Introduction to Internet of Things (IoT)
-
 The Internet of Things (IoT) refers to the network of interconnected physical devices that can communicate and exchange data with each other via the internet. These devices, often embedded with sensors, software, and other technologies, enable them to collect and transmit data, perform actions, and interact with their environment.
 
 ## Key Concepts of IoT
