@@ -84,11 +84,8 @@ const BlogPost = (props: any) => {
             <div className="">
               {recentPosts.map((post) => {
                 return (
-                  <Link href={`/blog/posts/${post.slug}`}>
-                    <div
-                      className="flex items-center gap-4 mt-3"
-                      key={post.title}
-                    >
+                  <Link href={`/blog/posts/${post.slug}`} key={post.title}>
+                    <div className="flex items-center gap-4 mt-3">
                       <Image
                         src={post.image}
                         alt={post.slug}
