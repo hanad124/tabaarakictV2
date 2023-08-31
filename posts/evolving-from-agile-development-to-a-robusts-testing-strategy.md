@@ -35,6 +35,8 @@ As software products grow in complexity, ensuring their reliability, stability, 
 
 Transitioning from Agile Development to a robust testing strategy requires a cultural shift, collaboration, and investments in the right tools and skills. Here are some steps to facilitate the transition:
 
+![testing strategy](https://drive.google.com/uc?export=download&id=1gIx3mi9KtgdJD1ZXB8TP7SITRMIREl3V)
+
 1. **Education and Awareness:** Educate the development team about the benefits and importance of a robust testing strategy. Awareness sessions can help foster a shared understanding of the value it brings to the software development process.
 
 2. **Collaboration:** Encourage collaboration between developers, testers, and other stakeholders to ensure that testing is an integral part of the development process. Foster an environment where feedback and knowledge sharing are encouraged.

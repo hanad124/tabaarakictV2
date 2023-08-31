@@ -6,12 +6,6 @@ import Image from "next/image";
 import PostsBreadCrumb from "../../(components)/PostsBreadCrumb";
 import { BiSearch } from "react-icons/bi";
 import { Badge } from "@/components/ui/badge";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@radix-ui/react-tooltip";
 import Link from "next/link";
 
 const getPostContent = (slug: string) => {
@@ -40,6 +34,7 @@ const BlogPost = (props: any) => {
     .slice(0, 4)
     .sort((a, b) => b.creationDate.getTime() - a.creationDate.getTime());
 
+  console.log(recentPosts[0].slug);
   // get popular tags
   const tags = posts;
 
@@ -87,26 +82,33 @@ const BlogPost = (props: any) => {
               Recent Posts
             </p>
             <div className="">
-              {recentPosts.map((post) => (
-                <div className="flex items-center gap-4 mt-3" key={post.title}>
-                  <Image
-                    src={post.image}
-                    alt={post.slug}
-                    width={100}
-                    height={100}
-                    className="w-13 h-13 rounded cursor-pointer"
-                  />
-                  <div className="text-custom_textColor -mb-2 text-sm">
-                    <p className="text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/80 h-10 flex-1 ">
-                      {post.title.slice(0, 50) +
-                        (post.title.length > 50 ? " ..." : "")}
-                    </p>
-                    <p className="text-custom_textColor font-regular cursor-pointer hover:text-custom_primary/80 h-10 flex-1 mt-1">
-                      {post.date}
-                    </p>
-                  </div>
-                </div>
-              ))}
+              {recentPosts.map((post) => {
+                return (
+                  <Link href={`/blog/posts/${post.slug}`}>
+                    <div
+                      className="flex items-center gap-4 mt-3"
+                      key={post.title}
+                    >
+                      <Image
+                        src={post.image}
+                        alt={post.slug}
+                        width={100}
+                        height={100}
+                        className="w-13 h-13 rounded cursor-pointer"
+                      />
+                      <div className="text-custom_textColor -mb-2 text-sm">
+                        <p className="text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/80 h-10 flex-1 ">
+                          {post.title.slice(0, 50) +
+                            (post.title.length > 50 ? " ..." : "")}
+                        </p>
+                        <p className="text-custom_textColor font-regular cursor-pointer hover:text-custom_primary/80 h-10 flex-1 mt-1">
+                          {post.date}
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </div>
           {/* popular tags */}
@@ -115,7 +117,7 @@ const BlogPost = (props: any) => {
               Popular Tags
             </p>
             <div className="flex items-center  flex-wrap gap-3 mt-3">
-              {tags.map((tag) => (
+              {tags.slice(0, 5).map((tag) => (
                 <Badge
                   variant="outline"
                   className="text-custom_primary bg-custom_primary/10 py-2 ring-none  cursor-pointer hover:bg-custom_primary hover:text-background"

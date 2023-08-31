@@ -14,7 +14,7 @@ const Process = () => {
           Process we follow
         </h2>
         {/* Process */}
-        <div className="flex flex-col justify-center md:justify-start items-center gap-y-20 gap-x-16 md:flex-row md:flex-wrap mt-16 md:mt-24">
+        <div className="flex flex-col justify-center md:justify-start items-center gap-y-20 gap-x-10 md:flex-row md:flex-wrap mt-16 md:mt-24">
           {processesData.map((process) => (
             <div
               key={process.id}
