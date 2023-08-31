@@ -4,8 +4,6 @@ import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata";
 import Image from "next/image";
 import PostsBreadCrumb from "../../(components)/PostsBreadCrumb";
-import { BiSearch } from "react-icons/bi";
-import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import SideBar from "../../(components)/SideBar";
 import ScrollIndicator from "@/components/ScrollIndicator";
@@ -38,7 +36,7 @@ const BlogPost = (props: any) => {
           author={post.data.author}
           title={post.data.title}
           date={post.data.date}
-          catogory={post.data.catogory}
+          category={post.data.category}
         />
       </div>
       <div className="mx-auto px-4  md:px-10 py-16  flex flex-col md:flex-row justify-center gap-x-10">

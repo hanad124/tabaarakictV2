@@ -12,6 +12,7 @@ const LatestPosts = () => {
     .sort((a, b) => b.creationDate.getTime() - a.creationDate.getTime())
     .slice(1);
 
+  // Map the sortedPosts array to an array of SinglePost components
   const blogPosts = sortedPosts.map((post) => {
     return <SinglePost key={post.slug} {...post} />;
   });

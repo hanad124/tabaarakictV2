@@ -58,7 +58,7 @@ export const SearchDialog: React.FC<ComponentProps> = ({ posts }) => {
           <input
             type="text"
             placeholder="Search posts... / ⌘ J"
-            className="bg-transparent w-full py-3 focus:outline-none px-3"
+            className="bg-transparent w-full py-3 focus:outline-none px-3 text-sm"
             onClick={() => setOpen(true)}
           />
           <div className="bg-custom_primary flex justify-center items-center text-background h-12 rounded-r w-14 cursor-pointer">

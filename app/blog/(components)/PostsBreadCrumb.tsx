@@ -2,19 +2,20 @@ import Link from "next/link";
 import React from "react";
 import { AvatarIcon } from "@radix-ui/react-icons";
 import { BiCalendarEvent } from "react-icons/bi";
+import { BiTag } from "react-icons/bi";
 
 type BreadCrumbProps = {
   author: string;
   title: string;
   date: string;
-  catogory: string;
+  category: string;
 };
 
 const PostsBreadCrumb = ({
   author,
   title,
   date,
-  catogory,
+  category,
 }: BreadCrumbProps) => {
   return (
     <nav className="breadcrumb bg-cover bg-center h-[17rem] overflow-hidden mt-16">
@@ -23,16 +24,19 @@ const PostsBreadCrumb = ({
           <p className="text-2xl md:text-5xl leading-10 md:leading-[4rem] text-background font-bold mb-4 text-center md:w-4/6">
             {title}
           </p>
-          <div className="flex flex-col justify-center items-center md:flex-row gap-x-6 gap-y-2 mt-2 text-background/80">
+          <div className="flex flex-wrap justify-center items-center md:flex-row gap-x-6 gap-y-3 mt-2 text-background/80">
             <div className="flex gap-2 items-center">
-              <AvatarIcon className="w-5 h-5 " />
-              <p className=" text-lg">{author}</p>
+              <AvatarIcon className="w-4 h-4 " />
+              <p className=" text-sm">{author}</p>
             </div>
             <div className="flex gap-2 items-center">
-              <BiCalendarEvent className="w-5 h-5 " />
-              <p className=" text-lg">{date}</p>
+              <BiCalendarEvent className="w-4 h-4 " />
+              <p className=" text-sm">{date}</p>
             </div>
-            <p className=" text-lg">{catogory}</p>
+            <div className="flex items-center gap-2">
+              <BiTag className="w-4 h-4 " />
+              <p className=" text-sm">{category}</p>
+            </div>
           </div>
         </div>
       </div>

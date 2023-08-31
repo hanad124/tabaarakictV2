@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { BiSearch } from "react-icons/bi";
 import { SearchDialog } from "./SearchPosts";
+import { CalendarIcon } from "@radix-ui/react-icons";
 
 // get recent posts by date
 const posts = getPostMetadata();
@@ -42,9 +43,12 @@ const SideBar = () => {
                       {post.title.slice(0, 50) +
                         (post.title.length > 50 ? " ..." : "")}
                     </p>
-                    <p className="text-custom_textColor font-regular cursor-pointer hover:text-custom_primary/80 h-10 flex-1 mt-1">
-                      {post.date}
-                    </p>
+                    <div className="flex gap-2 items-center mt-1">
+                      <CalendarIcon className="w-3 h-3" />
+                      <p className="text-custom_textColor font-regular cursor-pointer hover:text-custom_primary/80 flex-1 text-xs">
+                        {post.date}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </Link>
