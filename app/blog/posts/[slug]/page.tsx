@@ -46,9 +46,9 @@ const BlogPost = (props: any) => {
             alt={slug}
             width={400}
             height={300}
-            className="w-full md:max-h-96 rounded"
+            className="w-full md:max-h-96"
           />
-          <article className="mt-16 prose md:prose-lg dark:prose-invert prose-img:rounded-xl prose-img:w-[30rem] prose-img:h-[16rem] prose-a:text-blue-400 prose-code:text-[#23ba9e] prose-code:bg-slate-800 prose-code:p-1 prose-code:rounded-md">
+          <article className="mt-16 prose md:prose-lg dark:prose-invert prose-img:w-4/5 prose-img:rounded prose-img:mx-auto prose-img:h-[22rem] prose-a:text-blue-400 prose-code:text-[#23ba9e] prose-code:bg-slate-800 prose-code:p-1 prose-code:rounded-md">
             <Markdown>{post.content}</Markdown>
           </article>
         </div>
