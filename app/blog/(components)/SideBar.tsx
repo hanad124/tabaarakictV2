@@ -18,11 +18,14 @@ const tags = posts;
 
 const SideBar = () => {
   return (
-    <div className="md:w-[440px] sticky top-16 border border-custom_border rounded-lg h-full md:py-10 md:px-7">
+    <div className="md:w-[440px] sticky top-16 border border-custom_primary/10 rounded-lg h-full md:py-10 md:px-7">
       <SearchDialog posts={posts} />
 
       {/* recent posts */}
-      <div className="p-5 bg-custom_primary/5 my-10 rounded">
+      <div
+        className="p-5 my-10 rounded"
+        style={{ backgroundColor: "rgba(11, 99, 229, 0.03)" }}
+      >
         <p className="text-custom_secondary text-xl font-medium">
           Recent Posts
         </p>
@@ -36,16 +39,16 @@ const SideBar = () => {
                     alt={post.slug}
                     width={100}
                     height={100}
-                    className="w-13 h-13 rounded cursor-pointer"
+                    className="w-13 h-24 rounded cursor-pointer"
                   />
-                  <div className="text-custom_textColor -mb-2 text-sm">
-                    <p className="text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/80 h-10 flex-1 ">
-                      {post.title.slice(0, 50) +
-                        (post.title.length > 50 ? " ..." : "")}
+                  <div className="text-custom_textColor flex flex-col justify-between gap-2  text-sm">
+                    <p className="text-custom_secondary font-semibold text-base cursor-pointer hover:text-custom_primary/80  flex-1 ">
+                      {post.title.slice(0, 43) +
+                        (post.title.length > 43 ? " ..." : "")}
                     </p>
                     <div className="flex gap-2 items-center mt-1">
-                      <CalendarIcon className="w-3 h-3" />
-                      <p className="text-custom_textColor font-regular cursor-pointer hover:text-custom_primary/80 flex-1 text-xs">
+                      <CalendarIcon className="w-4 h-4 text-custom_primary" />
+                      <p className="text-custom_secondary font-regular cursor-pointer hover:text-custom_primary/80 flex-1 text-sm">
                         {post.date}
                       </p>
                     </div>
@@ -57,7 +60,10 @@ const SideBar = () => {
         </div>
       </div>
       {/* popular tags */}
-      <div className="p-5 bg-custom_primary/5 my-10 rounded">
+      <div
+        className="p-5  my-10 rounded"
+        style={{ backgroundColor: "rgba(11, 99, 229, 0.03)" }}
+      >
         <p className="text-custom_secondary text-xl font-medium">
           Popular Tags
         </p>
@@ -75,11 +81,14 @@ const SideBar = () => {
       </div>
 
       {/* follow us */}
-      <div className="p-5 bg-custom_primary/5 my-10 rounded">
+      <div
+        className="p-5  my-10 rounded"
+        style={{ backgroundColor: "rgba(11, 99, 229, 0.03)" }}
+      >
         <p className="text-custom_secondary text-xl font-medium">Follow Us</p>
         <div className="flex items-center  flex-wrap gap-3 mt-3">
           <div className="flex gap-8 mt-3">
-            <div className="group hover ring-2 ring-custom_border hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center">
+            <div className="group hover ring-2 ring-custom_border hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center cursor-pointer">
               <Link
                 href="https://www.facebook.com/TabaarakICT/"
                 target="_blank"
@@ -100,7 +109,7 @@ const SideBar = () => {
                 </svg>
               </Link>
             </div>
-            <div className="group ring-custom_border ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center">
+            <div className="group ring-custom_border ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center cursor-pointer">
               <Link
                 href="https://www.linkedin.com/in/tabaarak-ict-solutions-77421080"
                 target="_blank"
@@ -120,7 +129,7 @@ const SideBar = () => {
                 </svg>
               </Link>
             </div>
-            <div className="group hover ring-custom_border ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center">
+            <div className="group hover ring-custom_border ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center cursor-pointer">
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
