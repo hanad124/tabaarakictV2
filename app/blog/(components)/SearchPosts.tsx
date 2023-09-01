@@ -44,7 +44,7 @@ export const SearchDialog: React.FC<ComponentProps> = ({ posts }) => {
     return () => document.removeEventListener("keydown", down);
   }, []);
 
-
+ 
   return (
     <>
       {/* search */}
