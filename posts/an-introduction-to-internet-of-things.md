@@ -2,7 +2,7 @@
 title: "An Introduction to Internet of Things (IoT)"
 date: "August 30, 2023"
 category: "Industrial IoT"
-image: "https://drive.google.com/uc?export=download&id=1GcNVTVT88Ql64YByWBm3H2fHRgdFuoVK"
+image: "https://drive.google.com/uc?export=download&id=1yn2leeer5FH_5bEEN4ppQGkC2StCmbxq"
 author: "Hanad Mohamed"
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---

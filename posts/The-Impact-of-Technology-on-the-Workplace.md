@@ -2,7 +2,7 @@
 title: "The Impact of Technology on the Workplace"
 date: "August 20, 2023"
 category: "Technology"
-image: "https://drive.google.com/uc?export=download&id=1jJiMsLygfyxVpAaPQkhmR-u-jrksfmvc"
+image: "https://drive.google.com/uc?export=download&id=158b47xHZ0ZFUL3XwAxCjCDjwT2AWFHzE"
 author: "Hanad Mohamed"
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---

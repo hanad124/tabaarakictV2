@@ -44,20 +44,17 @@ export const SearchDialog: React.FC<ComponentProps> = ({ posts }) => {
     return () => document.removeEventListener("keydown", down);
   }, []);
 
-  // get recent posts by date
-  //   const posts = getPostMetadata();
-  //   const recentPosts = posts
-  //     .slice(0, 4)
-  //     .sort((a, b) => b.creationDate.getTime() - a.creationDate.getTime());
-
   return (
     <>
       {/* search */}
-      <div className="bg-custom_primary/5 p-5 rounded">
+      <div
+        className="p-5 rounded"
+        style={{ backgroundColor: "rgba(11, 99, 229, 0.03)" }}
+      >
         <div className="flex items-center border border-custom_border rounded-md  focus-within:ring focus-within:ring-custom_primary">
           <input
             type="text"
-            placeholder="Search posts... / ⌘ J"
+            placeholder="Search posts  - or -  ⌘ J"
             className="bg-transparent w-full py-3 focus:outline-none px-3 text-sm"
             onClick={() => setOpen(true)}
           />

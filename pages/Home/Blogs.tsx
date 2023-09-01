@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import autherImage from "@/public/assets/avator.png";
 import GetPosts from "./GetPosts";
 import { PostMetadata } from "@/types/PostMetadata";
+import Link from "next/link";
 
 interface ComponentProps {
   posts: PostMetadata[];
@@ -43,8 +44,9 @@ const Blogs: React.FC<ComponentProps> = ({ posts }) => {
         </p>
         <div className="flex flex-col justify-start gap-10 md:flex-row md:flex-wrap mt-16">
           {posts
-            .slice(0, 4)
-            .sort((a, b) => b.creationDate.getTime() - a.creationDate.getTime())
+            .slice(0, 3)
+            .sort((a, b) => a.creationDate.getTime() - b.creationDate.getTime())
+            .reverse()
             .map((blog) => {
               return (
                 <div
@@ -55,7 +57,7 @@ const Blogs: React.FC<ComponentProps> = ({ posts }) => {
                     <Skeleton height={200} />
                   ) : (
                     <Image
-                      className="w-full flex-1"
+                      className="w-full flex-1 rounded-lg"
                       src={blog.image}
                       alt={blog.title + " image"}
                       width={500}
@@ -86,9 +88,11 @@ const Blogs: React.FC<ComponentProps> = ({ posts }) => {
                       style={{ marginTop: "8px" }}
                     />
                   ) : (
-                    <p className="mt-3 text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/80 flex-1 ">
-                      {blog.title}
-                    </p>
+                    <Link href={`/blog/posts/${blog.slug}`}>
+                      <p className="mt-3 text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/80 flex-1 ">
+                        {blog.title}
+                      </p>
+                    </Link>
                   )}
                   <div className="flex gap-3 items-center mt-4">
                     {isLoading ? (

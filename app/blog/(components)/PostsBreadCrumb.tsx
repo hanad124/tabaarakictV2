@@ -27,15 +27,15 @@ const PostsBreadCrumb = ({
           <div className="flex flex-wrap justify-center items-center md:flex-row gap-x-6 gap-y-3 mt-2 text-background">
             <div className="flex gap-2 items-center">
               <AvatarIcon className="w-4 h-4 " />
-              <p className=" text-sm">{author}</p>
+              <p className=" text-sm font-medium">{author}</p>
             </div>
             <div className="flex gap-2 items-center">
               <BiCalendarEvent className="w-4 h-4 " />
-              <p className=" text-sm">{date}</p>
+              <p className=" text-sm font-medium">{date}</p>
             </div>
             <div className="flex items-center gap-2">
               <BiTag className="w-4 h-4 " />
-              <p className=" text-sm">{category}</p>
+              <p className=" text-sm font-medium">{category}</p>
             </div>
           </div>
         </div>

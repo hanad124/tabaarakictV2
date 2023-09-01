@@ -2,7 +2,7 @@
 title: "Exploring the Fascinating World of Artificial Intelligence"
 date: "August 30, 2023"
 category: "Machine Learning (ML)"
-image: "https://drive.google.com/uc?export=download&id=1WaMY7gRxzwHgvSP_hKBMuiddw8PiBaiI"
+image: "https://drive.google.com/uc?export=download&id=1gxqp8i3vhsX9daEgxFkDkWTtxx_cklEQ"
 author: "Hanad Mohamed"
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---

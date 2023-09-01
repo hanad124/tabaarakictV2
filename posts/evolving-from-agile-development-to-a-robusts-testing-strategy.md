@@ -2,7 +2,7 @@
 title: "Evolving from Agile Development to a Robust Testing Strategy"
 date: "August 30, 2023"
 category: "DevOps"
-image: "https://drive.google.com/uc?export=download&id=1gIx3mi9KtgdJD1ZXB8TP7SITRMIREl3V"
+image: "https://drive.google.com/uc?export=download&id=1I_5dVy-d1IJ3QSeYp5Dh55M3wWuZPIIj"
 author: "Hanad Mohamed"
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---
@@ -35,7 +35,7 @@ As software products grow in complexity, ensuring their reliability, stability, 
 
 Transitioning from Agile Development to a robust testing strategy requires a cultural shift, collaboration, and investments in the right tools and skills. Here are some steps to facilitate the transition:
 
-![testing strategy](https://drive.google.com/uc?export=download&id=1gIx3mi9KtgdJD1ZXB8TP7SITRMIREl3V)
+![testing strategy](https://drive.google.com/uc?export=download&id=1I_5dVy-d1IJ3QSeYp5Dh55M3wWuZPIIj)
 
 1. **Education and Awareness:** Educate the development team about the benefits and importance of a robust testing strategy. Awareness sessions can help foster a shared understanding of the value it brings to the software development process.
 

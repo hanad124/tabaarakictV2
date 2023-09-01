@@ -39,16 +39,16 @@ const BlogPost = (props: any) => {
           category={post.data.category}
         />
       </div>
-      <div className="mx-auto px-4  md:px-10 py-16  flex flex-col md:flex-row justify-center gap-x-10">
-        <div className="max-[398px]:w-[22rem] m-auto break-words sm:mx-4 flex-1">
+      <div className="mx-auto px-4  md:px-10 py-16  flex flex-col md:flex-row justify-center gap-x-10 gap-y-10 ">
+        <div className="max-[398px]:w-[22rem] m-auto break-words sm:mx-4 border-b pb-5 md:pd-0 md:border-b-0">
           <Image
             src={image}
             alt={slug}
             width={400}
             height={300}
-            className="w-full md:max-h-96 rounded"
+            className="w-full md:max-h-96"
           />
-          <article className="mt-16 prose md:prose-lg dark:prose-invert prose-img:rounded-xl prose-img:w-[30rem] prose-img:h-[16rem] prose-a:text-blue-400 prose-code:text-[#23ba9e] prose-code:bg-slate-800 prose-code:p-1 prose-code:rounded-md">
+          <article className="mt-16 prose md:prose-lg dark:prose-invert prose-img:w-full md:prose-img:w-4/5 prose-img:rounded prose-headings:text-custom_secondary prose-img:mx-auto md:prose-img:h-[22rem] prose-a:text-blue-400 prose-code:text-[#23ba9e] prose-code:bg-slate-800 prose-code:p-1 prose-code:rounded-md">
             <Markdown>{post.content}</Markdown>
           </article>
         </div>
