@@ -11,7 +11,6 @@ const About = () => {
   return (
     <div>
       {/* who we're */}
-
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -26,7 +25,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Image
-              className="shrink w-auto border rounded-[18px] md:h-[36.9rem]"
+              className="shrink w-auto border rounded-[18px] md:h-[30.9rem]"
               src={aboutImage}
               alt="girl image"
               width={570}

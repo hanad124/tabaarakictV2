@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { blogsData } from "@/data/generalData";
 import { useState, useEffect } from "react";
@@ -7,8 +9,14 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { Badge } from "@/components/ui/badge";
 
 import autherImage from "@/public/assets/avator.png";
+import GetPosts from "./GetPosts";
+import { PostMetadata } from "@/types/PostMetadata";
 
-const Blogs = () => {
+interface ComponentProps {
+  posts: PostMetadata[];
+}
+
+const Blogs: React.FC<ComponentProps> = ({ posts }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   // Simulate loading delay
@@ -20,8 +28,11 @@ const Blogs = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  console.log("posts:", posts);
+
   return (
     <div className="py-16">
+      {/* <GetPosts /> */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-custom_secondary text-3xl font-bold leading-normal lg:leading-relaxed lg:text-5xl md:text-4xl md:mx-24 text-center lg:mx-36 mb-0">
           Latest blog & news
@@ -30,84 +41,87 @@ const Blogs = () => {
           Stay updated with the latest trends, insights and news in the world of
           ICT.
         </p>
-        <div className="flex flex-col justify-center gap-10 md:flex-row md:flex-wrap mt-16">
-          {blogsData.map((blog) => {
-            return (
-              <div
-                className="flex flex-col border border-custom_border md:w-[370px] rounded-lg px-5 py-5"
-                key={blog.title}
-              >
-                {isLoading ? (
-                  <Skeleton height={200} />
-                ) : (
-                  <Image
-                    className="w-full flex-1"
-                    src={blog.img}
-                    alt={blog.title + " image"}
-                    width={500}
-                    height={300}
-                  />
-                )}
-                {isLoading ? (
-                  <Skeleton
-                    height={20}
-                    width={100}
-                    style={{ marginTop: "8px" }}
-                  />
-                ) : (
-                  <div className=" text-sm font-medium mt-2 inline-block flex-1 cursor-pointer">
-                    <Badge
-                      variant="outline"
-                      className="text-custom_primary bg-custom_primary/5 ring-none hover:ring-[1px] hover:ring-custom_primary"
-                    >
-                      #{blog.category}
-                    </Badge>
-                  </div>
-                )}
-                {isLoading ? (
-                  <Skeleton
-                    height={20}
-                    width={260}
-                    count={2}
-                    style={{ marginTop: "8px" }}
-                  />
-                ) : (
-                  <p className="mt-3 text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/80 flex-1 ">
-                    {blog.title}
-                  </p>
-                )}
-                <div className="flex gap-3 items-center mt-4">
+        <div className="flex flex-col justify-start gap-10 md:flex-row md:flex-wrap mt-16">
+          {posts
+            .slice(0, 4)
+            .sort((a, b) => b.creationDate.getTime() - a.creationDate.getTime())
+            .map((blog) => {
+              return (
+                <div
+                  className="flex flex-col border border-custom_border md:w-[370px] rounded-lg px-5 py-5"
+                  key={blog.title}
+                >
                   {isLoading ? (
-                    <Skeleton circle height={44} width={44} />
+                    <Skeleton height={200} />
                   ) : (
                     <Image
-                      className="w-11 h-11 cursor-pointer"
-                      src={autherImage}
-                      alt={"post image"}
-                      width={100}
-                      height={100}
+                      className="w-full flex-1"
+                      src={blog.image}
+                      alt={blog.title + " image"}
+                      width={500}
+                      height={300}
                     />
                   )}
-                  <div className="text-custom_textColor">
+                  {isLoading ? (
+                    <Skeleton
+                      height={20}
+                      width={100}
+                      style={{ marginTop: "8px" }}
+                    />
+                  ) : (
+                    <div className=" text-sm font-medium mt-2 inline-block flex-1 cursor-pointer">
+                      <Badge
+                        variant="outline"
+                        className="text-custom_primary bg-custom_primary/5 ring-none hover:ring-[1px] hover:ring-custom_primary"
+                      >
+                        #{blog.category}
+                      </Badge>
+                    </div>
+                  )}
+                  {isLoading ? (
+                    <Skeleton
+                      height={20}
+                      width={260}
+                      count={2}
+                      style={{ marginTop: "8px" }}
+                    />
+                  ) : (
+                    <p className="mt-3 text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/80 flex-1 ">
+                      {blog.title}
+                    </p>
+                  )}
+                  <div className="flex gap-3 items-center mt-4">
                     {isLoading ? (
-                      <Skeleton
-                        height={16}
+                      <Skeleton circle height={44} width={44} />
+                    ) : (
+                      <Image
+                        className="w-11 h-11 cursor-pointer"
+                        src={autherImage}
+                        alt={"post image"}
                         width={100}
-                        style={{ marginBottom: "4px" }}
+                        height={100}
                       />
-                    ) : (
-                      <p>Hanad Mohamed</p>
                     )}
-                    {isLoading ? (
-                      <Skeleton height={16} width={80} />
-                    ) : (
-                      <p>July 20, 2023</p>
-                    )}
+                    <div className="text-custom_textColor">
+                      {isLoading ? (
+                        <Skeleton
+                          height={16}
+                          width={100}
+                          style={{ marginBottom: "4px" }}
+                        />
+                      ) : (
+                        <p>Hanad Mohamed</p>
+                      )}
+                      {isLoading ? (
+                        <Skeleton height={16} width={80} />
+                      ) : (
+                        <p>July 20, 2023</p>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
         </div>
       </div>
     </div>

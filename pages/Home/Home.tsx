@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import Hero from "@/pages/Home/Hero";
 import About from "@/pages/Home/About";
@@ -12,6 +12,7 @@ import FunFact from "@/pages/Home/FunFact";
 import Blogs from "./Blogs";
 import Brands from "./Brands";
 import Banner from "./Banner";
+import GetPosts from "./GetPosts";
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
       <Portfolio />
       <Testtimonials />
       <FunFact />
-      <Blogs />
+      <GetPosts />
+      {/* <Blogs /> */}
       <Brands />
       <Banner />
     </>

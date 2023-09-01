@@ -13,10 +13,7 @@ const FeaturedPost = () => {
     );
   });
 
-  console.log("creationDate:", postMetadata[0].creationDate);
   const featuredPost = sortedPosts.length > 0 ? sortedPosts[0] : null;
-
-  console.log("postMetadata:", postMetadata);
 
   if (!featuredPost) {
     return null; // Handle the case when no featured post is available
