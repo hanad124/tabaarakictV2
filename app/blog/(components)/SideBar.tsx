@@ -26,14 +26,18 @@ const SideBar = () => {
         className="p-5 my-10 rounded"
         style={{ backgroundColor: "rgba(11, 99, 229, 0.03)" }}
       >
-        <p className="text-custom_secondary text-xl font-medium">
+        <p className="text-custom_secondary text-2xl font-semibold">
           Recent Posts
         </p>
-        <div className="">
+        <div className="flex flex-col gap-y-5 mt-5">
           {recentPosts.map((post) => {
             return (
-              <Link href={`/blog/posts/${post.slug}`} key={post.title}>
-                <div className="flex items-center gap-4 mt-3">
+              <Link
+                href={`/blog/posts/${post.slug}`}
+                key={post.title}
+                className=""
+              >
+                <div className="flex items-center gap-4 ">
                   <Image
                     src={post.image}
                     alt={post.slug}
@@ -64,10 +68,10 @@ const SideBar = () => {
         className="p-5  my-10 rounded"
         style={{ backgroundColor: "rgba(11, 99, 229, 0.03)" }}
       >
-        <p className="text-custom_secondary text-xl font-medium">
+        <p className="text-custom_secondary text-2xl font-semibold">
           Popular Tags
         </p>
-        <div className="flex items-center  flex-wrap gap-3 mt-3">
+        <div className="flex items-center  flex-wrap gap-3 mt-5">
           {tags.slice(0, 5).map((tag) => (
             <Badge
               variant="outline"
@@ -85,7 +89,9 @@ const SideBar = () => {
         className="p-5  my-10 rounded"
         style={{ backgroundColor: "rgba(11, 99, 229, 0.03)" }}
       >
-        <p className="text-custom_secondary text-xl font-medium">Follow Us</p>
+        <p className="text-custom_secondary text-2xl font-semibold">
+          Follow Us
+        </p>
         <div className="flex items-center  flex-wrap gap-3 mt-3">
           <div className="flex gap-8 mt-3">
             <div className="group hover ring-2 ring-custom_border hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center cursor-pointer">
