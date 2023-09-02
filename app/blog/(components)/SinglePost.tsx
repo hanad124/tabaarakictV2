@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { PostMetadata } from "@/types/PostMetadata";
 import Link from "next/link";
 import { BiSearch } from "react-icons/bi";
+import { Button } from "@/components/ui/button";
 
 interface ComponentProps {
   posts: PostMetadata[];
@@ -16,6 +17,7 @@ interface ComponentProps {
 const SinglePost: React.FC<ComponentProps> = ({ posts }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
+  const [showPosts, setShowPosts] = useState(3);
 
   // Simulate loading delay
   useEffect(() => {
@@ -26,13 +28,16 @@ const SinglePost: React.FC<ComponentProps> = ({ posts }) => {
     return () => clearTimeout(timer);
   }, []);
 
+  //  search posts by title
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredPosts = posts.filter((post) =>
-    post.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredPosts = posts
+    .slice(1, showPosts)
+    .filter((post) =>
+      post.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
   return (
     <>
@@ -53,7 +58,6 @@ const SinglePost: React.FC<ComponentProps> = ({ posts }) => {
             />
           </div>
         </div>
-        <div className="absolute left-0 bottom-0 bg-custom_border w-11 md:w-16 h-[5px]"></div>
         <div className="flex flex-col justify-start gap-3 md:flex-row md:flex-wrap mt-16">
           {/* {blogPosts} */}
           {filteredPosts.length === 0 ? (
@@ -143,6 +147,21 @@ const SinglePost: React.FC<ComponentProps> = ({ posts }) => {
             })
           )}
         </div>
+        {showPosts == 3 ? (
+          <div className="flex justify-center mt-10">
+            <Button
+              className="border-custom_border text-custom_textColor"
+              variant={"outline"}
+              onClick={() => {
+                setShowPosts(10);
+              }}
+            >
+              Load More
+            </Button>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </>
   );
