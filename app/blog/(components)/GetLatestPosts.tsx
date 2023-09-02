@@ -10,7 +10,7 @@ const GetLatestPosts = () => {
   const sortedPosts = postMetadata
     .reverse()
     .sort((a, b) => b.creationDate.getTime() - a.creationDate.getTime())
-    .slice(1);
+    .slice(0);
 
   return <SinglePost posts={sortedPosts} />;
 };

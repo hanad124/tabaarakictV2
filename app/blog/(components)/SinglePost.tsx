@@ -17,7 +17,7 @@ interface ComponentProps {
 const SinglePost: React.FC<ComponentProps> = ({ posts }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
-  const [showPosts, setShowPosts] = useState(3);
+  const [showPosts, setShowPosts] = useState(4);
 
   // Simulate loading delay
   useEffect(() => {
@@ -147,7 +147,7 @@ const SinglePost: React.FC<ComponentProps> = ({ posts }) => {
             })
           )}
         </div>
-        {showPosts > 0 && showPosts < 4 && filteredPosts.length > 0 && (
+        {showPosts > 0 && showPosts < 5 && filteredPosts.length > 0 && (
           <div className="flex justify-center mt-10">
             <Button
               className="border-custom_border text-custom_textColor"
