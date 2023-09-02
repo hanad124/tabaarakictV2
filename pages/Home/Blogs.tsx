@@ -29,7 +29,6 @@ const Blogs: React.FC<ComponentProps> = ({ posts }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  console.log("posts:", posts);
 
   return (
     <div className="py-16">
