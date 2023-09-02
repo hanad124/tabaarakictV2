@@ -147,7 +147,7 @@ const SinglePost: React.FC<ComponentProps> = ({ posts }) => {
             })
           )}
         </div>
-        {showPosts == 3 ? (
+        {showPosts > 0 && showPosts < 4 && filteredPosts.length > 0 && (
           <div className="flex justify-center mt-10">
             <Button
               className="border-custom_border text-custom_textColor"
@@ -159,8 +159,6 @@ const SinglePost: React.FC<ComponentProps> = ({ posts }) => {
               Load More
             </Button>
           </div>
-        ) : (
-          ""
         )}
       </div>
     </>

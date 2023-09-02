@@ -7,8 +7,6 @@ author: "Hanad Mohamed"
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---
 
-# Building and Deploying Applications in the Cloud
-
 In today's digital era, building and deploying applications in the cloud has become a standard practice for many businesses. The cloud offers numerous advantages, such as scalability, reliability, and cost-effectiveness. In this blog post, we will explore the key steps involved in building and deploying applications in the cloud.
 
 ## Step 1: Define Application Requirements
