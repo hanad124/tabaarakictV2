@@ -7,6 +7,8 @@ import PostsBreadCrumb from "../../(components)/PostsBreadCrumb";
 import Link from "next/link";
 import SideBar from "../../(components)/SideBar";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import { FiTag } from "react-icons/fi";
+import { Badge } from "@/components/ui/badge";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -51,6 +53,17 @@ const BlogPost = (props: any) => {
           <article className="mt-16 prose md:prose-lg dark:prose-invert prose-img:w-full  prose-img:rounded prose-headings:text-custom_secondary prose-img:mx-auto md:prose-img:h-[22rem] prose-a:text-blue-400 prose-code:text-[#23ba9e] prose-code:bg-slate-800 prose-code:p-1 prose-code:rounded-md">
             <Markdown>{post.content}</Markdown>
           </article>
+          {/* tags */}
+          <div className="flex items-center gap-4 my-10">
+            <FiTag className="text-custom_secondary text-lg -mb-1" />
+            <div className="flex flex-wrap gap-2">
+              {post.data.tags.map((tag: string) => (
+                <Link href={`/blog/tags/${tag}`} key={tag}>
+                  <Badge className="py-1 text-sm font-normal"> {tag}</Badge>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
         {/* side bar */}
         <SideBar />
