@@ -28,24 +28,43 @@ const Careers = () => {
             <span className="text-primary">a fresh graduate</span>.
           </p>
         </div>
-        <div className="flex items-center gap-5">
-          <Select>
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Select a fruit" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                <SelectLabel>Fruits</SelectLabel>
-                <SelectItem value="apple">Apple</SelectItem>
-                <SelectItem value="banana">Banana</SelectItem>
-                <SelectItem value="blueberry">Blueberry</SelectItem>
-                <SelectLabel>Seeds</SelectLabel>
-                <SelectItem value="pumpkin">Pumpkin</SelectItem>
-                <SelectItem value="sunflower">Sunflower</SelectItem>
-                <SelectItem value="sesame">Sesame</SelectItem>
-              </SelectGroup>
-            </SelectContent>
-          </Select>
+        {/* carees select menu  */}
+        <div className="flex items-center gap-5 justify-between mt-10">
+          <div className="w-full">
+            <Select>
+              <SelectTrigger className="w-full py-5">
+                <SelectValue placeholder="All Locations" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectItem value="mogadishu">Mogadishu</SelectItem>
+                  <SelectItem value="jowhar">Jowhar</SelectItem>
+                  <SelectItem value="afgoi">Afgoi</SelectItem>
+                  <SelectItem value="pumpkin">Bidao</SelectItem>
+                  <SelectItem value="sunflower">Kismaayo</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="w-full">
+            <Select>
+              <SelectTrigger className="w-full py-5">
+                <SelectValue placeholder="All Departments" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectItem value="customer-care">Customer Care</SelectItem>
+                  <SelectItem value="marketting">Marketting</SelectItem>
+                  <SelectItem value="isp">ISP</SelectItem>
+                  <SelectItem value="regional">Regional</SelectItem>
+                  <SelectItem value="information-communication-technology(ict)">
+                    Information Communication Technology(ICT)
+                  </SelectItem>
+                  <SelectItem value="sesame">Finance & Accounting</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
       </div>
     </div>
