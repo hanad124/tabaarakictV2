@@ -7,5 +7,6 @@ export type PostMetadata = {
   avator: string | any;
   category: string;
   creationDate: string | number | Date | any;
+  tags: string;
   // createdAt: string;
 };

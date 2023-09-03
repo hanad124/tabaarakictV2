@@ -22,6 +22,7 @@ const getPostMetadata = (): PostMetadata[] => {
       author: matterResult.data.author,
       avator: matterResult.data.avator,
       category: matterResult.data.category,
+      tags: matterResult.data.tags,
       creationDate: fileCreationDate, // Store creation date as Date object
     };
   });
