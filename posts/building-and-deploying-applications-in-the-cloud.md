@@ -4,6 +4,7 @@ date: "September 1, 2023"
 category: "Cloud Applications"
 image: "https://drive.google.com/uc?export=download&id=1ebqea3Mz976J7PQZaYtRGRvdyYbrlGiK"
 author: "Hanad Mohamed"
+tags: ["cloud", "applications", "deployment"]
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---
 

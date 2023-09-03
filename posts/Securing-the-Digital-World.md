@@ -4,6 +4,7 @@ date: "August 29, 2023"
 category: "Cryptography"
 image: "https://drive.google.com/uc?export=download&id=15qJh1vVUu9Vt-PyN-ANxS-_mG8F4VNEU"
 author: "Hanad Mohamed"
+tags: ["security", "cybersecurity", "digital"]
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---
 

@@ -4,6 +4,7 @@ date: "August 30, 2023"
 category: "DevOps"
 image: "https://drive.google.com/uc?export=download&id=1I_5dVy-d1IJ3QSeYp5Dh55M3wWuZPIIj"
 author: "Hanad Mohamed"
+tags: ["DevOps", "Testing", "Agile"]
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
 ---
 
