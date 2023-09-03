@@ -46,7 +46,7 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-[#323F7C] text-2xl font-bold leading-normal lg:leading-relaxed lg:text-4xl"
+            className="text-[#323F7C] text-2xl font-bold leading-normal  lg:text-4xl"
           >
             We provide perfect IT <br />
             <span className="text-[#3056D3]">solutions & technology</span> for
