@@ -2,7 +2,7 @@
 name: "Network Administrator"
 category: "Networking"
 type: "Full time"
-location: "Jowhar, Somalia"
+location: "Jowhar"
 issueDate: "September 13, 2023"
 expireDate: "September 22, 2023"
 ---

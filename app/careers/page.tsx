@@ -1,7 +1,4 @@
-import React from "react";
 import BreadCrumb from "@/components/BreadCrumb";
-
-import SelectMenus from "./(components)/SelectMenus";
 import GetLatestJobs from "./(components)/getLatestJobs";
 
 const Careers = () => {
@@ -22,8 +19,6 @@ const Careers = () => {
             <span className="text-primary">a fresh graduate</span>.
           </p>
         </div>
-        {/* carees select menu  */}
-        <SelectMenus />
         {/* careers jobs */}
         <GetLatestJobs />
       </div>

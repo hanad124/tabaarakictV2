@@ -15,7 +15,7 @@ const SideBar = () => {
   return (
     <div className="md:w-[400px] sticky top-16 border border-custom_primary/10 rounded-lg h-full md:py-10 md:px-7">
       <SearchDialog posts={jobs} />
-      {/* recent posts */}
+      {/* recent Jobs */}
       <div
         className="p-5 my-10 rounded"
         style={{ backgroundColor: "rgba(11, 99, 229, 0.03)" }}
@@ -27,9 +27,9 @@ const SideBar = () => {
           {recentJobs.map((job) => {
             return (
               <Link href={`/careers/${job.slug}`} key={job.name} className="">
-                <div className="flex items-center gap-4 ">
+                <div className="flex items-center gap-4">
                   <div className="text-custom_textColor flex flex-col justify-between gap-2  text-sm">
-                    <p className="text-custom_secondary font-semibold text-base cursor-pointer hover:text-custom_primary/80  flex-1 ">
+                    <p className="text-custom_secondary font-semibold text-base cursor-pointer hover:text-custom_primary/80 flex-1 ">
                       {job.name.slice(0, 43) +
                         (job.name.length > 43 ? " ..." : "")}
                     </p>

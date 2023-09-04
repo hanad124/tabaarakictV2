@@ -2,7 +2,7 @@
 name: "Software Engineer"
 category: "Development"
 type: "Full time"
-location: "Mogadishu, Somalia"
+location: "Mogadishu"
 issueDate: "September 02, 2023"
 expireDate: "September 10, 2023"
 ---
