@@ -5,7 +5,7 @@ import getJobsMetaData from "@/components/getJobsMetaData";
 import Image from "next/image";
 import JobstsBreadCrumb from "../JobBreadCrumb";
 import Link from "next/link";
-// import SideBar from "../../(components)/SideBar";
+import SideBar from "@/app/careers/(components)/SideBar";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import { Button } from "@/components/ui/button";
 
@@ -41,7 +41,7 @@ const BlogPost = (props: any) => {
         />
       </div>
       <div className="mx-auto px-4 md:px-10 py-16  flex flex-col md:flex-row justify-center gap-x-10 gap-y-10 ">
-        <div className="max-[750px]:w-[35rem] m-auto break-words sm:mx-4 border-b pb-5 md:pd-0  border rounded-lg px-10">
+        <div className="max-[450px]:w-[24rem] m-auto break-words sm:mx-4 border-b pb-5 md:pd-0  border rounded-lg px-10">
           <article className="mt-16 prose md:prose-lg dark:prose-invert prose-img:w-full  prose-img:rounded prose-headings:text-custom_secondary prose-img:mx-auto md:prose-img:h-[22rem] prose-a:text-blue-400 prose-code:text-[#23ba9e] prose-code:bg-slate-800 prose-code:p-1 prose-code:rounded-md">
             <Markdown>{job.content}</Markdown>
           </article>
@@ -72,7 +72,7 @@ const BlogPost = (props: any) => {
           </Button>
         </div>
         {/* side bar */}
-        {/* <SideBar /> */}
+        <SideBar />
       </div>
     </>
   );

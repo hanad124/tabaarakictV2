@@ -18,7 +18,7 @@ import Link from "next/link";
 import { TJobs } from "@/types/jobsMetaData";
 
 interface ComponentProps {
-  posts: PostMetadata[];
+  posts: TJobs[];
 }
 
 export const SearchDialog: React.FC<ComponentProps> = ({ posts }) => {
@@ -64,10 +64,10 @@ export const SearchDialog: React.FC<ComponentProps> = ({ posts }) => {
           <CommandGroup heading="Suggestions">
             {posts.map((post) => {
               return (
-                <Link href={`/blog/posts/${post.slug}`} key={post.title}>
+                <Link href={`/careers/${post.slug}`} key={post.name}>
                   <CommandItem className="cursor-pointer">
                     {/* <RocketIcon className="mr-2 h-4 w-4" /> */}
-                    <span>{post.title}</span>
+                    <span>{post.name}</span>
                     {/* <CommandShortcut>⌘J</CommandShortcut> */}
                   </CommandItem>
                   <CommandSeparator />

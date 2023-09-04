@@ -2,7 +2,7 @@ import { TJobs } from "@/types/jobsMetaData";
 import fs from "fs";
 import matter from "gray-matter";
 
-const getPostMetadata = (): TJobs[] => {
+const getJobsMetadata = (): TJobs[] => {
   const folder = "jobs/";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
@@ -29,4 +29,4 @@ const getPostMetadata = (): TJobs[] => {
   return jobs;
 };
 
-export default getPostMetadata;
+export default getJobsMetadata;

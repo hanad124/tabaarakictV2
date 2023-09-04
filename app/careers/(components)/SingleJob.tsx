@@ -15,9 +15,11 @@ const SingleJob: React.FC<ComponentProps> = ({ careers }) => {
           <Badge className="bg-[#F1EBFF] hover:bg-[#7534FF] hover:text-background text-[#7534FF] rounded-full uppercase px-3 py-1 cursor-pointer">
             {career.category}
           </Badge>
-          <p className="text-custom_secondary text-lg font-semibold mt-3">
-            {career.name}
-          </p>
+          <Link href={`/careers/${career.slug}`} passHref>
+            <p className="text-custom_secondary text-lg font-semibold mt-3">
+              {career.name}
+            </p>
+          </Link>
           <div className="flex items-center gap-2 mt-3">
             <p className="text-sm text-custom_textColor">
               Type:{" "}
