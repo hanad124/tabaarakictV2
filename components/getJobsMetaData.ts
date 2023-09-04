@@ -1,33 +1,32 @@
-import { PostMetadata } from "@/types/PostMetadata";
+import { TJobs } from "@/types/jobsMetaData";
 import fs from "fs";
 import matter from "gray-matter";
 
-const getPostMetadata = (): PostMetadata[] => {
-  const folder = "posts/";
+const getPostMetadata = (): TJobs[] => {
+  const folder = "jobs/";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
   // Get file creation date for each file
-  const posts = markdownPosts.map((fileName) => {
-    const fileStats = fs.statSync(`posts/${fileName}`);
+  const jobs = markdownPosts.map((fileName) => {
+    const fileStats = fs.statSync(`jobs/${fileName}`);
     const fileCreationDate = new Date(fileStats.birthtime); // Convert birthtime to Date object
 
-    const fileContents = fs.readFileSync(`posts/${fileName}`, "utf-8");
+    const fileContents = fs.readFileSync(`jobs/${fileName}`, "utf-8");
     const matterResult = matter(fileContents);
     return {
       slug: fileName.replace(".md", ""),
-      title: matterResult.data.title,
-      date: matterResult.data.date,
-      image: matterResult.data.image,
-      author: matterResult.data.author,
-      avator: matterResult.data.avator,
+      name: matterResult.data.name,
+      issueDate: matterResult.data.issueDate,
+      expireDate: matterResult.data.expireDate,
+      type: matterResult.data.type,
+      location: matterResult.data.location,
       category: matterResult.data.category,
-      tags: matterResult.data.tags,
       creationDate: fileCreationDate, // Store creation date as Date object
     };
   });
 
-  return posts;
+  return jobs;
 };
 
 export default getPostMetadata;

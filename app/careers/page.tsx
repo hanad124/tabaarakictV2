@@ -11,12 +11,13 @@ import {
 } from "@/components/ui/select";
 
 import SelectMenus from "./(components)/SelectMenus";
+import GetLatestJobs from "./(components)/getLatestJobs";
 
 const Careers = () => {
   const breadcrumbItems = [{ label: "Home", link: "/" }];
 
   return (
-   <div className="bg-background min-h-screen">
+    <div className="bg-background min-h-screen">
       <BreadCrumb items={breadcrumbItems} title="Careers" />
       <div className="py-16 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="">
@@ -32,6 +33,8 @@ const Careers = () => {
         </div>
         {/* carees select menu  */}
         <SelectMenus />
+        {/* careers jobs */}
+        <GetLatestJobs />
       </div>
     </div>
   );
