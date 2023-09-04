@@ -1,6 +1,7 @@
 import { TJobs } from "@/types/jobsMetaData";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface ComponentProps {
   careers: TJobs[];
@@ -11,7 +12,7 @@ const SingleJob: React.FC<ComponentProps> = ({ careers }) => {
     <div className="flex items-center gap-5 mt-16">
       {careers.map((career) => (
         <div key={career.slug} className="border rounded-lg p-5">
-          <Badge className="bg-[#F1EBFF] text-[#7534FF] rounded-full uppercase px-3 py-1 cursor-pointer">
+          <Badge className="bg-[#F1EBFF] hover:bg-[#7534FF] hover:text-background text-[#7534FF] rounded-full uppercase px-3 py-1 cursor-pointer">
             {career.category}
           </Badge>
           <p className="text-custom_secondary text-lg font-semibold mt-3">
@@ -34,7 +35,7 @@ const SingleJob: React.FC<ComponentProps> = ({ careers }) => {
           </div>
           {/* action buttons */}
           <div className="flex gap-5 mt-7">
-            <Button className="group hover:bg-custom_primary text-background bg-custom_primary/10 text-custom_primary shadow-none flex items-center gap-2">
+            <Button className="group hover:bg-custom_primary text-background bg-custom_primary/10 text-custom_primary shadow-none flex items-center gap-2 py-5">
               <span className="group-hover:text-background">Apply Now</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,9 +62,11 @@ const SingleJob: React.FC<ComponentProps> = ({ careers }) => {
                 />
               </svg>
             </Button>
-            <Button className="bg-transparent hover:decoration-solid hover:bg-transparent  text-custom_primary shadow-none">
-              Read More
-            </Button>
+            <Link href={`/careers/${career.slug}`} passHref>
+              <Button className="bg-transparent hover:underline  hover:bg-transparent  text-custom_primary shadow-none">
+                Read More
+              </Button>
+            </Link>
           </div>
         </div>
       ))}

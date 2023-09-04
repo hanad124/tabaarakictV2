@@ -1,14 +1,5 @@
 import React from "react";
 import BreadCrumb from "@/components/BreadCrumb";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 import SelectMenus from "./(components)/SelectMenus";
 import GetLatestJobs from "./(components)/getLatestJobs";
