@@ -72,7 +72,14 @@ const BlogPost = (props: any) => {
           </Button>
         </div>
         {/* side bar */}
-        <SideBar />
+        <SideBar
+          name={job.data.name}
+          issueDate={job.data.issueDate}
+          expireDate={job.data.expireDate}
+          category={job.data.category}
+          location={job.data.location}
+          type={job.data.type}
+        />
       </div>
     </>
   );

@@ -2,8 +2,25 @@ import { SearchDialog } from "@/app/careers/(components)/SearchPosts";
 import getJobsMetadata from "@/components/getJobsMetaData";
 import { CalendarIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
+import JobSummery from "./JobSummery";
 
-const SideBar = () => {
+type SideBarProps = {
+  name: string;
+  issueDate: string;
+  expireDate: string;
+  category: string;
+  location: string;
+  type: string;
+};
+
+const SideBar = ({
+  name,
+  location,
+  category,
+  type,
+  issueDate,
+  expireDate,
+}: SideBarProps) => {
   const jobs = getJobsMetadata();
   const recentJobs = jobs
     .slice(0, 4)
@@ -15,6 +32,16 @@ const SideBar = () => {
   return (
     <div className="md:w-[400px] sticky top-16 border border-custom_primary/10 rounded-lg h-full md:py-10 md:px-7">
       <SearchDialog posts={jobs} />
+      {/* job summary */}
+      <JobSummery
+        name={name}
+        issueDate={issueDate}
+        expireDate={expireDate}
+        category={category}
+        location={location}
+        type = {type}
+      />
+  
       {/* recent Jobs */}
       <div
         className="p-5 my-10 rounded"

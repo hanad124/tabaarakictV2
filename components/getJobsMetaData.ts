@@ -8,17 +8,30 @@ const getJobsMetadata = (): TJobs[] => {
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
   // Get file creation date for each file
-  const jobs = markdownPosts.map((fileName) => {
+  const jobs: (TJobs | null)[] = markdownPosts.map((fileName) => {
     const fileStats = fs.statSync(`jobs/${fileName}`);
     const fileCreationDate = new Date(fileStats.birthtime); // Convert birthtime to Date object
 
     const fileContents = fs.readFileSync(`jobs/${fileName}`, "utf-8");
     const matterResult = matter(fileContents);
+
+    const issueDate = matterResult.data.issueDate;
+    const expireDate = matterResult.data.expireDate;
+
+    // Check if the job has expired
+    const currentDate = new Date();
+    const expirationDate = new Date(expireDate);
+    if (currentDate > expirationDate) {
+      // Delete the job post file
+      fs.unlinkSync(`jobs/${fileName}`);
+      return null; // Skip the job entry
+    }
+
     return {
       slug: fileName.replace(".md", ""),
       name: matterResult.data.name,
-      issueDate: matterResult.data.issueDate,
-      expireDate: matterResult.data.expireDate,
+      issueDate,
+      expireDate,
       type: matterResult.data.type,
       location: matterResult.data.location,
       category: matterResult.data.category,
@@ -26,7 +39,7 @@ const getJobsMetadata = (): TJobs[] => {
     };
   });
 
-  return jobs;
+  return jobs.filter(Boolean) as TJobs[];
 };
 
 export default getJobsMetadata;
