@@ -1,8 +1,8 @@
 // // "use client";
 
 import Image from "next/image";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
+// import Skeleton from "react-loading-skeleton";
+// import "react-loading-skeleton/dist/skeleton.css";
 import { Badge } from "@/components/ui/badge";
 import getPostMetadata from "@/components/getPostMetadata";
 
