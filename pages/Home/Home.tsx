@@ -9,7 +9,7 @@ import Products from "@/pages/Home/Products";
 import Portfolio from "./Portfolio";
 import Testtimonials from "./Testtimonials";
 import FunFact from "@/pages/Home/FunFact";
-import Blogs from "./Blogs";
+// import Blogs from "./Blogs";
 import Brands from "./Brands";
 import Banner from "./Banner";
 import GetPosts from "./GetPosts";
