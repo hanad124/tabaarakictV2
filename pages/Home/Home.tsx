@@ -12,7 +12,7 @@ import FunFact from "@/pages/Home/FunFact";
 // import Blogs from "./Blogs";
 import Brands from "./Brands";
 import Banner from "./Banner";
-import GetPosts from "./GetPosts";
+// import GetPosts from "./GetPosts";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
       <Portfolio />
       <Testtimonials />
       <FunFact />
-      <GetPosts />
+      {/* <GetPosts /> */}
       {/* <Blogs /> */}
       <Brands />
       <Banner />

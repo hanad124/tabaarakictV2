@@ -1,8 +1,8 @@
-// // "use client";
+// // // "use client";
 
 // import Image from "next/image";
-// import Skeleton from "react-loading-skeleton";
-// import "react-loading-skeleton/dist/skeleton.css";
+// // import Skeleton from "react-loading-skeleton";
+// // import "react-loading-skeleton/dist/skeleton.css";
 // import { Badge } from "@/components/ui/badge";
 // import getPostMetadata from "@/components/getPostMetadata";
 
@@ -15,16 +15,16 @@
 // }
 
 const Blogs = () => {
-  //   // const [isLoading, setIsLoading] = useState(true);
+  //   //   // const [isLoading, setIsLoading] = useState(true);
 
-  //   // Simulate loading delay
-  //   // useEffect(() => {
-  //   //   const timer = setTimeout(() => {
-  //   //     setIsLoading(false);
-  //   //   }, 2000);
+  //   //   // Simulate loading delay
+  //   //   // useEffect(() => {
+  //   //   //   const timer = setTimeout(() => {
+  //   //   //     setIsLoading(false);
+  //   //   //   }, 2000);
 
-  //   //   return () => clearTimeout(timer);
-  //   // }, []);
+  //   //   //   return () => clearTimeout(timer);
+  //   //   // }, []);
 
   //   const posts = getPostMetadata();
 
@@ -52,8 +52,8 @@ const Blogs = () => {
     //                   key={blog.title}
     //                 >
     //                   {/* {isLoading ? (
-    //                     <Skeleton height={200} />
-    //                   ) : ( */}
+    //                         <Skeleton height={200} />
+    //                       ) : ( */}
     //                   <Image
     //                     className="w-full flex-1 rounded-lg"
     //                     src={blog.image}
@@ -63,12 +63,12 @@ const Blogs = () => {
     //                   />
     //                   {/* )} */}
     //                   {/* {isLoading ? (
-    //                     <Skeleton
-    //                       height={20}
-    //                       width={100}
-    //                       style={{ marginTop: "8px" }}
-    //                     />
-    //                   ) : ( */}
+    //                         <Skeleton
+    //                           height={20}
+    //                           width={100}
+    //                           style={{ marginTop: "8px" }}
+    //                         />
+    //                       ) : ( */}
     //                   <div className=" text-sm font-medium mt-2 inline-block flex-1 cursor-pointer">
     //                     <Badge
     //                       variant="outline"
@@ -79,13 +79,13 @@ const Blogs = () => {
     //                   </div>
     //                   {/* )} */}
     //                   {/* {isLoading ? (
-    //                     <Skeleton
-    //                       height={20}
-    //                       width={260}
-    //                       count={2}
-    //                       style={{ marginTop: "8px" }}
-    //                     />
-    //                   ) : ( */}
+    //                         <Skeleton
+    //                           height={20}
+    //                           width={260}
+    //                           count={2}
+    //                           style={{ marginTop: "8px" }}
+    //                         />
+    //                       ) : ( */}
     //                   <Link href={`/blog/posts/${blog.slug}`}>
     //                     <p className="mt-3 text-custom_secondary font-medium cursor-pointer hover:text-custom_primary/80 flex-1 ">
     //                       {blog.title}
@@ -94,8 +94,8 @@ const Blogs = () => {
     //                   {/* )} */}
     //                   <div className="flex gap-3 items-center mt-4">
     //                     {/* {isLoading ? (
-    //                       <Skeleton circle height={44} width={44} />
-    //                     ) : ( */}
+    //                           <Skeleton circle height={44} width={44} />
+    //                         ) : ( */}
     //                     <Image
     //                       className="w-11 h-11 cursor-pointer"
     //                       src={autherImage}
@@ -106,17 +106,17 @@ const Blogs = () => {
     //                     {/* )} */}
     //                     <div className="text-custom_textColor">
     //                       {/* {isLoading ? (
-    //                         <Skeleton
-    //                           height={16}
-    //                           width={100}
-    //                           style={{ marginBottom: "4px" }}
-    //                         />
-    //                       ) : ( */}
+    //                             <Skeleton
+    //                               height={16}
+    //                               width={100}
+    //                               style={{ marginBottom: "4px" }}
+    //                             />
+    //                           ) : ( */}
     //                       <p>Hanad Mohamed</p>
     //                       {/* )} */}
     //                       {/* {isLoading ? (
-    //                         <Skeleton height={16} width={80} />
-    //                       ) : ( */}
+    //                             <Skeleton height={16} width={80} />
+    //                           ) : ( */}
     //                       <p>July 20, 2023</p>
     //                       {/* )} */}
     //                     </div>
