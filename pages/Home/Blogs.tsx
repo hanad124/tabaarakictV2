@@ -4,6 +4,7 @@ import Image from "next/image";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { Badge } from "@/components/ui/badge";
+import getPostMetadata from "@/components/getPostMetadata";
 
 import autherImage from "@/public/assets/avator.png";
 import { PostMetadata } from "@/types/PostMetadata";
@@ -13,7 +14,7 @@ interface ComponentProps {
   posts: PostMetadata[];
 }
 
-const Blogs: React.FC<ComponentProps> = ({ posts }) => {
+const Blogs = () => {
   // const [isLoading, setIsLoading] = useState(true);
 
   // Simulate loading delay
@@ -24,6 +25,9 @@ const Blogs: React.FC<ComponentProps> = ({ posts }) => {
 
   //   return () => clearTimeout(timer);
   // }, []);
+
+  const posts = getPostMetadata();
+
 
   return (
     <div className="py-16">
