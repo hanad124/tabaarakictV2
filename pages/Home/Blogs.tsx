@@ -1,7 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { blogsData } from "@/data/generalData";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Skeleton from "react-loading-skeleton";
@@ -9,7 +7,6 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { Badge } from "@/components/ui/badge";
 
 import autherImage from "@/public/assets/avator.png";
-import GetPosts from "./GetPosts";
 import { PostMetadata } from "@/types/PostMetadata";
 import Link from "next/link";
 
