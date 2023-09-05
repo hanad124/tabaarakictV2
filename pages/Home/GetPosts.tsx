@@ -1,11 +1,11 @@
 import getPostMetadata from "@/components/getPostMetadata";
-import GetBlogs from "./GetBlogs";
+import Blogs from "./Blogs";
 
 const GetPosts = () => {
   const blogs = getPostMetadata();
   return (
     <div>
-      <GetBlogs posts={blogs} />
+      <Blogs posts={blogs} />
     </div>
   );
 };
