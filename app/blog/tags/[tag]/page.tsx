@@ -23,7 +23,7 @@ const page = (props: any) => {
       </h1>
       <div className="flex flex-col">
         {postTag.map((post: any) => (
-          <div className="flex flex-col">
+          <div className="flex flex-col" key={post.slug}>
             <Link href={`/blog/posts/${post.slug}`}>
               <h2 className="text-xl font-bold">{post.title}</h2>
             </Link>
