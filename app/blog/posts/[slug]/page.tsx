@@ -20,12 +20,11 @@ const getPostContent = (slug: string) => {
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  return posts.map((post) => ({slug: post.slug, params: { slug: post.slug }}));
 };
 
 const BlogPost = (props: any) => {
+  console.log("props:", props);
   const slug = props.params.slug;
   const post = getPostContent(slug);
   const image = post.data.image;
