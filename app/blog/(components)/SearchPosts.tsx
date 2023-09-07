@@ -19,9 +19,10 @@ import { TJobs } from "@/types/jobsMetaData";
 
 interface ComponentProps {
   posts: PostMetadata[];
+  placeholder: string;
 }
 
-export const SearchDialog: React.FC<ComponentProps> = ({ posts }) => {
+export const SearchDialog: React.FC<ComponentProps> = ({ posts, placeholder }) => {
   const [open, setOpen] = React.useState(false);
 
   // open dialog on ⌘K
@@ -47,7 +48,7 @@ export const SearchDialog: React.FC<ComponentProps> = ({ posts }) => {
         <div className="flex items-center border border-custom_border rounded-md  focus-within:ring focus-within:ring-custom_primary">
           <input
             type="text"
-            placeholder="Search jobs (⌘K)"
+            placeholder={`Search ${placeholder} (⌘K)`}
             className="bg-transparent w-full py-3 focus:outline-none px-3 text-sm"
             onClick={() => setOpen(true)}
           />

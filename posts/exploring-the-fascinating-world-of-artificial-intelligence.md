@@ -1,11 +1,11 @@
 ---
 title: "Exploring the Fascinating World of Artificial Intelligence"
 date: "August 30, 2023"
-category: "Machine Learning (ML)"
+category: "Machine-Learning-(ML)"
 image: "https://drive.google.com/uc?export=download&id=1gxqp8i3vhsX9daEgxFkDkWTtxx_cklEQ"
 author: "Hanad Mohamed"
 avator: "https://drive.google.com/uc?export=download&id=1-EBH4iBcQ2O5VNKqdRCUR0crn15NiamD"
-tags: ["AI", "ML", "NLP"]
+tags: ["Machine-Learning-(ML)", "AI"]
 ---
 
 Artificial Intelligence (AI) is a rapidly growing field that has revolutionized various industries and captured the imagination of researchers, developers, and enthusiasts alike. It encompasses a wide range of technologies and techniques that enable machines to simulate human intelligence and perform tasks that typically require human cognition. In this article, we will dive into the captivating world of AI and explore its key concepts and applications.

@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { FiUser } from "react-icons/fi";
 import { FiCalendar } from "react-icons/fi";
 import { FiTag } from "react-icons/fi";
+import { Button } from "@/components/ui/button";
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
@@ -57,7 +58,7 @@ const page = (props: any) => {
                       className=" w-full md:h-[24rem]"
                     />
                   </Link>
-                  <Badge className="absolute -bottom-8 mx-auto md:-bottom-4 left-10 transform flex flex-col md:flex-row justify-start items-start md:items-center gap-3 py-2 font-normal text-sm">
+                  <Badge className="absolute -bottom-8 mx-auto md:-bottom-4 left-10 transform flex flex-col md:flex-row justify-start items-start md:items-center gap-3 py-2 font-normal text-sm hover:bg-custom_primary">
                     <div className="flex items-center gap-2">
                       <FiUser className="w-5 h-5" />
                       <span>{post.author}</span>
@@ -89,12 +90,20 @@ const page = (props: any) => {
                       : post.content}
                   </Markdown>
                 </article>
+                <div className="inline px-4 md:px-10 mb-8 md:py-0 py-16 ">
+                  <Link href={`/blog/posts/${post.slug}`}>
+                    <Button className="flex items-center gap-2 py-6 border bg-transparent text-custom_secondary hover:bg-custom_primary hover:text-background shadow-none">
+                      <span>Continue Reading</span>
+                      <span className="font-bold text-lg"> &rarr;</span>
+                    </Button>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
         </div>
         {/* side bar */}
-        <SideBar />
+        <SideBar placeholder="posts" />
       </div>
     </>
   );

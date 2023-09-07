@@ -90,12 +90,14 @@ const SinglePost: React.FC<ComponentProps> = ({ posts }) => {
                     />
                   ) : (
                     <div className=" text-sm font-medium mt-2 inline-block flex-1 cursor-pointer">
-                      <Badge
-                        variant="outline"
-                        className="text-custom_primary bg-custom_primary/5 ring-none hover:ring-[1px] hover:ring-custom_primary"
-                      >
-                        #{post.category}
-                      </Badge>
+                      <Link href={`/blog/tag/${post.category}`}>
+                        <Badge
+                          variant="outline"
+                          className="text-custom_primary bg-custom_primary/5 ring-none hover:ring-[1px] hover:ring-custom_primary"
+                        >
+                          #{post.category}
+                        </Badge>
+                      </Link>
                     </div>
                   )}
                   {isLoading ? (

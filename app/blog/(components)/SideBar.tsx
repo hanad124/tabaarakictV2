@@ -6,6 +6,11 @@ import Image from "next/image";
 import { BiSearch } from "react-icons/bi";
 import { SearchDialog } from "./SearchPosts";
 import { CalendarIcon } from "@radix-ui/react-icons";
+import { type } from "os";
+
+type ComponentProps = {
+  placeholder: string;
+};
 
 // get recent posts by date
 const posts = getPostMetadata();
@@ -16,10 +21,10 @@ const recentPosts = posts
 // get popular tags
 const tags = posts;
 
-const SideBar = () => {
+const SideBar = ({ placeholder }: ComponentProps) => {
   return (
     <div className="md:w-[440px] sticky top-16 border border-custom_primary/10 rounded-lg h-full md:py-10 md:px-7 ">
-      <SearchDialog posts={posts} />
+      <SearchDialog posts={posts} placeholder={placeholder} />
 
       {/* recent posts */}
       <div

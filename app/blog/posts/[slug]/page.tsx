@@ -20,7 +20,10 @@ const getPostContent = (slug: string) => {
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
-  return posts.map((post) => ({slug: post.slug, params: { slug: post.slug }}));
+  return posts.map((post) => ({
+    slug: post.slug,
+    params: { slug: post.slug },
+  }));
 };
 
 const BlogPost = (props: any) => {
@@ -65,7 +68,7 @@ const BlogPost = (props: any) => {
           </div>
         </div>
         {/* side bar */}
-        <SideBar />
+        <SideBar placeholder="posts" />
       </div>
     </>
   );
