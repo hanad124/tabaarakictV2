@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import logo from "@/public/assets/header-logo.png";
+import tabaarak_logo from "@/public/assets/tabaarak-logo.svg";
 import { menuItems } from "@/data/generalData";
 
 function Header() {
@@ -47,17 +48,22 @@ function Header() {
         } "
         }`}
       >
-        <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-7  }`}>
+        <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-7}`}>
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
               <Link href={"/"}>
-                <Image
-                  className="h-10 w-10"
-                  src={logo}
-                  alt="logo image"
-                  width={30}
-                  height={30}
-                />
+                <div className="flex items-center gap-3">
+                  <Image
+                    className="h-10 w-10"
+                    src={tabaarak_logo}
+                    alt="logo image"
+                    width={30}
+                    height={30}
+                  />
+                  <span className="text-2xl font-bold text-custom_secondary tracking-wide hidden md:block">
+                    Tabaarak
+                  </span>
+                </div>
               </Link>
             </div>
             <div className="hidden md:block">

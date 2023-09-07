@@ -1,5 +1,7 @@
 import logo from "@/public/assets/header-logo.png";
 import Image from "next/image";
+import tabaarak_logo from "@/public/assets/tabaarak-logo.svg";
+
 import Link from "next/link";
 import {
   Tooltip,
@@ -16,7 +18,7 @@ const Footer = () => {
           <div className="">
             <div className="flex items-center gap-2">
               <Image
-                src={logo}
+                src={tabaarak_logo}
                 alt="footer logo"
                 height={100}
                 width={100}
