@@ -1,7 +1,7 @@
 ---
 title: "Building and Deploying Applications in the Cloud"
 date: "September 1, 2023"
-category: "Cloud Applications"
+category: "cloud"
 image: "https://drive.google.com/uc?export=download&id=1ebqea3Mz976J7PQZaYtRGRvdyYbrlGiK"
 author: "Hanad Mohamed"
 tags: ["cloud", "applications", "deployment"]

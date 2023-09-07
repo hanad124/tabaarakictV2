@@ -57,7 +57,7 @@ const BlogPost = (props: any) => {
             <FiTag className="text-custom_secondary text-lg -mb-1" />
             <div className="flex flex-wrap gap-2">
               {post.data.tags.map((tag: string) => (
-                <Link href={`/blog/tags/${tag}`} key={tag}>
+                <Link href={`/blog/tag/${tag}`} key={tag}>
                   <Badge className="py-1 text-sm font-normal"> {tag}</Badge>
                 </Link>
               ))}

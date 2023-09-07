@@ -73,13 +73,15 @@ const SideBar = () => {
         </p>
         <div className="flex items-center  flex-wrap gap-3 mt-5">
           {tags.slice(0, 5).map((tag) => (
-            <Badge
-              variant="outline"
-              className="text-custom_primary bg-custom_primary/10 py-2 ring-none  cursor-pointer hover:bg-custom_primary hover:text-background"
-              key={tag.category}
-            >
-              {tag.category}
-            </Badge>
+            <Link href={`/blog/tag/${tag.category}`} key={tag.category}>
+              <Badge
+                variant="outline"
+                className="text-custom_primary bg-custom_primary/10 py-2 ring-none  cursor-pointer hover:bg-custom_primary hover:text-background"
+                key={tag.category}
+              >
+                {tag.category}
+              </Badge>
+            </Link>
           ))}
         </div>
       </div>
