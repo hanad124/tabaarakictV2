@@ -34,7 +34,6 @@ const About = () => {
       </div>
       <Services />
       <FunFact />
-      <Brands />
       <Banner />
     </div>
   );

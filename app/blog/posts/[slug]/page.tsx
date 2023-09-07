@@ -57,11 +57,16 @@ const BlogPost = (props: any) => {
           </article>
           {/* tags */}
           <div className="flex items-center gap-4 my-10">
-            <FiTag className="text-custom_secondary text-lg -mb-1" />
-            <div className="flex flex-wrap gap-2">
+            <div className="flex items-center gap-1">
+              <span className="text-lg text-custom_secondary font-medium ">
+                Tags:
+              </span>
+              <FiTag className="text-custom_secondary text-xl -mb-1 rotate-90" />
+            </div>
+            <div className="flex flex-wrap gap-3">
               {post.data.tags.map((tag: string) => (
                 <Link href={`/blog/tag/${tag}`} key={tag}>
-                  <Badge className="py-1 text-sm font-normal"> {tag}</Badge>
+                  <Badge className="py-2 text-sm font-normal"> {tag}</Badge>
                 </Link>
               ))}
             </div>

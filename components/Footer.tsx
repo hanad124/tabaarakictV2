@@ -227,7 +227,12 @@ const Footer = () => {
 
               <p className="text-custom_textColor w-70 ">
                 © Copyright 2023 -{" "}
-                <Link href={"/"}>Tabaarak ICT Solutions</Link>
+                <Link
+                  href={"/"}
+                  className="hover:text-custom_primary hover:underline"
+                >
+                  Tabaarak ICT Solutions
+                </Link>
               </p>
             </div>
           </div>

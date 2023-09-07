@@ -101,7 +101,7 @@ const SideBar = ({ placeholder }: ComponentProps) => {
         </p>
         <div className="flex items-center  flex-wrap gap-3 mt-3">
           <div className="flex gap-8 mt-3">
-            <div className="group hover ring-2 ring-custom_border hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center cursor-pointer">
+            <div className="group hover ring-[1px] ring-custom_border hover:ring-custom_primary hover:bg-custom_primary w-9 px-1 pu-1 h-9 rounded-full flex justify-center items-center cursor-pointer">
               <Link
                 href="https://www.facebook.com/TabaarakICT/"
                 target="_blank"
@@ -122,7 +122,7 @@ const SideBar = ({ placeholder }: ComponentProps) => {
                 </svg>
               </Link>
             </div>
-            <div className="group ring-custom_border ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center cursor-pointer">
+            <div className="group ring-custom_border ring-[1px] hover:ring-custom_primary hover:bg-custom_primary w-9 px-1 pu-1 h-9 rounded-full flex justify-center items-center cursor-pointer">
               <Link
                 href="https://www.linkedin.com/in/tabaarak-ict-solutions-77421080"
                 target="_blank"
@@ -142,7 +142,7 @@ const SideBar = ({ placeholder }: ComponentProps) => {
                 </svg>
               </Link>
             </div>
-            <div className="group hover ring-custom_border ring-2 hover:ring-custom_primary hover:bg-custom_primary w-8 px-1 pu-1 h-8 rounded-full flex justify-center items-center cursor-pointer">
+            <div className="group hover ring-custom_border ring-[1px] hover:ring-custom_primary hover:bg-custom_primary w-9 px-1 pu-1 h-9 rounded-full flex justify-center items-center cursor-pointer">
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
