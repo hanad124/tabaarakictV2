@@ -28,12 +28,15 @@ const FeaturedPost = () => {
         }}
       >
         <div className="mb-10">
-          <Badge
-            variant="default" // default | outline | ghost
-            className="text-background bg-custom_primary cursor-pointer py-2 px-4 rounded-lg "
-          >
-            {featuredPost.category}
-          </Badge>
+          <Link href={`/blog/tag/${featuredPost.category}`}>
+            <Badge
+              variant="default" // default | outline | ghost
+              className="text-background bg-custom_primary cursor-pointer py-2 px-4 rounded-lg "
+            >
+              {featuredPost.category}
+            </Badge>
+          </Link>
+
           <Link href={`/blog/posts/${featuredPost.slug}`}>
             <p className="text-background text-xl md:text-4xl font-semibold md:w-5/6 leading-relaxed mt-5 cursor-pointer hover:opacity-75">
               {featuredPost.title}
