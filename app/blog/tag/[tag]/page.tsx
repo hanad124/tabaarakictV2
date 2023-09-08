@@ -37,12 +37,12 @@ const page = (props: any) => {
         <TagsBreadCrumb items={breadcrumbItems} postTag={props.params.tag} />
       </div>
       {/* ====== */}
-      <div className="mx-auto px-4  md:px-10 py-16  flex flex-col md:flex-row justify-center gap-x-10 gap-y-10 ">
+      <div className="mx-auto px-4  md:px-10 py-16  flex flex-col md:flex-row justify-center gap-x-5 gap-y-10 ">
         <div className="max-[450px]:w-[22rem] break-words sm:mx-4 ">
           <div className="mx-auto  flex flex-col justify-center gap-x-10 gap-y-10  ">
             {postTag.map((post: any) => (
               <div
-                className="flex flex-col border rounded-md overflow-hidden"
+                className="flex flex-col border rounded-md overflow-hidden md:max-w-3xl"
                 key={post.slug}
               >
                 <div className="relative w-full">
@@ -60,7 +60,7 @@ const page = (props: any) => {
                   </Link>
                   <Badge className="absolute -bottom-8 mx-auto md:-bottom-4 left-10 transform flex flex-col md:flex-row justify-start items-start md:items-center gap-3 py-2 font-normal text-sm hover:bg-custom_primary">
                     <div className="flex items-center gap-2">
-                      <FiUser className="w-5 h-5" />
+                      <FiUser className="w-4 h-4 " />
                       <span>{post.author}</span>
                     </div>
                     <span className="hidden md:block">/</span>
@@ -70,7 +70,7 @@ const page = (props: any) => {
                     </div>
                     <span className="hidden md:block">/</span>
                     <div className="flex items-center gap-2">
-                      <FiTag className="w-4 h-4" />
+                      <FiTag className="w-4 h-4 rotate-45" />
                       <span>{post.category}</span>
                     </div>
                   </Badge>
