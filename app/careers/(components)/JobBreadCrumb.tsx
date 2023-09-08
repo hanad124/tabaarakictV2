@@ -29,7 +29,7 @@ const JobstsBreadCrumb = ({
 
     // Calculate the difference in days
     const daysLeft = Math.ceil(
-      (expireDateTime.getTime() - issueDateTime.getTime()) / millisecondsPerDay
+      (expireDateTime.getTime() - currentDate.getTime()) / millisecondsPerDay
     );
 
     return `${daysLeft} days left`;
