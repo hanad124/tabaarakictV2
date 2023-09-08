@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import React from "react";
 
@@ -9,9 +10,14 @@ interface BreadcrumbItem {
 interface BlogBreadcrumbProps {
   items: BreadcrumbItem[];
   postTag: string;
+  postTagLength: number;
 }
 
-const TagsBreadCrumb: React.FC<BlogBreadcrumbProps> = ({ items, postTag }) => {
+const TagsBreadCrumb: React.FC<BlogBreadcrumbProps> = ({
+  items,
+  postTag,
+  postTagLength,
+}) => {
   return (
     <nav className="breadcrumb bg-cover bg-center h-[17rem] overflow-hidden mt-16">
       <div className="container mx-auto px-4 py-8 h-full  ">
@@ -48,6 +54,11 @@ const TagsBreadCrumb: React.FC<BlogBreadcrumbProps> = ({ items, postTag }) => {
                         ></path>
                       </svg>
                     </span>
+                  )}
+                  {index === items.length - 1 && (
+                    <Badge className="relative -top-2 -left-4 rounded-full px-2 py-1 bg-background text-custom_primary hover:bg-background hover:text-custom_primary">
+                      {postTagLength}
+                    </Badge>
                   )}
                 </React.Fragment>
               ))}

@@ -30,11 +30,12 @@ const page = (props: any) => {
   ];
 
   const postTag = getPostsByTag(props.params.tag);
+  const postTagLength = postTag.length;
   return (
     <>
       <ScrollIndicator />
       <div className="">
-        <TagsBreadCrumb items={breadcrumbItems} postTag={props.params.tag} />
+        <TagsBreadCrumb items={breadcrumbItems} postTag={props.params.tag} postTagLength = {postTagLength} />
       </div>
       {/* ====== */}
       <div className="mx-auto px-4  md:px-10 py-16  flex flex-col md:flex-row justify-center gap-x-5 gap-y-10 ">
