@@ -1,6 +1,7 @@
 import React from "react";
 import BreadCrumb from "@/components/BreadCrumb";
 import Form from "./(components)/Form";
+import FAQ from "./(components)/FAQS";
 
 const Contact = () => {
   const breadcrumbItems = [{ label: "Home", link: "/" }];
@@ -21,6 +22,7 @@ const Contact = () => {
         </p>
         {/* contact Form */}
         <Form />
+        <FAQ />
       </div>
     </div>
   );
