@@ -17,7 +17,7 @@ export const generateStaticParams = async () => {
   const posts = getPostMetadata();
   return posts.map((post) => ({
     slug: post.slug,
-    params: { slug: post.slug },
+    params: { tag: post.slug },
   }));
 };
 
@@ -35,7 +35,11 @@ const page = (props: any) => {
     <>
       <ScrollIndicator />
       <div className="">
-        <TagsBreadCrumb items={breadcrumbItems} postTag={props.params.tag} postTagLength = {postTagLength} />
+        <TagsBreadCrumb
+          items={breadcrumbItems}
+          postTag={props.params.tag}
+          postTagLength={postTagLength}
+        />
       </div>
       {/* ====== */}
       <div className="mx-auto px-4  md:px-10 py-16  flex flex-col md:flex-row justify-center gap-x-5 gap-y-10 ">
