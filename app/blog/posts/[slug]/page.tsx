@@ -9,6 +9,7 @@ import SideBar from "../../(components)/SideBar";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import { FiTag } from "react-icons/fi";
 import { Badge } from "@/components/ui/badge";
+import { Code } from "bright";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -32,6 +33,11 @@ const BlogPost = (props: any) => {
   const post = getPostContent(slug);
   const image = post.data.image;
 
+  // Wrap the code component in a function
+  const renderCode = (props: any) => {
+    return <Code lang="js" {...props} />;
+  };
+
   return (
     <>
       <ScrollIndicator />
@@ -52,8 +58,16 @@ const BlogPost = (props: any) => {
             height={300}
             className="w-full md:max-h-[26rem]"
           />
-          <article className="mt-16 prose md:prose-lg dark:prose-invert prose-img:w-full  prose-img:rounded prose-headings:text-custom_secondary prose-img:mx-auto md:prose-img:h-[22rem] prose-a:text-blue-400 prose-code:text-[#23ba9e] prose-code:bg-slate-800 prose-code:p-1 prose-code:rounded-md">
-            <Markdown>{post.content}</Markdown>
+          <article className="mt-16 prose md:prose-lg dark:prose-invert prose-img:w-full  prose-img:rounded prose-headings:text-custom_secondary prose-img:mx-auto md:prose-img:h-[22rem] prose-a:text-blue-400 ">
+            <Markdown
+              options={{
+                overrides: {
+                  code: renderCode, // Use the function to render the Code component
+                },
+              }}
+            >
+              {post.content}
+            </Markdown>
           </article>
           {/* tags */}
           <div className="flex items-center gap-4 my-10">

@@ -14,9 +14,22 @@ Technology has revolutionized every aspect of our lives, including the way we wo
 
 Gone are the days of relying solely on face-to-face meetings and phone calls for workplace communication. Technology has introduced numerous tools and platforms that have transformed the way we interact and collaborate with our colleagues. Instant messaging apps, video conferencing tools, and project management software have made it easier than ever to connect with team members, regardless of their location. This has led to increased productivity, streamlined workflows, and improved teamwork.
 
-```bash
-const name = "Hanad Mohamed";
+```ts
+interface Person {
+  name: string;
+  age: number;
+  email: string;
+}
+
+const person: Person = {
+  name: "John Doe",
+  age: 30,
+  email: "johndoe@example.com",
+};
+
+console.log(person);
 ```
+
 
 ## Automation and Efficiency
 
