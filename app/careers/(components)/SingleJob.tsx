@@ -106,9 +106,12 @@ const SingleJob: React.FC<ComponentProps> = ({ careers }) => {
 
       <div className="flex flex-wrap items-center gap-5 mt-16">
         {filteredCareers.length === 0 ? (
-          <p className="text-custom_secondary text-center">
-            None of the available jobs match your specified filters.
-          </p>
+          <div className="flex justify-center w-full items-center">
+            <p className="text-custom_secondary text-center">
+              Currently, there are no available job opportunities at the moment.
+              Please check back later for updates 📻.
+            </p>
+          </div>
         ) : (
           filteredCareers.map((career) => (
             <div
