@@ -11,6 +11,8 @@ import { FiTag } from "react-icons/fi";
 import { Badge } from "@/components/ui/badge";
 import { Code } from "bright";
 
+Code.theme = "dracula";
+
 const getPostContent = (slug: string) => {
   const folder = "posts/";
   const file = folder + slug + ".md";
