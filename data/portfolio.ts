@@ -4,6 +4,8 @@ import projec1 from "@/public/assets/project1.png";
 import projec2 from "@/public/assets/project2.png";
 import projec3 from "@/public/assets/project3.png";
 import projec4 from "@/public/assets/project4.png";
+import projec5 from "@/public/assets/project5.jpeg";
+import projec6 from "@/public/assets/project6.jpeg";
 
 // Projects
 export const projects: TProjects[] = [
@@ -31,12 +33,19 @@ export const projects: TProjects[] = [
     category: "Mobile App",
     title: "Rikaab",
   },
+  {
+    id: 5,
+    image: projec5,
+    category: "Mobile App",
+    title: "kaafiye management system",
+  },
+  {
+    id: 6,
+    image: projec6,
+    category: "Desktop Apps",
+    title: "Daryeel clinic software",
+  },
 ];
 
 // Tabs
-export const tabs: string[] = [
-  "All",
-  "Mobile App",
-  "Web Apps",
-  "Desktop Apps",
-];
+export const tabs: string[] = ["All", "Mobile App", "Web Apps", "Desktop Apps"];

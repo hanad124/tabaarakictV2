@@ -55,19 +55,22 @@ const Projects = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col justify-center md:justify-start items-center gap-y-0 gap-x-16 md:flex-row md:flex-wrap mt-16 md:mt-20">
+          <div className="flex flex-col justify-center items-center gap-y-0 gap-x-16 md:flex-row md:flex-wrap mt-16 md:mt-20">
             {/* Render projects */}
             {projects.map((project) => {
               return (
                 <React.Fragment key={project.id}>
                   {activeTab === "All" || activeTab === project.category ? (
-                    <div className="w-[350px] rounded-md" key={project.id}>
+                    <div
+                      className="w-[350px] mx-h-[23rem] rounded-md"
+                      key={project.id}
+                    >
                       <Image
                         src={project.image}
                         height={300}
                         width={400}
                         alt={project.title}
-                        className="h-64 rounded-lg"
+                        className="h-64 rounded-lg border"
                       />
                       <div className="flex flex-col gap-3 text-center bg-background shadow-lg justify-center items-center rounded-lg border border-custom_border py-7 w-5/6 mx-auto relative -top-24">
                         <p className="text-custom_primary font-semibold">
@@ -86,7 +89,17 @@ const Projects = () => {
                       </div>
                     </div>
                   ) : (
-                    <Skeleton height={300} width={300} />
+                    <></>
+                    // not implemented yet
+                    // <div className="w-[3250px] mx-h-[23rem] rounded-md">
+                    //   <Skeleton height={200} width={300} />
+                    //   <div className="flex flex-col gap-3 text-center bg-background shadow-lg justify-center items-center rounded-lg border border-custom_border py-7 w-5/6 mx-auto relative -top-24">
+                    //     <Skeleton height={20} width={100} />
+                    //     <Skeleton height={40} width={100} />
+                    //     <Skeleton height={40} width={200} />
+                    //   </div>
+                    // </div>
+                    // <Skeleton height={300} width={300} />
                   )}
                 </React.Fragment>
               );

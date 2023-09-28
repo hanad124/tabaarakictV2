@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { portfolioData } from "@/data/generalData";
+import Link from "next/link";
 
 const Portfolio = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,39 +34,41 @@ const Portfolio = () => {
             tristique. Pellentesque quis augue ac mauris posuere vehicula.
           </p>
         </div>
-        <div className="flex justify-center">
-          <Button
-            variant={"outline"}
-            size={"lg"}
-            className=" group text-custom_primary w-full hover:bg-custom_primary  md:w-80 mx-5hover:bg-custom_primary hover:text-background flex items-center gap-3"
-          >
-            View all portfolio
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
+        <Link href={"/portfolio"}>
+          <div className="flex justify-center">
+            <Button
+              variant={"outline"}
+              size={"lg"}
+              className=" group text-custom_primary w-full hover:bg-custom_primary  md:w-80 mx-5hover:bg-custom_primary hover:text-background flex items-center gap-3"
             >
-              <path
-                d="M3.75 12H20.25"
-                stroke="#0B63E5"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="group-hover:stroke-background"
-              />
-              <path
-                d="M13.5 5.25L20.25 12L13.5 18.75"
-                stroke="#0B63E5"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="group-hover:stroke-background"
-              />
-            </svg>
-          </Button>
-        </div>
+              View all portfolio
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M3.75 12H20.25"
+                  stroke="#0B63E5"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="group-hover:stroke-background"
+                />
+                <path
+                  d="M13.5 5.25L20.25 12L13.5 18.75"
+                  stroke="#0B63E5"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="group-hover:stroke-background"
+                />
+              </svg>
+            </Button>
+          </div>
+        </Link>
       </div>
 
       {/* Projects */}

@@ -3,8 +3,8 @@ name: "Network Administrator"
 category: "Networking"
 type: "Full time"
 location: "Jowhar"
-issueDate: "September 21, 2023"
-expireDate: "September 22, 2023"
+issueDate: "September 28, 2023"
+expireDate: "September 29, 2023"
 ---
 
 We are seeking a skilled and experienced Network Administrator to join our team. As a Network Administrator, you will be responsible for managing and maintaining our organization's network infrastructure, ensuring its smooth operation and optimal performance. You will play a critical role in supporting our network systems and resolving any issues that may arise.
