@@ -42,19 +42,19 @@ import bran_9_img from "@/public/assets/brand-9.png";
 // CLients
 export const testtimonialsData: Ttesttimonials[] = [
   {
-    text: "Shirkada Jtech waxay noo fududeesay system aan ku maamulno dhamaan howlaha xarunta sida u adeegida bukaanada, maamulida shaqaalaha, la shaqeynta qalabyada sheybaarka iyo dhamaan xisaabaadka xarunta.",
+    text: "Shirkada Tabaarak waxay noo fududeesay system aan ku maamulno dhamaan howlaha xarunta sida u adeegida bukaanada, maamulida shaqaalaha, la shaqeynta qalabyada sheybaarka iyo dhamaan xisaabaadka xarunta.",
     name: "HASSAN DIRIE ",
     title: "Deputy director and academic at Nova Diagnostic",
     img: testtimonial_1_img,
   },
   {
-    text: "Waxan Jtech ku amaanaya sida quruxda badan ay u ilaaliyen sumada Bangiga, waxaan rajayneynaa ina sidaas iyo ka quruxbadan uwada shaqeeno mustabalka dhow iyo kan fogba.",
+    text: "Waxan tabaarak ICT ku amaanaya sida quruxda badan ay u ilaaliyen sumada Bangiga, waxaan rajayneynaa ina sidaas iyo ka quruxbadan uwada shaqeeno mustabalka dhow iyo kan fogba.",
     name: "ABDULKADIR HILOWLE  ",
     title: "Head of Business at MyBank",
     img: testtimonial_2_img,
   },
   {
-    text: "Waxaan u mahadcelinayaa xarunta Jtech oo qeyb weyn ka qaadatay barashadeyda xirfadaha Graphic Design-ka iyo Video Editing-ka.",
+    text: "Waxaan u mahadcelinayaa xarunta tabaarak ICT oo qeyb weyn ka qaadatay barashadeyda xirfadaha Graphic Design-ka iyo Video Editing-ka.",
     name: "ABDISHAKUR MOALLIAM ",
     title: "Digital Media Officer, Hormuud Telecom",
     img: testtimonial_3_img,

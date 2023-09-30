@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -35,12 +36,14 @@ const Banner = () => {
               Request for a Quote and get started
             </p>
           </div>
-          <Button
-            className="px-14 py-3 bg-background/10 rounded-sm hover:bg-background/20 shadow-none text-md relative z-10"
-            size={"lg"}
-          >
-            Contact us
-          </Button>
+          <Link href="/contact">
+            <Button
+              className="px-14 py-3 bg-background/10 rounded-sm hover:bg-background/20 shadow-none text-md relative z-10"
+              size={"lg"}
+            >
+              Contact us
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

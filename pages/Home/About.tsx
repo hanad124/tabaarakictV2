@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import aboutImage from "@/public/assets/about-img.png";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -70,7 +71,9 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="my-3"
           >
-            <Button size={"lg"}>Learn More</Button>
+            <Link href="/about">
+              <Button size={"lg"}>Learn More</Button>
+            </Link>
           </motion.div>
         </div>
       </motion.div>

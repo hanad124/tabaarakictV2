@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { HiMiniSquare3Stack3D } from "react-icons/hi2";
 import { HiLocationMarker } from "react-icons/hi";
 import { HiOutlineBriefcase } from "react-icons/hi";
+import { BiUserCircle } from "react-icons/bi";
 
 type SummeryProps = {
   name: string;
@@ -13,12 +14,14 @@ type SummeryProps = {
   category: string;
   location: string;
   type: string;
+  positions: string;
 };
 
 const JobSummery = ({
   name,
   location,
   category,
+  positions,
   issueDate,
   expireDate,
   type,
@@ -91,6 +94,14 @@ const JobSummery = ({
         <div className="flex flex-col gap-2 text-sm text-custom_secondary">
           <p className="font-semibold">Category</p>
           <p>{category}</p>
+        </div>
+      </div>
+      {/* positions */}
+      <div className="flex items-center gap-4 mt-5">
+        <BiUserCircle className="w-8 h-8 text-custom_primary" />
+        <div className="flex flex-col gap-2 text-sm text-custom_secondary">
+          <p className="font-semibold">Positions</p>
+          <p>{positions}</p>
         </div>
       </div>
       {/* location */}

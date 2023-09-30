@@ -9,6 +9,7 @@ type SideBarProps = {
   issueDate: string;
   expireDate: string;
   category: string;
+  positions: string;
   location: string;
   type: string;
 };
@@ -18,6 +19,7 @@ const SideBar = ({
   location,
   category,
   type,
+  positions,
   issueDate,
   expireDate,
 }: SideBarProps) => {
@@ -38,10 +40,11 @@ const SideBar = ({
         issueDate={issueDate}
         expireDate={expireDate}
         category={category}
+        positions={positions}
         location={location}
-        type = {type}
+        type={type}
       />
-  
+
       {/* recent Jobs */}
       <div
         className="p-5 my-10 rounded"

@@ -58,12 +58,14 @@ const Hero = () => {
                   delivering state-of-the-art technologies that ignite growth,
                   optimize efficiency.
                 </p>
-                <Button
-                  className="btn-primary px-14 w-full md:w-[14rem]"
-                  size={"lg"}
-                >
-                  Get Started
-                </Button>
+                <Link href="/contact">
+                  <Button
+                    className="btn-primary px-14 w-full md:w-[14rem]"
+                    size={"lg"}
+                  >
+                    Get Started
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -87,12 +89,14 @@ const Hero = () => {
                   delivering state-of-the-art technologies that ignite growth,
                   optimize efficiency.
                 </p>
-                <Button
-                  className="btn-primary px-14 w-full md:w-[14rem]"
-                  size={"lg"}
-                >
-                  Get Started
-                </Button>
+                <Link href="/contact">
+                  <Button
+                    className="btn-primary px-14 w-full md:w-[14rem]"
+                    size={"lg"}
+                  >
+                    Get Started
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

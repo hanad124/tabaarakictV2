@@ -37,15 +37,15 @@ export const projects: TProjects[] = [
     id: 5,
     image: projec5,
     category: "Mobile App",
-    title: "kaafiye management system",
+    title: "kaafiye system",
   },
   {
     id: 6,
     image: projec6,
-    category: "Desktop Apps",
+    category: "Desktop App",
     title: "Daryeel clinic software",
   },
 ];
 
 // Tabs
-export const tabs: string[] = ["All", "Mobile App", "Web Apps", "Desktop Apps"];
+export const tabs: string[] = ["All", "Mobile App", "Web Apps", "Desktop App"];
