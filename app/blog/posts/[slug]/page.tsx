@@ -30,7 +30,6 @@ export const generateStaticParams = async () => {
 };
 
 const BlogPost = (props: any) => {
-  console.log("props:", props);
   const slug = props.params.slug;
   const post = getPostContent(slug);
   const image = post.data.image;

@@ -1,9 +1,15 @@
+"use client";
+
 import React from "react";
 import BreadCrumb from "@/components/BreadCrumb";
 import Form from "./(components)/Form";
 import FAQ from "./(components)/FAQS";
+import { useToast } from "@/components/ui/use-toast";
+import { Button } from "@/components/ui/button";
 
 const Contact = () => {
+  const { toast } = useToast();
+
   const breadcrumbItems = [{ label: "Home", link: "/" }];
 
   return (
@@ -20,6 +26,17 @@ const Contact = () => {
           contact us using the information provided below. We look forward to
           hearing from you.
         </p>
+        <Button
+          onClick={() => {
+            toast({
+              title: "Scheduled: Catch up",
+              description: "Friday, February 10, 2023 at 5:57 PM",
+            });
+            alert("clicked");
+          }}
+        >
+          Show Toast
+        </Button>
         {/* contact Form */}
         <Form />
         <FAQ />

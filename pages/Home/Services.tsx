@@ -12,7 +12,7 @@ const Services = () => {
         <div className="mt-16 flex flex-col justify-center gap-10 md:flex-row md:flex-wrap">
           {/* single service 1*/}
           <div className="group bg-background hover:bg-custom_primary rounded-md shadow-custom_shadow p-7 md:w-[300px] flex flex-col">
-            <div className="flex justify-center flex-1">
+            <div className="flex justify-start flex-1">
               <div className=" bg-custom_primary/10 px-3 py-2 rounded-md group-hover:bg-white/10 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -64,14 +64,14 @@ const Services = () => {
               </div>
             </div>
 
-            <p className="text-center pt-6 text-lg font-bold text-custom_secondary group-hover:text-background flex-1">
+            <p className="text-start pt-6 text-lg font-bold text-custom_secondary group-hover:text-background flex-1">
               Software Development
             </p>
-            <p className="text-center text-custom_textColor leading-relaxed my-4 group-hover:text-custom_border flex-1">
+            <p className="text-start text-custom_textColor leading-relaxed my-4 group-hover:text-custom_border flex-1">
               Tailored software solutions that streamline processes and drive
               growth.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-background">
+            <div className="flex justify-start gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-background">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ const Services = () => {
           </div>
           {/* single service 2*/}
           <div className="group bg-background hover:bg-custom_primary rounded-md shadow-custom_shadow p-7 md:w-[330px]">
-            <div className="flex justify-center">
+            <div className="flex justify-start">
               <div className=" bg-custom_primary/10 group-hover:bg-white/10  px-3 py-2 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -151,13 +151,13 @@ const Services = () => {
               </div>
             </div>
 
-            <p className="text-center pt-6 text-lg font-bold text-custom_secondary         group-hover:text-background">
+            <p className="text-start pt-6 text-lg font-bold text-custom_secondary         group-hover:text-background">
               Mobile App Development
             </p>
-            <p className="text-center text-custom_textColor group-hover:text-custom_border leading-relaxed my-4">
+            <p className="text-start text-custom_textColor group-hover:text-custom_border leading-relaxed my-4">
               Engaging and functional mobile apps for seamless user experiences.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-background">
+            <div className="flex justify-start gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-background">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +185,7 @@ const Services = () => {
           </div>
           {/* single service 3*/}
           <div className="group hover:bg-custom_primary bg-background rounded-md shadow-custom_shadow p-7 md:w-[330px]">
-            <div className="flex justify-center">
+            <div className="flex justify-start">
               <div className=" bg-custom_primary/10 group-hover:bg-white/10 px-3 py-2 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -230,14 +230,14 @@ const Services = () => {
               </div>
             </div>
 
-            <p className="group-hover:text-background text-center pt-6 text-lg font-bold text-custom_secondary">
+            <p className="group-hover:text-background text-start pt-6 text-lg font-bold text-custom_secondary">
               Bulk sms Api
             </p>
-            <p className="group-hover:text-custom_border  text-center text-custom_textColor leading-relaxed my-4">
+            <p className="group-hover:text-custom_border  text-start text-custom_textColor leading-relaxed my-4">
               fficiently reach and engage your audience with our powerful SMS
               integration.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-white">
+            <div className="flex justify-start gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-white">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +267,7 @@ const Services = () => {
           </div>
           {/* single service 4*/}
           <div className="group bg-background hover:bg-custom_primary rounded-md shadow-custom_shadow p-7 md:w-[330px]">
-            <div className="flex justify-center">
+            <div className="flex justify-start">
               <div className=" bg-custom_primary/10 group-hover:bg-white/10 px-3 py-2 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -365,14 +365,14 @@ const Services = () => {
               </div>
             </div>
 
-            <p className="group-hover:text-background text-center pt-6 text-lg font-bold text-custom_secondary">
+            <p className="group-hover:text-background text-start pt-6 text-lg font-bold text-custom_secondary">
               Web design & Hosting
             </p>
-            <p className="group-hover:text-custom_border text-center text-custom_textColor leading-relaxed my-4">
+            <p className="group-hover:text-custom_border text-start text-custom_textColor leading-relaxed my-4">
               Captivating web design and reliable hosting for a strong online
               presence.
             </p>
-            <div className="group-hover:text-background flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline">
+            <div className="group-hover:text-background flex justify-start gap-2 text-custom_primary cursor-pointer hover:underline">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -402,7 +402,7 @@ const Services = () => {
           </div>
           {/* single service 5*/}
           <div className="group bg-background hover:bg-custom_primary  rounded-md shadow-custom_shadow p-7 md:w-[330px] flex flex-col">
-            <div className="flex justify-center flex-1">
+            <div className="flex justify-start flex-1">
               <div className=" bg-custom_primary/10 group-hover:bg-white/10 px-3 py-2 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -444,13 +444,13 @@ const Services = () => {
               </div>
             </div>
 
-            <p className="text-center group-hover:text-background pt-6 text-lg font-bold text-custom_secondary flex-1">
+            <p className="text-start group-hover:text-background pt-6 text-lg font-bold text-custom_secondary flex-1">
               IT Consultant{" "}
             </p>
-            <p className="text-center text-custom_textColor leading-relaxed my-4  group-hover:text-custom_border flex-1">
+            <p className="text-start text-custom_textColor leading-relaxed my-4  group-hover:text-custom_border flex-1">
               Strategic guidance to align technology with business goals.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline  group-hover:text-background ">
+            <div className="flex justify-start gap-2 text-custom_primary cursor-pointer hover:underline  group-hover:text-background ">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -480,7 +480,7 @@ const Services = () => {
           </div>
           {/* single service 6*/}
           <div className="group bg-background 10 hover:bg-custom_primary rounded-md shadow-custom_shadow p-7 md:w-[330px]">
-            <div className="flex justify-center">
+            <div className="flex justify-start">
               <div className=" bg-custom_primary/10 10 group-hover:bg-white/10  px-3 py-2 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -530,14 +530,14 @@ const Services = () => {
               </div>
             </div>
 
-            <p className="text-center pt-6 text-lg font-bold text-custom_secondary group-hover:text-background ">
+            <p className="text-start pt-6 text-lg font-bold text-custom_secondary group-hover:text-background ">
               Network Infrastructure
             </p>
-            <p className="text-center text-custom_textColor group-hover:text-custom_border leading-relaxed my-4">
+            <p className="text-start text-custom_textColor group-hover:text-custom_border leading-relaxed my-4">
               Secure and scalable networks for seamless connectivity and
               communication.
             </p>
-            <div className="flex justify-center gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-background">
+            <div className="flex justify-start gap-2 text-custom_primary cursor-pointer hover:underline group-hover:text-background">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
