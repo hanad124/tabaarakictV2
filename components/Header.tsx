@@ -101,7 +101,7 @@ function Header() {
               <Sheet>
                 <SheetTrigger onClick={handleSheetClose}>
                   {" "}
-                  <span className=" -mr-2 md:hidden bg-[#0B63E5] inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-[#0b62e5db] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                  <span className=" -mr-2 -mt-2 md:hidden bg-[#0B63E5] inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-[#0b62e5db] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     <svg
                       className="block h-6 w-6"
@@ -123,12 +123,17 @@ function Header() {
                   <SheetHeader>
                     <SheetTitle>
                       <Image
-                        className="h-10 w-10 flex-shrink-0 text-center -mt-3"
-                        src={logo}
+                        className="h-10 w-10"
+                        src={tabaarak_logo}
                         alt="logo image"
                         width={30}
                         height={30}
                       />
+                      <div className="flex items-center gap-3">
+                        <span className="text-2xl font-bold text-custom_secondary tracking-wide hidden md:block">
+                          Tabaarak
+                        </span>
+                      </div>
                     </SheetTitle>
                     <SheetDescription>
                       <span className=" flex flex-col gap-1 justify-start text-left  mt-7">

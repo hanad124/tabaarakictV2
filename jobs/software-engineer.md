@@ -4,8 +4,8 @@ category: "Development"
 type: "Full time"
 location: "Mogadishu"
 positions: "1"
-issueDate: "September 27, 2023"
-expireDate: "Octobar 02, 2023"
+issueDate: "December 09, 2023"
+expireDate: "December 16, 2023"
 ---
 
 We are seeking a talented and motivated Software Engineer to join our dynamic team. As a Software Engineer, you will play a key role in designing, developing, and maintaining our software solutions. You will collaborate with cross-functional teams to deliver high-quality software products that meet our customers' needs.

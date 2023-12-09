@@ -26,17 +26,6 @@ const Contact = () => {
           contact us using the information provided below. We look forward to
           hearing from you.
         </p>
-        <Button
-          onClick={() => {
-            toast({
-              title: "Scheduled: Catch up",
-              description: "Friday, February 10, 2023 at 5:57 PM",
-            });
-            alert("clicked");
-          }}
-        >
-          Show Toast
-        </Button>
         {/* contact Form */}
         <Form />
         <FAQ />

@@ -228,7 +228,7 @@ const Footer = () => {
               </div>
 
               <p className="text-custom_textColor w-70 ">
-                © Copyright 2023 -{" "}
+                Copyright © 2023 -{" "}
                 <Link
                   href={"/"}
                   className="hover:text-custom_primary hover:underline"
