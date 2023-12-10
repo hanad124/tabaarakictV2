@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Redesigned Tabaarak ICT Website
 
-## Getting Started
+During my personal project, I came across the website for `Tabaarak ICT` and was inspired to redesign it with a focus on creating a fun and engaging user experience. Using my expertise in web development and modern technologies, I embarked on the task of revamping their website and implementing an advanced and visually impressive user interface (UI).
 
-First, run the development server:
+[![Portfolio Preview](./public/assets/TABAARAK-ICT%20Thumbnail.svg)](https://tabaarakict.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+> **Live Website**: [https://tabaarakict.vercel.app/](https://tabaarakict.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Responsive Design:** The website adapts seamlessly to different devices and screen sizes.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Dynamic Content:** Real-time updates and interactive elements provide a dynamic browsing experience.
 
-## Learn More
+- **Clean Code:** The codebase follows industry best practices, ensuring maintainability and scalability.
 
-To learn more about Next.js, take a look at the following resources:
+- **Strapi CMS:** Efficient content management with Strapi, a headless CMS.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Interactive UI:** Engaging user interactions and intuitive navigation enhance the user experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **SEO Optimization:** Implemented SEO best practices for improved search engine visibility.
 
-## Deploy on Vercel
+- **Performance Optimization:** Optimized for fast loading speed and efficient performance.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Social Media Integration:** Integration with social media platforms for easy content sharing.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Security Measures:** Implemented security measures, including SSL encryption.
+
+## Pages
+
+1. **Home:** The landing page of the website, providing an overview of the company and its offerings.
+
+2. **Services:** A page that showcases the services provided by "Tabaarak ICT" in detail.
+
+3. **Portfolio:** An overview of the company's previous projects, highlighting their expertise and achievements.
+
+4. **Blog:** A section featuring articles, insights, and industry-related content for visitors to explore.
+
+5. **Careers:** Information about job opportunities, company culture, and the application process.
+
+6. **About:** An informative page that provides background information about "Tabaarak ICT," its mission, and values.
+
+7. **Contact Us:** A page that allows visitors to get in touch with "Tabaarak ICT" for inquiries or collaboration opportunities.
+
+## Technologies Used
+
+<img src="https://skillicons.dev/icons?i=next,ts,tailwind,graphql,vercel,cmc&perline=13" />
