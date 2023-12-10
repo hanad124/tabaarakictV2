@@ -29,15 +29,12 @@ import process_2_img from "@/public/assets/ui_ux_design-icon.png";
 import process_3_img from "@/public/assets/prototyping-icon.png";
 import process_4_img from "@/public/assets/developement-icon.png";
 
-import bran_1_img from "@/public/assets/brand-1.png";
-import bran_2_img from "@/public/assets/brand-2.png";
-import bran_3_img from "@/public/assets/brand-3.png";
-import bran_4_img from "@/public/assets/brand-4.png";
-import bran_5_img from "@/public/assets/brand-5.png";
-import bran_6_img from "@/public/assets/brand-6.png";
-import bran_7_img from "@/public/assets/brand-7.png";
-import bran_8_img from "@/public/assets/brand-8.png";
-import bran_9_img from "@/public/assets/brand-9.png";
+import bran_2_img from "@/public/assets/client5.png";
+import bran_3_img from "@/public/assets/client6.png";
+import bran_4_img from "@/public/assets/client7.png";
+import bran_5_img from "@/public/assets/client8.png";
+import bran_6_img from "@/public/assets/client9.jpeg";
+import bran_7_img from "@/public/assets/client10.png";
 
 // CLients
 export const testtimonialsData: Ttesttimonials[] = [
@@ -104,15 +101,12 @@ export const menuItems: TmenuItems[] = [
 
 // Brands
 export const brands = [
-  bran_1_img,
   bran_2_img,
   bran_3_img,
   bran_4_img,
   bran_5_img,
   bran_6_img,
   bran_7_img,
-  bran_8_img,
-  bran_9_img,
 ];
 
 // Portfolio

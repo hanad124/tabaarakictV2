@@ -36,14 +36,12 @@ const Banner = () => {
               Request for a Quote and get started
             </p>
           </div>
-          <Link href="/contact">
-            <Button
-              className="px-14 py-3 bg-background/10 rounded-sm hover:bg-background/20 shadow-none text-md relative z-10"
-              size={"lg"}
-            >
-              Contact us
-            </Button>
-          </Link>
+          <Button
+            className="px-12 py-3 bg-background/10 rounded-sm hover:bg-background/20 shadow-none text-md relative z-10"
+            size={"lg"}
+          >
+            <Link href="/contact">Contact us</Link>
+          </Button>
         </div>
       </div>
     </div>

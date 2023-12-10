@@ -13,15 +13,15 @@ const Brands = () => {
           we worked with 😊
         </h2>
 
-        <div className="flex flex-wrap gap-10 mt-20 items-center justify-center">
+        <div className="flex flex-wrap mt-10 items-center justify-center">
           {brands.map((brand, index) => {
             return (
               <React.Fragment key={index}>
                 <Image
-                  className="cursor-pointer grayscale hover:grayscale-0 hover:scale-105 transition-transform  max-h-[160px] max-w-[200px] p-[25px] basis-96 text-center"
+                  className="cursor-pointer hover:scale-105 transition-transform  max-h-[160px] max-w-[200px] p-[10px] basis-96 text-center"
                   src={brand}
                   alt={"brand image"}
-                  width={100}
+                  width={200}
                   height={50}
                 />
               </React.Fragment>
