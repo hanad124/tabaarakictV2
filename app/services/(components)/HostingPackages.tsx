@@ -4,6 +4,7 @@
 import { hostingPackages } from "@/data/hostingPackages";
 import { Button } from "@/components/ui/button";
 import React from "react";
+import Link from "next/link";
 
 // HostingPackages component
 const HostingPackages = () => {
@@ -217,41 +218,44 @@ const HostingPackages = () => {
                       {packages.description}
                     </p>
                   </div>
+                  {/* "Get Started" button */}
                   <div className="mt-5 ">
-                    {/* "Get Started" button */}
-                    <Button
-                      variant={"outline"}
-                      size={"lg"}
-                      className="group hover:bg-custom_primary hover:text-background flex items-center gap-3 text-custom_primary"
-                    >
-                      <p className="font-medium text-lg">Get Started</p>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
+                    <Link href="/contact">
+                      <Button
+                        variant={"outline"}
+                        size={"lg"}
+                        className="group hover:bg-custom_primary hover:text-background flex items-center gap-3 text-custom_primary"
                       >
-                        <path
-                          d="M3.75 12H20.25"
-                          stroke="#0B63E5"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="group-hover:stroke-background"
-                        />
-                        <path
-                          d="M13.5 5.25L20.25 12L13.5 18.75"
-                          stroke="#0B63E5"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="group-hover:stroke-background"
-                        />
-                      </svg>
-                    </Button>
+                        <p className="font-medium text-lg">Get Started</p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M3.75 12H20.25"
+                            stroke="#0B63E5"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="group-hover:stroke-background"
+                          />
+                          <path
+                            d="M13.5 5.25L20.25 12L13.5 18.75"
+                            stroke="#0B63E5"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="group-hover:stroke-background"
+                          />
+                        </svg>
+                      </Button>
+                    </Link>
                   </div>
                 </div>
+                {/* Package features */}
                 <div className="flex flex-col gap-y-5 p-5">
                   <div className="flex gap-4 flex-col">
                     {packages.features.map((feature, index) => {
@@ -266,18 +270,31 @@ const HostingPackages = () => {
                                 viewBox="0 0 14 14"
                                 fill="none"
                               >
-                                <path
-                                  d="M11.8125 3.93774L5.6875 10.0625L2.625 7.00024"
-                                  stroke="#0F9918"
-                                  strokeWidth="2"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                />
+                                {/* SVG code for the checkmark icon */}
+                                {feature !== "SSL Certificate (NO)" && (
+                                  <path
+                                    d="M11.8125 3.93774L5.6875 10.0625L2.625 7.00024"
+                                    stroke="#0F9918"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                  />
+                                )}
                               </svg>
                             </div>
-                            <p className="text-custom_secondary text-md ">
+                            {feature === "SSL Certificate (NO)" ? (
+                              <p className="text-slate-400 text-md line-through">
+                                SSL Certificate (NO)
+                              </p>
+                            ) : (
+                              <p className="text-custom_secondary text-md ">
+                                {feature}
+                              </p>
+                            )}
+
+                            {/* <p className="text-custom_secondary text-md ">
                               {feature}
-                            </p>
+                            </p> */}
                           </div>
                         </React.Fragment>
                       );

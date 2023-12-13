@@ -72,12 +72,12 @@ const Portfolio = () => {
       </div>
 
       {/* Projects */}
-      <div className="flex flex-col justify-start md:justify-start gap-14 md:flex-row md:flex-wrap  mt-24 ">
+      <div className="flex flex-col justify-start md:justify-start gap-10 md:flex-row md:flex-wrap  mt-24 ">
         {/* signle project */}
         {portfolioData.map((project) => {
           return (
             <div
-              className="flex flex-col border md:w-[370px] border-custom_border rounded-b-lg pb-4"
+              className="flex flex-col border md:w-[340px] border-custom_border rounded-b-lg pb-4"
               key={project.title}
             >
               {isLoading ? (
@@ -99,7 +99,7 @@ const Portfolio = () => {
                   style={{ marginTop: "22px", marginLeft: "13px" }}
                 />
               ) : (
-                <p className="text-custom_secondary font-bold text-2xl mt-7 flex-1 ml-4">
+                <p className="text-custom_secondary font-bold text-2xl mt-7 flex-1 ml-4 flex-start">
                   {project.title}
                 </p>
               )}
@@ -118,7 +118,7 @@ const Portfolio = () => {
                   />
                 </>
               ) : (
-                <p className="mt-2  ml-4 text-custom_textColor flex-1">
+                <p className="mt-2  ml-4 text-custom_textColor flex-1 flex-start">
                   {project.desc}
                 </p>
               )}

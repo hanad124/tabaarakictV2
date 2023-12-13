@@ -16,6 +16,7 @@ export const hostingPackages: THostingPackages[] = [
       <path d="M3.75 12H20.25" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>`,
+    sslCertificate: false,
     features: [
       "10 GB Disk Storage",
 
@@ -49,6 +50,7 @@ export const hostingPackages: THostingPackages[] = [
       <path d="M3.75 12H20.25" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>`,
+    sslCertificate: false,
     features: [
       "30 GB Disk Storage",
 
@@ -82,6 +84,7 @@ export const hostingPackages: THostingPackages[] = [
       <path d="M3.75 12H20.25" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>`,
+    sslCertificate: true,
     features: [
       "Unlimited Disk Storage",
 

@@ -8,4 +8,5 @@ export type THostingPackages = {
   buttonIcon: string;
   features: string[];
   isRecommended: boolean;
+  sslCertificate: boolean;
 };
