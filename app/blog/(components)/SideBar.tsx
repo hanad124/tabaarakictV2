@@ -15,8 +15,8 @@ import SharePost from "./SharePost";
 
 type ComponentProps = {
   placeholder: string;
-  postUrl?: string;
-  postTitle?: string;
+  postUrl: string;
+  postTitle: string;
 };
 
 // get recent posts by date
@@ -30,9 +30,7 @@ const tags = posts;
 
 // share post on social media
 
-const SideBar = (
-  { placeholder, postUrl, postTitle }: ComponentProps = { placeholder: "" }
-) => {
+const SideBar = ({ placeholder, postUrl, postTitle }: ComponentProps) => {
   return (
     <div className="md:w-[440px] sticky top-16 border border-custom_primary/10 rounded-lg h-full md:py-10 md:px-7 ">
       <SearchDialog posts={posts} placeholder={placeholder} />
