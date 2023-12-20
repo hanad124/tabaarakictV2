@@ -49,7 +49,7 @@ export async function generateMetadata(
   // return metadata
   return {
     title: `${post.data.title} | ${post.data.category} - Tabaarak ICT Solutions`,
-    description: post.data.description,
+    description: post.content,
     openGraph: {
       images: [
         {

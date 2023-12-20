@@ -12,6 +12,12 @@ import { FiUser } from "react-icons/fi";
 import { FiCalendar } from "react-icons/fi";
 import { FiTag } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
+import type { Metadata, ResolvingMetadata } from "next";
+
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
@@ -21,7 +27,36 @@ export const generateStaticParams = async () => {
   }));
 };
 
-const page = (props: any) => {
+// add dynamic meta data about the page here
+
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const { tag } = params as unknown as { tag: string };
+
+  // fetch data
+  const post = getPostsByTag(tag);
+
+  // return metadata
+  return {
+    title: `${post[0]?.category} - Tabaarak ICT Solutions`,
+    description: post[0]?.content,
+    openGraph: {
+      images: [
+        {
+          url: post[0]?.image,
+          width: 800,
+          height: 600,
+          alt: post[0]?.title,
+        },
+      ],
+    },
+  };
+}
+
+const Page = (props: any) => {
   // Generate breadcrumb items
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -114,4 +149,4 @@ const page = (props: any) => {
   );
 };
 
-export default page;
+export default Page;
