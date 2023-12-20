@@ -97,7 +97,7 @@ const SharePost = ({
             <div className="group hover ring-[1px] ring-custom_border hover:ring-custom_primary hover:bg-custom_primary w-9 px-1 pu-1 h-9 rounded-full flex justify-center items-center cursor-pointer">
               <FacebookShareButton
                 url={`https://tabaarakict.vercel.app/blog/posts/${postUrl}`}
-                quote={`${postTitle} - Tabaarak ICT Solutions`}
+                // quote={`${postTitle} - Tabaarak ICT Solutions`}
                 hashtag="#tabaarakict"
                 className="Demo__some-network__share-button"
               >
