@@ -10,8 +10,16 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 import { FiTag } from "react-icons/fi";
 import { Badge } from "@/components/ui/badge";
 import { Code } from "bright";
+import type { Metadata, ResolvingMetadata } from "next";
+
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 Code.theme = "dracula";
+
+// add meta data about the page here
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -28,8 +36,33 @@ export const generateStaticParams = async () => {
     params: { slug: post.slug },
   }));
 };
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const { slug } = params as unknown as { slug: string };
 
-const BlogPost = (props: any) => {
+  // fetch data
+  const post = getPostContent(slug);
+
+  // return metadata
+  return {
+    title: `${post.data.title} | ${post.data.category} - Tabaarak ICT Solutions`,
+    description: post.data.description,
+    openGraph: {
+      images: [
+        {
+          url: post.data.image,
+          width: 800,
+          height: 600,
+          alt: post.data.title,
+        },
+      ],
+    },
+  };
+}
+const BlogPost = (props: any, metadata: Metadata) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   const image = post.data.image;

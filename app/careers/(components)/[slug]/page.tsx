@@ -8,6 +8,12 @@ import Link from "next/link";
 import SideBar from "@/app/careers/(components)/SideBar";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import { Button } from "@/components/ui/button";
+import type { Metadata, ResolvingMetadata } from "next";
+
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 const getPostContent = (slug: string) => {
   const folder = "jobs/";
@@ -23,6 +29,35 @@ export const generateStaticParams = async () => {
     slug: job.slug,
   }));
 };
+
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const { slug } = params as unknown as { slug: string };
+
+  // fetch data
+  const job = getPostContent(slug);
+
+  // return metadata
+  return {
+    title: `
+    ${job.data.name} | ${job.data.category} | ${job.data.location} - Tabaarak ICT Solutions
+    `,
+    description: job.data.description,
+    openGraph: {
+      images: [
+        {
+          url: job.data.image,
+          width: 800,
+          height: 600,
+          alt: job.data.title,
+        },
+      ],
+    },
+  };
+}
 
 const BlogPost = (props: any) => {
   const slug = props.params.slug;

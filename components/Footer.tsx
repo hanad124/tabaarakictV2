@@ -41,6 +41,7 @@ const Footer = () => {
                       <Link
                         href="https://www.facebook.com/TabaarakICT/"
                         target="_blank"
+                        aria-label="facebook"
                       >
                         {" "}
                         <svg
@@ -72,6 +73,7 @@ const Footer = () => {
                       <Link
                         href="https://www.linkedin.com/in/tabaarak-ict-solutions-77421080"
                         target="_blank"
+                        aria-label="linkedin"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
