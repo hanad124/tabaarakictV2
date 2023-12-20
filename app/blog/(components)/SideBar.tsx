@@ -6,10 +6,17 @@ import Image from "next/image";
 import { BiSearch } from "react-icons/bi";
 import { SearchDialog } from "./SearchPosts";
 import { CalendarIcon } from "@radix-ui/react-icons";
-import { type } from "os";
+import {
+  WhatsappShareButton,
+  FacebookShareButton,
+  FacebookShareCount,
+} from "react-share";
+import SharePost from "./SharePost";
 
 type ComponentProps = {
   placeholder: string;
+  postUrl?: string;
+  postTitle?: string;
 };
 
 // get recent posts by date
@@ -21,7 +28,11 @@ const recentPosts = posts
 // get popular tags
 const tags = posts;
 
-const SideBar = ({ placeholder }: ComponentProps) => {
+// share post on social media
+
+const SideBar = (
+  { placeholder, postUrl, postTitle }: ComponentProps = { placeholder: "" }
+) => {
   return (
     <div className="md:w-[440px] sticky top-16 border border-custom_primary/10 rounded-lg h-full md:py-10 md:px-7 ">
       <SearchDialog posts={posts} placeholder={placeholder} />
@@ -161,6 +172,9 @@ const SideBar = ({ placeholder }: ComponentProps) => {
           </div>
         </div>
       </div>
+
+      {/* share post */}
+      <SharePost postUrl={postUrl} postTitle={postTitle} />
     </div>
   );
 };

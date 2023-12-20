@@ -121,7 +121,11 @@ const BlogPost = (props: any, metadata: Metadata) => {
           </div>
         </div>
         {/* side bar */}
-        <SideBar placeholder="posts" />
+        <SideBar
+          placeholder="posts"
+          postUrl={slug}
+          postTitle={post.data.title}
+        />
       </div>
     </>
   );
