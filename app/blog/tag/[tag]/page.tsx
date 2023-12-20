@@ -143,7 +143,7 @@ const Page = (props: any) => {
           </div>
         </div>
         {/* side bar */}
-        <SideBar placeholder="posts" />
+        <SideBar placeholder="posts" postUrl="" postTitle="" />
       </div>
     </>
   );
