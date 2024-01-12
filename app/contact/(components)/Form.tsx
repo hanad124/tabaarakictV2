@@ -20,9 +20,7 @@ const Form = () => {
   // send email
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      description: "thanks, Your message has been sent.",
-    });
+
     setLoading(true);
     const res = await fetch("/api/send", {
       method: "POST",
@@ -32,7 +30,9 @@ const Form = () => {
       body: JSON.stringify(data),
       credentials: "same-origin",
     });
-    setLoading(false);
+    toast({
+      description: "thanks, Your message has been sent.",
+    });
     const json = await res.json();
     setData({
       name: "",
@@ -52,6 +52,25 @@ const Form = () => {
       setLoading(false);
       console.log(json);
     }
+
+    // const { name, email, subject, company, message } = data;
+    // setLoading(true);
+
+    // const res = await sendMail(data);
+    // if (res) {
+    //   toast({
+    //     description: "thanks, Your message has been sent.",
+    //   });
+    // } else {
+    //   toast({
+    //     description: "Sorry, Your message failed to send.",
+    //   });
+    // }
+
+    // console.log(data);
+
+    setLoading(false);
+
     setData({
       name: "",
       email: "",

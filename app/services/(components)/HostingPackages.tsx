@@ -21,7 +21,6 @@ const HostingPackages = () => {
           businesses of all sizes 👌.
         </p>
         {/* Hosting packages */}
-
         <div className="flex flex-col justify-center md:justify-start gap-y-20 gap-x-6 md:flex-row md:flex-wrap mt-16 md:mt-24">
           {hostingPackages.map((packages, index) => {
             return (

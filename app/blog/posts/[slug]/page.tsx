@@ -36,6 +36,7 @@ export const generateStaticParams = async () => {
     params: { slug: post.slug },
   }));
 };
+
 export async function generateMetadata(
   { params, searchParams }: Props,
   parent: ResolvingMetadata
