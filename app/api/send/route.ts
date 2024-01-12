@@ -1,4 +1,4 @@
-import { EmailTemplate } from "@/components/EmailTemplate";
+// import { EmailTemplate } from "@/components/EmailTemplate";
 import nodemailer from "nodemailer";
 import { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
@@ -89,13 +89,13 @@ export async function POST(resquest: Request) {
         from: SMTP_EMAIL,
         to: SMTP_EMAIL,
         subject,
-        react: EmailTemplate({
-          name: name,
-          message: message,
-          company: company,
-          email: email,
-          subject: subject,
-        }) as React.ReactElement,
+        // react: EmailTemplate({
+        //   name: name,
+        //   message: message,
+        //   company: company,
+        //   email: email,
+        //   subject: subject,
+        // }) as React.ReactElement,
       });
 
       console.log(sendResult);
