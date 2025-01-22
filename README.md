@@ -1,6 +1,6 @@
 # Redesigned Tabaarak ICT Website
 
-During my personal project, I came across the website for `Tabaarak ICT` and was inspired to redesign it with a focus on creating a fun and engaging user experience. Using my expertise in web development and modern technologies, I embarked on the task of revamping their website and implementing an advanced and visually impressive user interface (UI).
+During my personal projects, I came across the website for `Tabaarak ICT` and was inspired to redesign it with a focus on creating a fun and engaging user experience. Using my expertise in web development and modern technologies, I embarked on the task of revamping their website and implementing an advanced and visually impressive user interface (UI).
 
 [![Portfolio Preview](./public/assets/TABAARAK-ICT%20Thumbnail.svg)](https://tabaarakict.vercel.app/)
 
